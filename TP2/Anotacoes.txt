@@ -1,0 +1,20 @@
+capacitor  - 22 microfarads ceramica, X5R ou X7R
+cap de entrada - tensao nominal maior que 4,2 V, usar 10V
+cap de saida maior que 5V, usar 16V
+
+r1 = 110 kQ
+r2 = 15 kQ
+Usa formula do datasheet do CI para calcular
+
+l1 - 4,7 microH - corrente nominal maior que a corrente maxima (maior que 1,67A)
+
+d1 - diodo Schottky, porque ele tem pouca queda de tensão e é rápido - 
+Usar formula do datasheet para calcular que envolve corrente de pico
+Tensao reversa maior que 5V
+
+
+Corrente maxima:
+P = V x I = 5V x 0,7 = 3,5W (0,7 é a corrente que escolhemos >0,5)
+Corrente da bateria: I = P/V = 3,5/3,0 = 1,17A  (pior caso com entrada de 3V)
+
+
