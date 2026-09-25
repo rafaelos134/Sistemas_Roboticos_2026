@@ -4,14 +4,6 @@ UFMG, DCC, 2º semestre de 2026, Prof. Paulo Rezeck. Turmas TE3, TL19 e P25.
 
 Disciplina prática, baseada em laboratório e projeto integrador, que dá um panorama do projeto de sistemas robóticos: mecânica e fabricação digital, eletrônica e PCB, sistemas embarcados, sensores e filtragem, controle e odometria, e integração com ROS/ROS2. Os módulos rendem cinco relatórios e culminam em um projeto final coletivo (futebol de robôs, sumô ou pega-pega).
 
-## Avaliação (100 pontos)
-
-| Item                                   |
-|----------------------------------------|
-| Relatórios de laboratório (R1 a R5)    |
-| Projeto final: relatório/documentação  |
-| Projeto final: demonstração na arena   |
-| Projeto final: seminário (10–12 min)   |
 
 ## Estrutura
 
