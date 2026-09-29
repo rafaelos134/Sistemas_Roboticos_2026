@@ -6,7 +6,7 @@ r1 = 110 kQ
 r2 = 15 kQ
 Usa formula do datasheet do CI para calcular
 
-l1 - 4,7 microH - corrente nominal maior que a corrente maxima (maior que 1,67A)
+l1 - 4,7 microH - corrente nominal maior que a corrente maxima (maior que 1,17A)
 
 d1 - diodo Schottky, porque ele tem pouca queda de tensão e é rápido - 
 Usar formula do datasheet para calcular que envolve corrente de pico
