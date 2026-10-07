@@ -1,0 +1,774 @@
+% =====================================================================
+% Relatório 3 -- TCRT5000 (12 pontos). Recado do professor (01/10):
+%
+%   Como descrito no roteiro, você tem que terminar a caracterização dos
+%   sensores, e medir em mm direto no arduino. Quero os graficos em mm.
+%   Faça uma analise da maior distancia que conseguirem. Compare as
+%   soluções.
+%   Lembrem-se de explorar o tempo de atuação do LED para emitir mais luz
+%   e maior alcance.
+%   DICA: O valor do sinal do sensor quando todo tampado, deveria
+%   idealmente ser 1023. Se estiver muito baixo, verifique a resitencia
+%   se estão corretas.
+%   Vocês devem documentar muito bem todo o processo e me enviar o
+%   relatorio posteriormente.
+%
+% Checklist do roteiro (Seção 10) -> onde está no relatório:
+%   foto protoboard + régua/cartão ........ Seção 3 (fig:montagem, fig:bancada)
+%   planilha (médias, z, g0, g1, d_est) .... repositório (Seção 5.3/5.4 resume)
+%   gráfico do sinal até 200 mm (em mm) .... fig:sinal-dist
+%   gráfico da distância estimada (mm) ..... fig:dest-dist
+%   sketch sinal,mm + curva ao vivo em mm .. repositório (Seção 5.5 mostra a curva)
+%   alcance / 200 mm era o limite? ......... Seção 5.6
+%   redução do tempo: sinal e alcance ...... Seções 5.7 e 6.2
+%
+% Convenção: \pendente{...} e \pnd marcam o que falta; \placeholderfig
+% ocupa o lugar de uma figura. Antes da entrega, nenhum dos três pode
+% sobrar (grep -n 'pendente\|pnd\|placeholderfig' main.tex).
+% =====================================================================
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{indentfirst}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{figuras/}}
+
+\captionsetup{font=small,skip=4pt}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+% Deixa o LaTeX empacotar melhor figuras e tabelas, para nao sobrar
+% espaco em branco no pe das paginas.
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.75}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+\setlength{\parskip}{0.15em}
+
+% ---------------------------------------------------------------------
+% Marca o que ainda falta preencher. Aparece em vermelho no PDF.
+% ANTES DA ENTREGA FINAL: apagar todos os \pendente do texto.
+% ---------------------------------------------------------------------
+\newcommand{\pendente}[1]{\textcolor{red}{\textbf{[FALTA:} #1\textbf{]}}}
+\newcommand{\pnd}{\textcolor{red}{\textbf{[?]}}}
+
+% ---------------------------------------------------------------------
+% PREAMBULO DE REVISAO. Some na versao de entrega.
+%   \begin{corte}...\end{corte}  bloco inteiro em vermelho (candidato a corte)
+%   \vl{...}                     texto atual, riscado em vermelho
+%   \nv{...}                     reescrita proposta, em verde
+% ---------------------------------------------------------------------
+\newenvironment{corte}{\color{red}}{}
+\definecolor{verde}{rgb}{0,0.42,0.10}
+\newcommand{\vl}[1]{{\color{red}\sout{#1}}}
+\newcommand{\nv}[1]{{\color{verde}#1}}
+
+% Caixa que ocupa o lugar de uma foto que ainda nao existe.
+% Quando a foto estiver pronta, trocar a linha inteira por:
+%   \includegraphics[width=\linewidth]{nome-do-arquivo}
+\newcommand{\placeholderfig}[2]{%
+  \fbox{\begin{minipage}[c][#1][c]{0.97\linewidth}
+    \centering\itshape\color{gray} #2
+  \end{minipage}}%
+}
+
+
+% ---------------------------------------------------------------------
+
+\title{\textbf{Relatório 3: Sensor de distância por infravermelho}\\
+[0.4em]
+\large Caracterização do TCRT5000, modelo inverso no Arduino e efeito do tempo de acionamento do LED
+}
+
+\author{
+Vinicius Trindade Dias Abel \\
+Guilherme Buxbaum Marinho Guerra \\
+Thiago Henrique Silva de Almeida \\
+Rafael Santos Oliveira \\[0.8em]
+\small Departamento de Ciência da Computação \\
+\small Universidade Federal de Minas Gerais \\
+\small Projeto de Sistemas Robóticos, Prof. Paulo Rezeck
+}
+
+\date{Belo Horizonte, \pendente{data de envio} de 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+Este relatório descreve a caracterização de um sensor reflexivo TCRT5000, montado na protoboard com um Arduino Mega, como medidor de distância até um cartão branco. O sinal usado é a diferença entre as leituras do conversor com o LED infravermelho desligado e ligado, o que remove a luz ambiente. O sinal foi medido em \pendente{N\textsubscript{d}} distâncias entre \pendente{d\textsubscript{min}} e \pendente{d\textsubscript{max}}\,mm, com \pendente{N} ciclos por distância, em duas varreduras independentes, uma para calibração e outra para validação. O modelo $d = g_0 + g_1/\sqrt{S}$ deu $g_0 = \pendente{}$\,mm e $g_1 = \pendente{}$\,mm$\cdot$contagem$^{1/2}$, com erro RMS de \pendente{}\,mm na validação, e foi gravado no Arduino, que passou a imprimir a distância em milímetros. O alcance, definido como a maior distância em que o sinal se separa do fundo por três desvios-padrão, foi de \pendente{}\,mm com 1\,s de acionamento. Reduzir o tempo de acionamento para \pendente{} reduziu o sinal em \pendente{}\,\% e o alcance para \pendente{}\,mm, o que é explicado pelos tempos de subida e de descida medidos para o conjunto LED e fototransistor, de \pendente{} e \pendente{}. Por fim, três soluções de conversão sinal-distância (modelo do roteiro, lei de potência ajustada e tabela interpolada) são comparadas em erro e em custo no microcontrolador.
+\end{abstract}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+% =====================================================================
+\section{Introdução}
+\label{sec:introducao}
+% =====================================================================
+
+Um sensor de distância estima a separação até um alvo sem encostar nele. Em robótica móvel, sensores reflexivos de infravermelho são usados para detectar obstáculos próximos, seguir linhas e medir a distância até paredes, porque são baratos, pequenos e fáceis de ler com um conversor analógico. O preço dessa simplicidade é que a leitura não é a distância: é uma corrente que depende da distância, mas também da refletância do alvo, do ângulo, da luz da sala e da potência do emissor. Transformar essa leitura em milímetros exige caracterizar o sensor e ajustar um modelo.
+
+O objetivo deste trabalho é levar o TCRT5000 desse sinal bruto até uma medida em milímetros calculada no próprio Arduino, e responder a duas perguntas: até que distância a montagem consegue medir, e como esse alcance depende do tempo em que o LED fica aceso em cada ciclo. Especificamente, o trabalho:
+\begin{enumerate}[nosep]
+  \item verifica a montagem e o circuito de leitura (Seção~\ref{sec:montagem});
+  \item mede o sinal em função da distância até além de 200\,mm, com repetições, uma série sem alvo e duas varreduras independentes (Seções~\ref{sec:metodologia} e~\ref{sec:res-caracterizacao});
+  \item ajusta o modelo inverso do roteiro e o compara com duas alternativas (Seção~\ref{sec:res-modelo});
+  \item grava o modelo no Arduino e valida a leitura em milímetros contra a régua (Seção~\ref{sec:res-arduino});
+  \item determina o alcance com um critério estatístico explícito (Seção~\ref{sec:res-alcance});
+  \item mede o efeito do tempo de acionamento do LED sobre o sinal e sobre o alcance, e explica esse efeito com a resposta temporal medida do emissor e do detector (Seções~\ref{sec:res-degrau} e~\ref{sec:res-tempo}).
+\end{enumerate}
+
+% =====================================================================
+\section{Fundamentação}
+\label{sec:fundamentacao}
+% =====================================================================
+
+\subsection{O TCRT5000}
+
+O TCRT5000 reúne, no mesmo invólucro, um LED infravermelho que emite em torno de 950\,nm e um fototransistor com filtro que bloqueia a maior parte da luz visível~\cite{tcrt5000}. Os dois ficam lado a lado, voltados para a mesma direção. A luz do LED sai, é refletida pelo alvo e uma parte volta ao fototransistor. Os fótons absorvidos geram portadores na base, e o ganho do transistor transforma essa fotocorrente numa corrente de coletor $I_C$ maior. Quanto mais perto e mais refletor for o alvo, maior $I_C$.
+
+A folha de dados especifica o sensor para distâncias pequenas: a corrente de coletor típica é de \pendente{conferir no datasheet: $I_C$ típico, com $I_F$ e distância de teste}, e a curva de resposta relativa tem pico em torno de 2,5\,mm~\cite{tcrt5000}. Abaixo desse ponto, emissor e detector deixam de enxergar a mesma região do alvo e o sinal cai ao se aproximar. A folha de dados também informa tempos de subida e de descida do fototransistor de \pendente{conferir $t_r$, $t_f$ e a carga $R_L$ de teste}, medidos com uma carga bem menor que a usada aqui.
+
+\subsection{Circuito de leitura}
+
+A Figura~\ref{fig:esquema} mostra o circuito do roteiro~\cite{roteiro}. O LED é acionado pelo pino D8 através de um resistor de $R_E = 100\,\Omega$. Com o pino em nível alto, a corrente direta é
+\begin{equation}
+I_F = \frac{V_{OH} - V_F}{R_E} \approx \frac{5{,}0 - 1{,}2}{100} \approx 38\,\text{mA},
+\label{eq:if}
+\end{equation}
+em que $V_F$ é a queda direta do LED. Esse valor está próximo do limite de 40\,mA por pino do ATmega2560~\cite{atmega2560}, e por isso o LED não deve ficar aceso continuamente; o próprio programa o desliga a cada ciclo. Com $V_{OH}$ e $V_F$ medidos (Tabela~\ref{tab:verificacao}), a corrente real foi de \pendente{}\,mA.
+
+O coletor do fototransistor tem um resistor de \textit{pull-up} de $R_C = 4{,}7\,\text{k}\Omega$ ligado ao 5\,V, e o emissor vai ao GND. A tensão lida em A0 é
+\begin{equation}
+V_{A0} = V_{CC} - R_C\, I_C ,
+\qquad
+\text{ADC} = 1023\,\frac{V_{A0}}{V_{CC}} .
+\label{eq:va0}
+\end{equation}
+Sem luz, $I_C$ é apenas a corrente de escuro, da ordem de nanoampères, e $V_{A0} \approx V_{CC}$: com o sensor todo tampado, a leitura deve ficar perto de 1023. Uma leitura bem abaixo disso, no escuro, indica resistor errado ou terminais trocados. No outro extremo, o transistor satura quando $R_C I_C$ se aproxima de $V_{CC} - V_{CE(sat)}$, ou seja, para
+\begin{equation}
+I_{C,\text{sat}} \approx \frac{V_{CC} - V_{CE(sat)}}{R_C} \approx \frac{5{,}0 - 0{,}2}{4700} \approx 1{,}0\,\text{mA}.
+\end{equation}
+Acima dessa corrente a leitura fica presa perto de zero e deixa de carregar informação sobre a distância. O valor de $R_C$ é, portanto, um compromisso: um resistor maior dá mais contagens por microampère, e mais alcance, mas satura mais longe do sensor e deixa a resposta mais lenta (Seção~\ref{sec:fund-dinamica}).
+
+\subsection{Leitura diferencial}
+
+Cada ciclo do programa faz duas leituras: $\text{adc}_\text{on}$, com o LED aceso, e $\text{adc}_\text{off}$, com o LED apagado. A segunda contém só a luz ambiente. O sinal é
+\begin{equation}
+S = \max\left(0,\ \text{adc}_\text{off} - \text{adc}_\text{on}\right)
+\approx \frac{1023}{V_{CC}}\, R_C\, I_{C,\text{LED}},
+\label{eq:sinal}
+\end{equation}
+proporcional à parte da corrente de coletor causada pela luz do próprio LED, desde que o transistor não esteja saturado e que a luz ambiente não mude entre as duas leituras. A subtração remove a luz ambiente constante, mas não o ruído de cada leitura: o desvio-padrão de $S$ é aproximadamente $\sqrt{2}$ vezes o de uma leitura isolada.
+
+\subsection{Modelo inverso}
+\label{sec:fund-modelo}
+
+Para um alvo difuso grande, a potência refletida que chega ao detector cai, em primeira aproximação, com o quadrado da distância~\cite{roteiro}:
+\begin{equation}
+S(d) = \frac{\alpha}{d^2}
+\quad\Longrightarrow\quad
+d = \frac{\sqrt{\alpha}}{\sqrt{S}} .
+\end{equation}
+O roteiro acrescenta um termo constante, que absorve o zero da régua, o tamanho finito do alvo e o residual de ambiente, e lineariza o modelo na variável $z = 1/\sqrt{S}$:
+\begin{equation}
+d = g_0 + g_1\, z, \qquad z = \frac{1}{\sqrt{S}} .
+\label{eq:modelo}
+\end{equation}
+Os ganhos $g_0$ (mm) e $g_1$ (mm$\cdot$contagem$^{1/2}$) saem de uma regressão linear de $d$ contra $z$.
+
+O modelo também dá a resolução em distância. Um ruído $\sigma_S$ no sinal vira um ruído em distância
+\begin{equation}
+\sigma_d(d) = \left|\frac{\partial d}{\partial S}\right| \sigma_S
+= \frac{g_1}{2}\, S^{-3/2}\, \sigma_S .
+\label{eq:sigmad}
+\end{equation}
+Como $S$ cai com $d^2$, $\sigma_d$ cresce aproximadamente com $d^3$ quando $\sigma_S$ é constante. É essa piora rápida, e não só a queda do sinal até o fundo, que limita o alcance útil do sensor.
+
+\subsection{Resposta temporal do LED e do fototransistor}
+\label{sec:fund-dinamica}
+
+Quando D8 sobe, a corrente no LED se estabelece rapidamente, mas a potência óptica e, principalmente, a corrente do fototransistor levam um tempo para chegar ao regime. No fototransistor, a capacitância da junção base-coletor, multiplicada pelo ganho do transistor (efeito Miller), carrega através da resistência de carga. A constante de tempo cresce com $R_C$: com $R_C = 4{,}7\,\text{k}\Omega$, bem maior que a carga de teste da folha de dados, a resposta deve ser mais lenta que o $t_r$ nominal. Quando o LED apaga, a carga armazenada na base ainda sustenta corrente de coletor por mais um intervalo, e esse intervalo é maior quando o transistor estava saturado.
+
+Se o tempo ligado $t_\text{on}$ for curto perto dessas constantes de tempo, $\text{adc}_\text{on}$ é lido antes de a corrente chegar ao regime. Se o tempo desligado $t_\text{off}$ for curto, $\text{adc}_\text{off}$ é lido antes de o transistor voltar a cortar. Os dois efeitos reduzem $S$ na Equação~\eqref{eq:sinal}. Como o ruído da leitura não diminui junto, a razão sinal-ruído cai e o alcance encolhe. Há ainda um limite do conversor: cada \texttt{analogRead} no Mega leva cerca de 112\,$\mu$s (13 ciclos do ADC a 125\,kHz, mais o tempo da função)~\cite{atmega2560}, o que limita a resolução temporal das medidas feitas pelo próprio Arduino.
+
+Para tempos longos, o efeito esperado é o oposto: o LED aquece, e a potência emitida por um LED infravermelho cai com a temperatura da junção. Um tempo ligado muito longo poderia, portanto, reduzir o sinal ao longo do pulso. Esse efeito é verificado na Seção~\ref{sec:res-degrau}.
+
+% =====================================================================
+\section{Materiais e montagem}
+\label{sec:montagem}
+% =====================================================================
+
+\subsection{Materiais}
+
+\begin{table}[H]
+\centering
+\caption{Materiais usados.}
+\label{tab:materiais}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+\toprule
+Item & Observação \\
+\midrule
+Arduino Mega 2560 & alimentado pela USB; 5\,V e GND levados à protoboard \\
+TCRT5000 & \pendente{módulo ou componente solto; lote/marca} \\
+Resistor $R_E$ & 100\,$\Omega$, valor medido na Tabela~\ref{tab:verificacao} \\
+Resistor $R_C$ & 4,7\,k$\Omega$, valor medido na Tabela~\ref{tab:verificacao} \\
+Alvo & cartão branco de \pendente{dimensões, ex.: 150 $\times$ 100}\,mm, \pendente{material: papel sulfite colado em papelão} \\
+Régua / trena & \pendente{comprimento}, resolução de 1\,mm \\
+Fixação & \pendente{como o sensor foi preso: fita, bloco, suporte} \\
+Multímetro & \pendente{modelo}, para resistores e tensões \\
+Osciloscópio & \pendente{modelo, se usado na Seção~\ref{sec:met-degrau}} \\
+Computador & PlatformIO, Python 3 com \texttt{pyserial}, \texttt{numpy} e \texttt{matplotlib} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Circuito}
+
+A montagem segue o roteiro~\cite{roteiro}: 4,7\,k$\Omega$ do 5\,V ao coletor e ao A0, emissor do fototransistor ao GND, 100\,$\Omega$ do D8 ao anodo do LED e catodo ao GND. Com a face preta voltada para o observador e os pinos para baixo, os terminais são, da esquerda para a direita, coletor, emissor, anodo e catodo.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.48\linewidth}
+  \centering
+  \placeholderfig{5.5cm}{Esquema elétrico: D8--100\,$\Omega$--LED, 5\,V--4,7\,k$\Omega$--coletor--A0}
+  \caption{Esquema elétrico.}
+  \label{fig:esquema}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.48\linewidth}
+  \centering
+  \placeholderfig{5.5cm}{Foto da protoboard, de cima, com os fios identificáveis}
+  \caption{Montagem na protoboard.}
+  \label{fig:montagem}
+\end{subfigure}
+\caption{Circuito de leitura do TCRT5000.}
+\label{fig:circuito}
+\end{figure}
+
+\subsection{Bancada de medição}
+\label{sec:bancada}
+
+A qualidade da curva depende mais da bancada que do circuito. A bancada foi montada com quatro cuidados:
+\begin{itemize}[nosep]
+  \item \textbf{Sensor fixo.} O TCRT5000 foi preso \pendente{como} com a face voltada para a régua, a uma altura de \pendente{}\,mm da mesa, para que a mesa não reflita o feixe para o detector.
+  \item \textbf{Zero na face do sensor.} O zero da régua foi alinhado com a face do sensor, e as distâncias são medidas da face até o papel.
+  \item \textbf{Cartão perpendicular e guiado.} O cartão foi colado num \pendente{bloco/esquadro} que desliza encostado na régua, o que mantém o cartão perpendicular ao eixo e centrado no sensor em todas as posições. A perpendicularidade foi conferida com um esquadro.
+  \item \textbf{Luz da sala constante.} Todas as séries foram feitas com a mesma iluminação, \pendente{luzes acesas/apagadas, janelas}, e sem pessoas passando entre o sensor e o alvo.
+\end{itemize}
+As dimensões do cartão importam a distâncias grandes: se o feixe do LED ficar maior que o cartão, parte da luz deixa de ser refletida e o sinal cai mais rápido que $1/d^2$. Esse ponto é retomado na Seção~\ref{sec:disc-limitacoes}.
+
+\begin{figure}[H]
+\centering
+\placeholderfig{6cm}{Foto da bancada: sensor fixo, régua com zero na face do sensor, cartão no suporte deslizante}
+\caption{Arranjo de medição com a régua e o cartão branco.}
+\label{fig:bancada}
+\end{figure}
+
+\subsection{Verificação da montagem}
+\label{sec:verificacao}
+
+Antes de qualquer caracterização, a montagem foi verificada com os passos abaixo, cujos resultados estão na Tabela~\ref{tab:verificacao}.
+\begin{enumerate}[nosep]
+  \item Resistores medidos com o multímetro, fora do circuito.
+  \item $V_{CC}$ medido nos bornes da protoboard, e $V_F$ medido sobre o LED com D8 em nível alto, para calcular $I_F$ pela Equação~\eqref{eq:if}.
+  \item LED observado pela câmera do celular, que mostra o infravermelho como uma mancha violeta (Figura~\ref{fig:led-camera}).
+  \item Sensor totalmente tampado com um objeto opaco e escuro, sem tocar no cartão: $\text{adc}_\text{off}$ deve ficar perto de 1023, como indicado pelo professor.
+  \item Cartão branco encostado na face do sensor: $\text{adc}_\text{on}$ deve cair e parar num patamar, confirmando que o transistor satura. O patamar não é zero, e sim $1023\, V_{CE(sat)}/V_{CC}$, da ordem de 40 a 80 contagens.
+  \item Sem alvo, com o sensor voltado para o espaço livre: $S$ deve oscilar perto de zero.
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+\caption{Verificação da montagem.}
+\label{tab:verificacao}
+\begin{tabular}{lll}
+\toprule
+Grandeza & Esperado & Medido \\
+\midrule
+$R_E$ & 100\,$\Omega$ & \pnd \\
+$R_C$ & 4,7\,k$\Omega$ & \pnd \\
+$V_{CC}$ & 5,0\,V & \pnd \\
+$V_F$ (LED aceso) & 1,1 a 1,3\,V & \pnd \\
+$I_F$ (Eq.~\ref{eq:if}) & $\approx 38$\,mA & \pnd \\
+$\text{adc}_\text{off}$, sensor tampado & $\approx 1023$ & \pnd \\
+$\text{adc}_\text{on}$, cartão encostado (patamar) & 40 a 80 & \pnd \\
+$S$, sem alvo (média $\pm$ desvio) & $\approx 0$ & \pnd \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pendente{se algum item falhou na primeira tentativa (ex.: leitura tampada baixa, terminais trocados), descrever o problema e a correção; isso conta como documentação do processo.}
+
+\begin{figure}[H]
+\centering
+\placeholderfig{4.5cm}{Foto pela câmera do celular mostrando o LED infravermelho aceso}
+\caption{LED infravermelho aceso visto pela câmera do celular.}
+\label{fig:led-camera}
+\end{figure}
+
+% =====================================================================
+\section{Metodologia}
+\label{sec:metodologia}
+% =====================================================================
+
+A Figura~\ref{fig:fluxo} resume o fluxo do trabalho. Cada etapa produz um arquivo CSV no repositório, e todos os gráficos e números do relatório saem desses arquivos.
+
+\begin{figure}[H]
+\centering
+\placeholderfig{3.5cm}{Diagrama de blocos: verificação $\rightarrow$ resposta ao degrau $\rightarrow$ caracterização (ida = calibração, volta = validação, fundo) $\rightarrow$ ajuste e comparação de modelos $\rightarrow$ modelo no Arduino e validação ao vivo $\rightarrow$ varredura de tempos de acionamento}
+\caption{Fluxo do trabalho experimental.}
+\label{fig:fluxo}
+\end{figure}
+
+\subsection{Firmware de aquisição}
+\label{sec:met-firmware}
+
+O sketch do roteiro foi mantido no essencial (LED no D8, leitura em A0, sinal pela Equação~\eqref{eq:sinal}), com cinco mudanças que tornam as medidas mais confiáveis e mais rápidas de repetir:
+\begin{enumerate}[nosep]
+  \item \textbf{Saída completa em CSV.} Cada ciclo imprime \texttt{adc\_on,adc\_off,sinal}, e não só o sinal. Com as duas leituras separadas, é possível ver se o transistor saturou ($\text{adc}_\text{on} \approx 0$) e se a luz ambiente mudou ($\text{adc}_\text{off}$ variando).
+  \item \textbf{Média de $M$ leituras por janela.} No fim de cada janela, o programa faz $M$ conversões seguidas e usa a média. Com $t_\text{on} = 1$\,s, $M = 8$ ocupa menos de 1\,ms da janela e reduz o ruído de quantização. Quando $t_\text{on}$ ou $t_\text{off}$ fica abaixo de 5\,ms, usa-se $M = 1$, para que as conversões não alonguem a janela.
+  \item \textbf{Tempos em microssegundos, configuráveis pela serial.} Os tempos $t_\text{on}$ e $t_\text{off}$ são alterados por um comando na serial, sem regravar o programa. Assim, a varredura de tempos da Seção~\ref{sec:met-tempo} é feita com o mesmo binário e com o cartão parado. Abaixo de 16\,ms, a espera usa \texttt{delayMicroseconds}; acima, \texttt{delay}.
+  \item \textbf{Ciclos curtos medidos em blocos.} Imprimir uma linha a 115200\,baud leva cerca de 2\,ms. Se a impressão ocorresse a cada ciclo, o LED ficaria apagado por $t_\text{off}$ mais esse tempo, e o T2 mediria o efeito errado. Por isso, quando $t_\text{on} + t_\text{off} < 20$\,ms, o programa mede 100 ciclos seguidos, guarda as leituras na memória e só depois as imprime. O primeiro ciclo de cada bloco, que parte de um LED apagado havia mais tempo, é descartado.
+  \item \textbf{Firmware de distância.} Um segundo programa, com o mesmo ciclo, imprime \texttt{sinal,mm}, formato que o \texttt{plot\_serial.py} do roteiro reconhece e desenha em milímetros (Seção~\ref{sec:met-arduino}).
+\end{enumerate}
+O tempo $t_\text{on}$ é contado da subida de D8 até o início da primeira conversão; o mesmo vale para $t_\text{off}$. O código completo está no repositório do trabalho.
+
+\subsection{Coleta}
+\label{sec:met-coleta}
+
+A coleta é feita por um script Python (\texttt{coleta.py}) que lê a serial, pede a distância atual pelo teclado, descarta os $\pendente{2}$ primeiros ciclos depois de cada mudança de posição (o cartão pode ter sido movido no meio de um ciclo) e grava as $N$ linhas seguintes num CSV com as colunas \texttt{serie, t\_on\_us, t\_off\_us, d\_mm, rep, adc\_on, adc\_off, sinal}. Anotar à mão não é necessário, o que elimina erros de transcrição. A planilha pedida pelo roteiro é montada a partir desse CSV.
+
+\subsection{Caracterização estática}
+\label{sec:met-caracterizacao}
+
+A caracterização principal usa $t_\text{on} = t_\text{off} = 1000$\,ms, o regime quase contínuo do roteiro. A grade de distâncias é mais densa onde o sinal muda mais depressa:
+\begin{itemize}[nosep]
+  \item de 0 a 20\,mm, a cada 2\,mm, para localizar a saturação e o pico de resposta;
+  \item de 20 a 100\,mm, a cada 5\,mm;
+  \item de 100 a 200\,mm, a cada 10\,mm;
+  \item acima de 200\,mm, a cada 20\,mm, até que o sinal se confunda com o fundo em três posições seguidas.
+\end{itemize}
+Isso dá \pendente{N\textsubscript{d}} posições. Em cada uma, foram registrados $N = \pendente{20}$ ciclos válidos, o que custa cerca de 40\,s por posição com ciclos de 2\,s. Com $N = 20$, o erro-padrão da média fica em $\sigma_S/\sqrt{20} \approx 0{,}22\,\sigma_S$, e o desvio-padrão de cada posição é estimado com folga suficiente para o critério de alcance.
+
+A grade foi percorrida duas vezes:
+\begin{itemize}[nosep]
+  \item \textbf{Ida} (perto para longe): usada para \textbf{calibrar}, isto é, ajustar os modelos;
+  \item \textbf{Volta} (longe para perto), em outro momento: usada só para \textbf{validar}.
+\end{itemize}
+Usar uma varredura para ajustar e outra para avaliar evita medir o erro do modelo nos mesmos pontos que o definiram, o que daria um erro otimista. A diferença entre ida e volta também mostra deriva (aquecimento, mudança de luz) e erro de reposicionamento do cartão.
+
+Além das duas varreduras, foi feita uma \textbf{série de fundo}: $N_0 = \pendente{100}$ ciclos sem cartão, com o sensor voltado para \pendente{o espaço livre / uma parede a mais de 1\,m}. Dela saem a média $\mu_0$ e o desvio-padrão $\sigma_0$ do sinal sem alvo.
+
+Para cada posição, a planilha guarda $d$, $\bar{S}$, $\sigma_S$, $N$, $\overline{\text{adc}}_\text{on}$, $\overline{\text{adc}}_\text{off}$, $z = 1/\sqrt{\bar{S}}$, $d_\text{est}$, o erro $d_\text{est} - d$ e $\sigma_d$ pela Equação~\eqref{eq:sigmad}.
+
+\subsection{Critério de alcance}
+\label{sec:met-alcance}
+
+O roteiro define o alcance como o ponto em que a média do sinal deixa de se separar da leitura sem alvo~\cite{roteiro}. Para que isso não dependa de julgamento visual, foram usados dois critérios.
+
+\paragraph{Alcance de detecção.} É a maior distância $d_\text{det}$ em que
+\begin{equation}
+\bar{S}(d) \ \ge\ S_\text{lim} = \mu_0 + 3\,\sigma_0 ,
+\label{eq:limiar}
+\end{equation}
+e em que todas as distâncias menores, a partir do pico, também satisfazem a condição. O fator 3 é o critério usual de limite de detecção: um sinal de fundo ultrapassa esse limiar em menos de 0,2\,\% das vezes, se o ruído for aproximadamente gaussiano.
+
+\paragraph{Alcance de medição.} Detectar o cartão não é o mesmo que medir a distância até ele. O alcance de medição $d_\text{med}$ é a maior distância em que a resolução da Equação~\eqref{eq:sigmad} fica abaixo de 5\,\% da distância,
+\begin{equation}
+\sigma_d(d) \le 0{,}05\, d ,
+\end{equation}
+e o erro do modelo na validação fica abaixo de \pendente{10}\,mm. É a faixa em que a leitura em milímetros pode ser usada por um robô.
+
+A resposta à pergunta do roteiro (se 200\,mm é o limite) é dada pelos dois valores.
+
+\subsection{Ajuste do modelo e comparação de soluções}
+\label{sec:met-ajuste}
+
+\paragraph{Faixa de ajuste.} Entram no ajuste apenas as posições
+\begin{itemize}[nosep]
+  \item em que o transistor não saturou. Como o patamar de saturação depende de $V_{CE(sat)}$ e dos resistores, ele não foi fixado a priori, e sim medido: um ponto é saturado quando $\overline{\text{adc}}_\text{on} \le \min_d \overline{\text{adc}}_\text{on} + 5$ contagens, desde que esse mínimo fique abaixo de 200 (senão, nenhum ponto saturou). O limiar obtido foi de \pendente{} contagens;
+  \item além do pico de resposta, onde $\bar{S}$ diminui quando $d$ aumenta;
+  \item com $\bar{S} \ge S_\text{lim}$, isto é, dentro do alcance de detecção.
+\end{itemize}
+As posições descartadas aparecem nos gráficos com outro marcador e são listadas na Tabela~\ref{tab:caracterizacao}.
+
+\paragraph{Soluções comparadas.} Três formas de converter o sinal em distância foram ajustadas com os dados da ida e avaliadas com os da volta:
+\begin{enumerate}[label=\textbf{M\arabic*}, nosep]
+  \item \textbf{Modelo do roteiro}, Equação~\eqref{eq:modelo}: regressão linear de $d$ contra $z = 1/\sqrt{\bar{S}}$, com \texttt{INCLINAÇÃO} e \texttt{INTERCEPÇÃO} na planilha.
+  \item \textbf{Lei de potência com expoente livre}: $\bar{S} = \alpha\, d^{-n}$, ajustada por regressão linear de $\ln \bar{S}$ contra $\ln d$, e invertida como $d = (\alpha/S)^{1/n}$. Este modelo testa a hipótese do inverso do quadrado: se $n$ sair perto de 2, M1 e M2 dizem a mesma coisa; se não, o expoente medido indica o quanto o alvo finito e a geometria do sensor desviam do caso ideal.
+  \item \textbf{Tabela interpolada}: os pares $(\bar{S}, d)$ da ida são gravados no Arduino, e a distância é obtida por interpolação linear entre os dois pontos vizinhos. Não supõe forma nenhuma para a curva.
+\end{enumerate}
+As três soluções são comparadas pelo erro RMS e pelo erro máximo na validação, dentro da faixa de ajuste, e pelo custo no Arduino (memória e tempo de cálculo por amostra). O coeficiente $R^2$ do ajuste também é informado, mas não é usado para escolher o modelo, porque mede a qualidade na calibração e não na validação.
+
+\subsection{Modelo no Arduino}
+\label{sec:met-arduino}
+
+O modelo escolhido foi gravado no sketch, que passou a imprimir \texttt{sinal,mm}. A conta $d = g_0 + g_1/\sqrt{S}$ só é válida dentro da faixa de ajuste, e o programa trata os dois extremos explicitamente:
+\begin{itemize}[nosep]
+  \item se $S < S_\text{lim}$, o sinal não se separa do fundo, e o programa imprime $d_\text{det}$, o alcance de detecção. O valor deve ser lido como ``o cartão está a $d_\text{det}$ ou mais'', que é a informação útil para um robô, e mantém o gráfico ao vivo na escala certa. Esse tratamento também evita a divisão por zero quando $S = 0$;
+  \item se $\text{adc}_\text{on}$ indica saturação, o programa imprime a menor distância da faixa de ajuste, que é o limite inferior do que o sensor distingue.
+\end{itemize}
+
+A validação ao vivo foi feita em \pendente{10} posições sorteadas entre \pendente{d\textsubscript{min}} e \pendente{d\textsubscript{med}}, diferentes das usadas na calibração. Em cada uma, foram registrados $\pendente{20}$ valores em milímetros, e a média e o desvio foram comparados com a régua.
+
+\subsection{Resposta ao degrau}
+\label{sec:met-degrau}
+
+Para explicar o efeito do tempo de acionamento com medidas, e não só com o argumento geral, a resposta temporal do conjunto LED e fototransistor foi medida diretamente, com o cartão parado a \pendente{30}\,mm.
+
+\paragraph{Com osciloscópio (preferencial).} Canal 1 no D8 e canal 2 no A0, com disparo na borda de subida do canal 1, e o sketch alternando o LED com $t_\text{on} = t_\text{off} = \pendente{5}$\,ms. Mede-se o tempo de 10\,\% a 90\,\% da excursão de A0 na subida ($t_r$) e na descida ($t_f$) do LED.
+
+\paragraph{Com o Arduino (alternativa).} Um modo do sketch apaga o LED por 50\,ms, acende-o e faz $K = \pendente{200}$ conversões seguidas, registrando o tempo de cada uma com \texttt{micros()}; depois apaga o LED e repete. O ciclo é repetido 20 vezes e as curvas são promediadas. Com o divisor padrão do ADC, o passo é de cerca de 112\,$\mu$s; reduzindo o divisor do ADC para 16, o passo cai para cerca de 16\,$\mu$s, com alguma perda de exatidão, suficiente para medir tempos.
+
+A medida foi repetida com o cartão a \pendente{5}\,mm, onde o transistor satura, para ver o efeito da saturação sobre o tempo de desligamento. Para verificar o aquecimento do LED, o sinal também foi registrado continuamente durante \pendente{5}\,s com o LED aceso, a uma distância fixa.
+
+\subsection{Efeito do tempo de acionamento}
+\label{sec:met-tempo}
+
+A varredura de tempos foi organizada em três experimentos.
+
+\paragraph{T1: tempos iguais.} Com $t_\text{on} = t_\text{off} = t$, para $t \in \{1000,\ 100,\ 10,\ 1,\ 0{,}5,\ 0{,}2\}$\,ms, mediu-se o sinal em três distâncias com sinal claro em 1\,s, $d \in \{\pendente{20}, \pendente{60}, \pendente{120}\}$\,mm, e uma série de fundo. Cada condição tem $N = \pendente{50}$ ciclos. Os tempos abaixo de 1\,ms, além da sequência sugerida no roteiro, servem para localizar onde o sinal começa a cair, já que esperamos constantes de tempo da ordem de dezenas a centenas de microssegundos.
+
+\paragraph{T2: tempos separados.} Para separar a contribuição de cada borda, variou-se $t_\text{on}$ com $t_\text{off}$ fixo e longo, e depois $t_\text{off}$ com $t_\text{on}$ fixo e longo, na distância intermediária. ``Longo'' é \pendente{5$\times$ a constante de tempo medida na Seção~\ref{sec:res-degrau}}. Se o sinal cair só quando $t_\text{on}$ diminui, o limite está na subida; se cair também com $t_\text{off}$, o detector não volta a cortar a tempo.
+
+\paragraph{T3: alcance por tempo.} Para $t \in \{1000,\ 10,\ 1,\ \pendente{0{,}2}\}$\,ms, foi feita uma varredura de 20 em 20\,mm a partir de \pendente{}\,mm, com fundo próprio para cada tempo, e o alcance de detecção foi calculado pela Equação~\eqref{eq:limiar}.
+
+A cada troca de tempo, os primeiros ciclos foram descartados, e a ordem dos tempos foi \pendente{aleatória / decrescente}, para que uma deriva lenta não se confunda com o efeito do tempo.
+
+\subsection{Processamento}
+
+O script \texttt{analise.py} lê os CSVs, calcula médias, desvios, $z$, os ajustes de M1, M2 e M3, os alcances e gera todos os gráficos deste relatório, sempre com distância em milímetros. A planilha (\texttt{TP3\_planilha.ods}) reproduz o ajuste de M1 com as funções do roteiro, e os ganhos das duas ferramentas foram conferidos entre si.
+
+% =====================================================================
+\section{Resultados}
+\label{sec:resultados}
+% =====================================================================
+
+\subsection{Verificação}
+
+\pendente{resumir a Tabela~\ref{tab:verificacao}: leitura tampada (perto de 1023?), corrente real do LED, fundo sem alvo ($\mu_0 \pm \sigma_0$).}
+
+\subsection{Resposta ao degrau}
+\label{sec:res-degrau}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{A0 (contagens ou V) $\times$ tempo ($\mu$s) após a subida de D8; cartão a 30\,mm e a 5\,mm}
+  \caption{LED acendendo.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{A0 $\times$ tempo ($\mu$s) após a descida de D8; cartão a 30\,mm e a 5\,mm}
+  \caption{LED apagando.}
+\end{subfigure}
+\caption{Resposta do fototransistor ao acionamento do LED.}
+\label{fig:degrau}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Tempos de resposta medidos (10--90\,\%).}
+\label{tab:degrau}
+\begin{tabular}{lcc}
+\toprule
+Condição & $t_r$ (subida) & $t_f$ (descida) \\
+\midrule
+cartão a \pnd\,mm (sem saturar) & \pnd\,$\mu$s & \pnd\,$\mu$s \\
+cartão a \pnd\,mm (saturado) & \pnd\,$\mu$s & \pnd\,$\mu$s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pendente{comparar com o $t_r$/$t_f$ do datasheet e comentar o efeito de $R_C$ e da saturação; dizer se houve queda do sinal durante os 5\,s de LED aceso (aquecimento).}
+
+\subsection{Caracterização do sinal}
+\label{sec:res-caracterizacao}
+
+\begin{figure}[H]
+\centering
+\placeholderfig{7cm}{$\bar{S}$ (contagens) $\times$ $d$ (mm), de 0 a \pnd\,mm: ida e volta com barras de $\pm\sigma_S$, faixa do fundo $\mu_0 + 3\sigma_0$ em cinza, pontos descartados com marcador vazio, linha vertical em 200\,mm}
+\caption{Sinal médio em função da distância, com $t_\text{on} = t_\text{off} = 1$\,s.}
+\label{fig:sinal-dist}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{$\overline{\text{adc}}_\text{on}$ e $\overline{\text{adc}}_\text{off}$ $\times$ $d$ (mm): mostra a saturação perto do sensor e a luz ambiente constante}
+  \caption{Leituras com o LED aceso e apagado.}
+  \label{fig:adc-on-off}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{$\sigma_S$ (contagens) $\times$ $d$ (mm): o ruído é constante ou depende da distância?}
+  \caption{Ruído do sinal.}
+  \label{fig:ruido}
+\end{subfigure}
+\caption{Detalhes da caracterização.}
+\label{fig:caract-detalhes}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Caracterização (ida), resumida. A tabela completa, com ida e volta, está na planilha do repositório.}
+\label{tab:caracterizacao}
+\small
+\begin{tabular}{rrrrrrl}
+\toprule
+$d$ (mm) & $\overline{\text{adc}}_\text{on}$ & $\overline{\text{adc}}_\text{off}$ & $\bar{S}$ & $\sigma_S$ & $z$ & uso \\
+\midrule
+\pnd & \pnd & \pnd & \pnd & \pnd & \pnd & descartado (saturação) \\
+\pnd & \pnd & \pnd & \pnd & \pnd & \pnd & descartado (antes do pico) \\
+\pnd & \pnd & \pnd & \pnd & \pnd & \pnd & ajuste \\
+\multicolumn{7}{c}{$\vdots$} \\
+200 & \pnd & \pnd & \pnd & \pnd & \pnd & \pnd \\
+\pnd & \pnd & \pnd & \pnd & \pnd & \pnd & descartado (fundo) \\
+\midrule
+fundo & --- & \pnd & $\mu_0 = $\,\pnd & $\sigma_0 = $\,\pnd & --- & $S_\text{lim} = $\,\pnd \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pendente{descrever a curva: onde satura, onde está o pico, como cai, se ida e volta concordam (diferença máxima), se a luz ambiente ficou estável.}
+
+\subsection{Modelo inverso e comparação de soluções}
+\label{sec:res-modelo}
+
+\begin{table}[H]
+\centering
+\caption{Parâmetros ajustados na ida, com faixa de ajuste de \pnd\ a \pnd\,mm.}
+\label{tab:ganhos}
+\begin{tabular}{lll}
+\toprule
+Modelo & Parâmetros & $R^2$ (calibração) \\
+\midrule
+M1: $d = g_0 + g_1/\sqrt{S}$ & $g_0 = $\,\pnd\,mm, \ $g_1 = $\,\pnd\,mm$\cdot$cont.$^{1/2}$ & \pnd \\
+M2: $S = \alpha\, d^{-n}$ & $\alpha = $\,\pnd, \ $n = $\,\pnd & \pnd \\
+M3: tabela interpolada & \pnd\ pontos & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\placeholderfig{7cm}{$d_\text{est}$ (mm) $\times$ $d$ da régua (mm), pontos da validação (volta) para M1, M2 e M3, reta $y = x$ por cima}
+\caption{Distância estimada contra a distância da régua.}
+\label{fig:dest-dist}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{erro $d_\text{est} - d$ (mm) $\times$ $d$ (mm), validação, M1/M2/M3}
+  \caption{Erro do modelo.}
+  \label{fig:erro}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{$\sigma_d$ (mm) pela Eq.~\eqref{eq:sigmad} $\times$ $d$ (mm), com a reta $0{,}05\,d$}
+  \caption{Resolução em distância.}
+  \label{fig:resolucao}
+\end{subfigure}
+\caption{Erro e resolução, em milímetros.}
+\label{fig:erro-resolucao}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Comparação das soluções na validação (volta).}
+\label{tab:comparacao-modelos}
+\begin{tabular}{lccccc}
+\toprule
+Modelo & RMS (mm) & erro máx. (mm) & viés (mm) & memória & tempo/amostra \\
+\midrule
+M1 & \pnd & \pnd & \pnd & 2 floats & \pnd\,$\mu$s \\
+M2 & \pnd & \pnd & \pnd & 2 floats & \pnd\,$\mu$s \\
+M3 & \pnd & \pnd & \pnd & \pnd\ pares & \pnd\,$\mu$s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pendente{qual modelo foi para o Arduino e por quê; comentar se $n \approx 2$; onde o erro de M1 se concentra.}
+
+\subsection{Distância em milímetros no Arduino}
+\label{sec:res-arduino}
+
+\begin{figure}[H]
+\centering
+\placeholderfig{6cm}{Captura do \texttt{plot\_serial.py} em modo mm, aproximando e afastando o cartão}
+\caption{Distância calculada no Arduino, ao vivo, em milímetros.}
+\label{fig:ao-vivo}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Validação ao vivo: leitura do Arduino contra a régua.}
+\label{tab:ao-vivo}
+\begin{tabular}{rrrr}
+\toprule
+$d$ régua (mm) & média Arduino (mm) & desvio (mm) & erro (mm) \\
+\midrule
+\pnd & \pnd & \pnd & \pnd \\
+\pnd & \pnd & \pnd & \pnd \\
+\multicolumn{4}{c}{$\vdots$} \\
+\midrule
+\multicolumn{3}{l}{erro RMS} & \pnd \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Alcance}
+\label{sec:res-alcance}
+
+\pendente{com 1\,s: $S_\text{lim} = $\,? contagens; alcance de detecção $d_\text{det} = $\,?\,mm; alcance de medição $d_\text{med} = $\,?\,mm. Responder diretamente: 200\,mm era o limite? Indicar os dois alcances na Figura~\ref{fig:sinal-dist} e na Figura~\ref{fig:resolucao}.}
+
+\subsection{Efeito do tempo de acionamento}
+\label{sec:res-tempo}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{T1: $\bar{S}$ normalizado por $\bar{S}(1\,\text{s})$ $\times$ $t$ (escala log), uma curva por distância}
+  \caption{Sinal relativo em função do tempo.}
+  \label{fig:sinal-tempo}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.49\linewidth}
+  \centering
+  \placeholderfig{5cm}{T2: $\bar{S}$ $\times$ $t_\text{on}$ (com $t_\text{off}$ longo) e $\times$ $t_\text{off}$ (com $t_\text{on}$ longo)}
+  \caption{Contribuição de cada borda.}
+  \label{fig:ton-toff}
+\end{subfigure}
+\caption{Sinal em função do tempo de acionamento.}
+\label{fig:tempo}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\placeholderfig{6cm}{T3: $\bar{S}$ $\times$ $d$ (mm) para cada tempo, com o limiar de cada um; ao lado ou em detalhe, $d_\text{det}$ (mm) $\times$ $t$ (escala log)}
+\caption{Curvas de sinal e alcance para cada tempo de acionamento.}
+\label{fig:alcance-tempo}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Efeito do tempo de acionamento ($t_\text{on} = t_\text{off} = t$).}
+\label{tab:tempo}
+\begin{tabular}{rccccc}
+\toprule
+$t$ & $\bar{S}(\pnd\,\text{mm})$ & $\bar{S}(\pnd\,\text{mm})$ & $\bar{S}(\pnd\,\text{mm})$ & $\sigma_0$ & $d_\text{det}$ (mm) \\
+\midrule
+1000\,ms & \pnd & \pnd & \pnd & \pnd & \pnd \\
+100\,ms  & \pnd & \pnd & \pnd & \pnd & --- \\
+10\,ms   & \pnd & \pnd & \pnd & \pnd & \pnd \\
+1\,ms    & \pnd & \pnd & \pnd & \pnd & \pnd \\
+0,5\,ms  & \pnd & \pnd & \pnd & \pnd & --- \\
+0,2\,ms  & \pnd & \pnd & \pnd & \pnd & \pnd \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\pendente{a partir de qual $t$ o sinal começa a cair; a queda vem de $t_\text{on}$, de $t_\text{off}$ ou dos dois; o ruído $\sigma_0$ mudou com $t$? quanto o alcance caiu.}
+
+% =====================================================================
+\section{Discussão}
+\label{sec:discussao}
+% =====================================================================
+
+\subsection{Comparação das soluções}
+
+\pendente{discutir a Tabela~\ref{tab:comparacao-modelos}. Pontos a cobrir: (i) se o expoente $n$ de M2 confirma o inverso do quadrado ou mostra desvio (alvo finito, ângulo entre emissor e detector); (ii) se o ganho de M3 em erro compensa a memória e a necessidade de recalibrar todos os pontos; (iii) que nenhum modelo melhora a resolução $\sigma_d$, que vem do ruído e não do ajuste. Reunir também a comparação entre tempos de acionamento numa tabela-síntese (tempo $\times$ alcance $\times$ taxa de amostragem), já que tempos curtos dão mais leituras por segundo, o que importa num robô em movimento.}
+
+\begin{table}[H]
+\centering
+\caption{Síntese: compromisso entre alcance e taxa de leitura.}
+\label{tab:sintese}
+\begin{tabular}{rccc}
+\toprule
+$t_\text{on} = t_\text{off}$ & leituras por segundo & $d_\text{det}$ (mm) & $d_\text{med}$ (mm) \\
+\midrule
+1000\,ms & 0,5 & \pnd & \pnd \\
+10\,ms   & $\approx$\,50 & \pnd & \pnd \\
+1\,ms    & $\approx$\,\pnd & \pnd & \pnd \\
+\pnd     & \pnd & \pnd & \pnd \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{O que acontece fisicamente com um pulso curto}
+\label{sec:disc-fisica}
+
+\pendente{explicar com as medidas da equipe, não só com o argumento geral: usar $t_r$ e $t_f$ da Tabela~\ref{tab:degrau} para prever a partir de qual $t$ o sinal deveria cair (ex.: $t \lesssim 3\tau$) e comparar com onde ele caiu na Figura~\ref{fig:sinal-tempo}; usar o T2 para dizer qual borda limita; explicar por que o alcance cai (sinal menor, ruído $\sigma_0$ igual, limiar igual $\Rightarrow$ $S(d)$ cruza $S_\text{lim}$ mais perto); comentar o efeito da saturação sobre o tempo de desligamento e o eventual aquecimento do LED em 1\,s.}
+
+\subsection{Como aumentar o alcance}
+
+\pendente{com base nos resultados, discutir o que daria mais alcance nesta montagem e o que custa cada opção: (i) manter $t_\text{on}$ acima do tempo de estabilização medido, sem precisar de 1\,s; (ii) promediar mais ciclos (o ruído cai com $1/\sqrt{N}$, a taxa de leitura cai com $N$); (iii) aumentar $R_C$ (mais contagens por $\mu$A, mas satura mais longe e fica mais lento); (iv) aumentar $I_F$ com um transistor driver em pulsos curtos, já que o pino do Mega está no limite de 40\,mA e o LED aceita correntes de pico bem maiores em pulsos curtos (conferir no datasheet); (v) alvo mais refletor ou maior.}
+
+\subsection{Fontes de erro e limitações}
+\label{sec:disc-limitacoes}
+
+\pendente{cobrir: leitura da régua e paralaxe ($\pm$0,5\,mm); alinhamento e perpendicularidade do cartão; tamanho do cartão frente à abertura do feixe a distâncias grandes; variação da luz ambiente entre $\text{adc}_\text{off}$ e $\text{adc}_\text{on}$; variação de $V_{CC}$ da USB (afeta $I_F$, mas a referência do ADC acompanha); dependência da refletância do alvo, que faz o modelo valer só para este cartão; diferença entre ida e volta.}
+
+% =====================================================================
+\section{Conclusão}
+\label{sec:conclusao}
+% =====================================================================
+
+\pendente{um parágrafo com os números principais: $g_0$, $g_1$, erro RMS de validação, alcance de detecção e de medição com 1\,s, se 200\,mm era o limite; um parágrafo sobre o tempo de acionamento: a partir de qual tempo o sinal cai, quanto o alcance cai e qual tempo é o melhor compromisso para um robô; um parágrafo sobre qual solução de conversão recomendamos e por quê.}
+
+\subsection*{Repositório}
+
+A planilha, os códigos e os dados brutos não foram reproduzidos neste relatório e estão no repositório do trabalho, em \pendente{URL do GitHub, com \textbackslash url}:
+\begin{itemize}[nosep]
+  \item \texttt{TP3\_planilha.ods}: medidas, médias, $z$, $g_0$, $g_1$, $d_\text{est}$ e erro.
+  \item \texttt{firmware/}: sketch de aquisição e sketch final que imprime \texttt{sinal,mm}.
+  \item \texttt{scripts/coleta.py}, \texttt{scripts/analise.py} e \texttt{exemplos/plot\_serial.py}.
+  \item \texttt{dados/}: CSVs brutos de todas as séries.
+  \item \pendente{conferir nomes e caminhos finais}
+\end{itemize}
+
+% =====================================================================
+\begin{thebibliography}{9}
+
+\bibitem{roteiro}
+REZECK, P. \textit{Sensor de distância por infravermelho: TCRT5000 na protoboard}. Roteiro da Aula 13, Projeto de Sistemas Robóticos, DCC/UFMG, 2026.
+
+\bibitem{tcrt5000}
+Vishay Semiconductors. \textit{TCRT5000, TCRT5000L: Reflective Optical Sensor with Transistor Output}. Datasheet. \pendente{número do documento, revisão e URL}
+
+\bibitem{atmega2560}
+Microchip (Atmel). \textit{ATmega640/1280/1281/2560/2561 Datasheet}. Seções do ADC e características elétricas (corrente máxima por pino). \pendente{revisão e URL}
+
+\end{thebibliography}
+
+\end{document}

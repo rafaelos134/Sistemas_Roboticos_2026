@@ -1,0 +1,7 @@
+grandeza,valor,observacao
+adc_off com o sensor todo tampado,1021.5,"média das 4 leituras estáveis (1023, 1022, 1018, 1023); as 3 primeiras eram o sensor sendo tampado"
+adc_on no patamar de saturação,63.5,"sensor tampado: a luz do LED refletida na tampa satura o fototransistor; leituras estáveis 65, 60, 65, 64"
+R_C medido,4900,"multímetro, fora do circuito; nominal 4,7 kΩ (+4,3 %, dentro da tolerância de 5 %)"
+R_E medido,103,"multímetro, fora do circuito; nominal 100 Ω (+3 %)"
+Vcc nos bornes da protoboard,5.00,multímetro
+Tensão no D8 em HIGH (com LED),4.94,"medido com o LED aceso; interpretado como a tensão do pino D8 ao GND (não pode ser a queda no LED, que é ~1,2 V)"
