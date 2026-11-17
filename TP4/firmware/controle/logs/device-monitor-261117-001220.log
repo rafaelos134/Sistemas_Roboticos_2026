@@ -1,0 +1,6 @@
+# TP4 controle de velocidade
+# D_mm=43.40 N=287.3 k_mm_tick=0.47457 neutro_us=1495 pino_servo=10 Ts_ms=50.0
+# kp=0.0000 ki=0.0000 kd=0.0000 filtro=passa_baixa janela=5 alfa=0.300
+# patamares=30.0 50.0 70.0 90.0 110.0  v_ens=60.0
+# h ? | n us | o us | s mm/s | x | z | g kp ki kd | f 0/1 | w n | a alfa
+# q v1..v5 | r mm/s | u pino | l 0/1 | N [ini] [fim] | A [passo] [s] | 1 | 2 | 3 [voltas]
