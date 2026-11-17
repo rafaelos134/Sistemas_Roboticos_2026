@@ -40,7 +40,7 @@
 #define N_TICKS     287.3f              // media de 20 voltas a mao, X4
 static const float K_MM_TICK = PI * D_MM / N_TICKS;   // mm/tick
 
-static float neutro_us = 1500.0f;       // PREENCHER apos a busca do neutro (comando N)
+static float neutro_us = 1495.0f;       // medido na busca do neutro (comando N), 2 corridas
 
 // ---------------- configuracao ----------------
 static uint8_t pin_servo = 10;          // 'u <pino>' troca em tempo de execucao
@@ -352,7 +352,6 @@ void setup() {
   escreve_pulso(neutro_us);
   t_ant = micros(); t_prox = t_ant + TS_US;
   Serial.println(F("# TP4 controle de velocidade"));
-  if (neutro_us == 1500.0f) Serial.println(F("# AVISO: neutro ainda e o 1500 padrao; faca a busca (comando N)"));
   params();
   ajuda();
 }
