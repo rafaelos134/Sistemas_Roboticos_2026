@@ -120,8 +120,11 @@ inteiros. Com k = 0,4746 mm/tick:
 conta é o intervalo medido entre as leituras. Numa amostra de 33 linhas do log
 (firmware de controle, roda parada), `dt_us` ficou em 50000,1 ± 4,8 µs (faixa de
 49992 a 50008 µs). Portanto Δt = 50,000 ms, com desvio de 0,005 ms, e o degrau
-usado é **k/Δt = 0,4746 / 0,050 = 9,5 mm/s**. (Refazer a média e o desvio com o
-log completo dos ensaios, que traz `dt_us` em cada linha.)
+usado é **k/Δt = 0,4746 / 0,050 = 9,5 mm/s**.
+
+Conferido com o motor girando, no log da curva aberta (1259 amostras, `dt_us` em
+cada linha): média 50,000 ms, desvio 9,2 µs, faixa de 49860 a 50140 µs (±0,3 %).
+O Δt real não se afasta do nominal de forma que mude o degrau.
 
 Numa velocidade
 baixa, por exemplo 30 mm/s com Δt = 50 ms, a janela tem só cerca de 3,2 ticks
@@ -130,7 +133,89 @@ baixa, por exemplo 30 mm/s com Δt = 50 ms, a janela tem só cerca de 3,2 ticks
 
 ## 4. Neutro do servo (busca na bancada)
 
-Firmware `firmware/controle`, comando `N 1400 1600`: aplica cada pulso por 5 s,
+### 4.1 Servo atual (motor trocado)
+
+O servo foi trocado depois da primeira busca, porque as duas corridas com o
+servo anterior não concordavam entre si. Os dados abaixo são do servo novo.
+Comando `N 1300 1700`: cada pulso por 5 s, descartando o primeiro 1 s, ticks
+contados nos 4 s seguintes, passos de 10 µs. "Parada" = no máximo 2 ticks em
+4 s. `v = k · Δticks / Δt`, com k = 0,4746 mm/tick. A banda morta é a da
+bancada inteira (servo, transmissão e roda), vista pelo encoder.
+
+| Pulso (µs) | Ticks em 4 s | v (mm/s) | Estado |
+|---|---|---|---|
+| 1300 | -1182 | -142,01 | gira − |
+| 1310 | -1135 | -136,36 | gira − |
+| 1320 | -1083 | -130,12 | gira − |
+| 1330 | -1044 | -125,43 | gira − |
+| 1340 | -1017 | -122,19 | gira − |
+| 1350 | -981 | -117,86 | gira − |
+| 1360 | -958 | -115,10 | gira − |
+| 1370 | -924 | -111,01 | gira − |
+| 1380 | -904 | -108,61 | gira − |
+| 1390 | -858 | -103,08 | gira − |
+| 1400 | -840 | -100,92 | gira − |
+| 1410 | -810 | -97,32 | gira − |
+| 1420 | -771 | -92,63 | gira − |
+| 1430 | -739 | -88,79 | gira − |
+| 1440 | -705 | -84,70 | gira − |
+| 1450 | -690 | -82,90 | gira − |
+| 1460 | -626 | -75,21 | gira − |
+| 1470 | 0 | 0,00 | parada |
+| 1480 | 0 | 0,00 | parada |
+| 1490 | 0 | 0,00 | parada |
+| 1500 | 0 | 0,00 | parada |
+| 1510 | 0 | 0,00 | parada |
+| 1520 | 0 | 0,00 | parada |
+| 1530 | 667 | 80,14 | gira + |
+| 1540 | 690 | 82,90 | gira + |
+| 1550 | 742 | 89,15 | gira + |
+| 1560 | 761 | 91,43 | gira + |
+| 1570 | 795 | 95,52 | gira + |
+| 1580 | 839 | 100,80 | gira + |
+| 1590 | 865 | 103,93 | gira + |
+| 1600 | 904 | 108,61 | gira + |
+| 1610 | 948 | 113,90 | gira + |
+| 1620 | 990 | 118,94 | gira + |
+| 1630 | 1013 | 121,71 | gira + |
+| 1640 | 1069 | 128,44 | gira + |
+| 1650 | 1108 | 133,12 | gira + |
+| 1660 | 1140 | 136,97 | gira + |
+| 1670 | 1160 | 139,37 | gira + |
+| 1680 | 1192 | 143,21 | gira + |
+| 1690 | 1214 | 145,86 | gira + |
+| 1700 | 1267 | 152,22 | gira + |
+
+- Último pulso com a roda girando para trás: 1460 µs (−75,2 mm/s)
+- Pulsos com a roda parada: de 1470 a 1520 µs
+- Primeiro pulso com a roda girando para a frente: 1530 µs (+80,1 mm/s)
+- **Neutro = (1470 + 1520) / 2 = 1495 µs**
+- Banda morta ≈ 1465 a 1525 µs, ≈ 60 µs (resolução de 10 µs)
+
+Observações:
+- A roda pula de 0 para ≈ ±75 a 80 mm/s ao sair da banda morta, nos dois
+  sentidos. Não existe velocidade sustentável entre 0 e ≈ 75 mm/s com pulso
+  fixo, o que limita o primeiro patamar da malha fechada.
+- Fora da banda a curva é aproximadamente linear: de 1530 a 1700 µs, a
+  velocidade sobe de 80 a 152 mm/s (≈ 0,42 mm/s por µs), e de 1460 a 1300 µs
+  vai de −75 a −142 mm/s. Ainda não saturou em ±200 µs do neutro; a
+  saturação sai da varredura `A`.
+- Simetria: a 100 µs do neutro, +108,6 mm/s (1600 µs) e −100,9 mm/s (1400 µs),
+  cerca de 7 % de diferença. A 200 µs, +152,2 e −142,0 mm/s (também ≈ 7 %).
+- O neutro mudou 10 µs em relação ao servo anterior (1485 µs), com a mesma
+  largura de banda morta (≈ 60 µs).
+- **Repetição (2ª corrida, mesmo comando):** a faixa parada saiu igual, de 1470
+  a 1520 µs, e o neutro de novo em **1495 µs** (banda morta de 60 µs). O neutro
+  se repete. Nas velocidades houve diferença entre as corridas: em média
+  −6,5 mm/s no lado negativo (a 2ª corrida foi mais rápida para trás) e
+  +2,3 mm/s no positivo, com diferença máxima de 8,8 mm/s (≈ 8 %) em um mesmo
+  pulso. Extremos da 2ª corrida: −146,1 mm/s em 1300 µs e +153,9 mm/s em
+  1700 µs. A velocidade para um dado pulso varia cerca de ±5 mm/s de uma
+  corrida para outra, e isso é a razão de fechar a malha.
+
+### 4.2 Servo anterior (descartado, só registro)
+
+Firmware `firmware/controle`, comando `N 1400 1600`, com o **servo anterior**: aplica cada pulso por 5 s,
 descarta o primeiro 1 s (transitório) e conta os ticks nos 4 s seguintes.
 Passos de 10 µs. Critério de "parada": no máximo 2 ticks em 4 s. A velocidade é
 `v = k · Δticks / Δt` com k = 0,4746 mm/tick. A banda morta é a da bancada
@@ -182,29 +267,62 @@ Observações:
 
 ## 5. Curva pulso × velocidade em malha aberta
 
-Comando `A [passo] [s]`: varre de 1000 a 2000 µs, cada pulso por 3 s. A
-velocidade em regime vem do log, descartando o transitório (por exemplo, o
-primeiro 1,5 s de cada pulso), em mm/s: `v = k · Δticks / Δt` com k = 0,4746.
+Comando `A 50 3` com o servo atual e neutro de 1495 µs: de 1000 a 2000 µs em
+passos de 50 µs, 3 s por pulso. Registro em `dados/malha_aberta_A50_3.csv`
+(1259 amostras de 50 ms). Para cada pulso, a velocidade em regime é
+`v = k · Δticks / Δt` entre 1,5 s e 3 s do pulso (descartando o transitório),
+com k = 0,4746 mm/tick. Reproduzir: `python3 scripts/curva_aberta.py`
+(gera `dados/curva_aberta.csv` e, com matplotlib, `figuras/curva_aberta.png`).
 
-Pontos preliminares (teste de sanidade, ticks lidos de 0,5 em 0,5 s, em regime):
-
-| Pulso (µs) | Δticks / 0,5 s | Velocidade |
+| Pulso (µs) | v em regime (mm/s) | desvio da v bruta (mm/s) |
 |---|---|---|
-| 2000 | ≈ 288 | ≈ 576 ticks/s = **+273 mm/s** |
-| 1000 | ≈ −272 | ≈ −544 ticks/s = **−258 mm/s** |
+| 1000 | -258,0 | 12,9 |
+| 1050 | -240,6 | 11,2 |
+| 1100 | -221,9 | 12,6 |
+| 1150 | -205,9 | 11,2 |
+| 1200 | -184,3 | 11,1 |
+| 1250 | -166,6 | 13,6 |
+| 1300 | -147,0 | 8,2 |
+| 1350 | -121,8 | 13,6 |
+| 1400 | -104,4 | 5,6 |
+| 1450 | -81,8 | 11,0 |
+| 1500 | 0,0 | 0,0 |
+| 1550 | 91,6 | 10,7 |
+| 1600 | 111,6 | 10,5 |
+| 1650 | 132,2 | 12,8 |
+| 1700 | 154,2 | 10,7 |
+| 1750 | 174,1 | 15,7 |
+| 1800 | 191,8 | 13,7 |
+| 1850 | 215,4 | 13,1 |
+| 1900 | 233,4 | 15,5 |
+| 1950 | 253,7 | 13,5 |
+| 2000 | 272,6 | 13,3 |
 
-Já mostra uma assimetria de cerca de 6 % entre os sentidos. A curva completa
-(banda morta, saturação nas pontas) sai da varredura.
-
-_Registrar aqui: tabela pulso × velocidade, banda morta, saturação, assimetria._
+- **Extremos:** +272,6 mm/s em 2000 µs e −258,0 mm/s em 1000 µs. A assimetria
+  entre os sentidos é de 14,6 mm/s, cerca de 5,4 % do maior.
+- **Banda morta:** 1500 µs dá 0 ticks, e 1450 e 1550 µs já giram (−81,8 e
+  +91,6 mm/s). Isso concorda com a busca da seção 4: parada de 1470 a 1520 µs,
+  e salto de 0 para ≈ ±80 mm/s ao sair dela.
+- **Saturação:** não há patamar plano. A curva segue quase linear até as pontas,
+  com inclinação de ≈ 0,38 a 0,40 mm/s por µs no lado positivo (de +91,6 a
+  +272,6 mm/s entre 1550 e 2000 µs) e um pouco menor perto de 1000 µs (de
+  −258,0 a −240,6 mm/s nos primeiros 50 µs, ≈ 0,35 mm/s por µs). Dentro de
+  1000 a 2000 µs o servo não satura de forma clara.
+- **Ruído:** a velocidade bruta tem desvio de 5 a 16 mm/s em regime, com passo
+  de quantização de 9,5 mm/s. É o que o filtro precisa tratar.
+- **Faixa útil para a malha:** de ≈ 80 mm/s (saída da banda morta) até
+  ≈ 250 mm/s. Os patamares do ensaio 1 devem ficar nessa faixa, por exemplo
+  100, 130, 160, 190 e 220 mm/s (ajustar com `q`).
+- Os pontos preliminares anteriores (+273 e −258 mm/s do teste de sanidade) foram
+  substituídos por esta varredura.
 
 ## Pendências
 
 - [x] Medir D e calcular k
 - [x] Registrar o método de D (paquímetro, 43,40 mm)
 - [x] Δt do código (50 ms) e degrau k/Δt (9,5 mm/s)
-- [~] Neutro do servo: 1485 µs medido (seção 4); falta repetir a busca para confirmar
-- [ ] Curva pulso × velocidade em malha aberta (mm/s): seção 5
+- [x] Neutro do servo atual: 1495 µs, confirmado em 2 corridas (seção 4.1)
+- [x] Curva pulso × velocidade em malha aberta (mm/s): seção 5 (falta só a figura, que precisa de matplotlib)
 - [ ] Comparação de dois filtros no mesmo degrau
 - [ ] Sintonia do PID (tabela de tentativas)
 - [ ] Ensaios: cinco patamares, inversão de sentido, distância
