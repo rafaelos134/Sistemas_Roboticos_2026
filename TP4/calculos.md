@@ -24,6 +24,12 @@ Referência da bancada (só para conferência): D = 49,2 mm e N = 288 ticks
   gira com o sinal no D10: pulso de 2000 µs dá ticks crescentes e 1000 µs dá
   ticks decrescentes, então A e B nos pinos 2 e 3 estão no sentido certo.
   (O D9 não foi testado.)
+- **Troca do motor (07/11/2026):** o SG90 de giro contínuo não estava
+  funcionando corretamente e acabou parando de funcionar. Foi substituído por um
+  servo **TowerPro MG90S**, no mesmo header (sinal no D10), com a mesma roda,
+  encoder e transmissão. Por isso N (seção 1), D e k (seção 2) continuam
+  valendo. O neutro e a banda morta da seção 4 e os pontos preliminares da
+  seção 5 foram medidos com o SG90 e serão medidos novamente com o MG90S.
 
 ## 1. Ticks por volta (N)
 
@@ -208,3 +214,13 @@ _Registrar aqui: tabela pulso × velocidade, banda morta, saturação, assimetri
 - [ ] Comparação de dois filtros no mesmo degrau
 - [ ] Sintonia do PID (tabela de tentativas)
 - [ ] Ensaios: cinco patamares, inversão de sentido, distância
+
+## Confirmações opcionais
+
+- [ ] Se a roda ou a engrenagem do encoder foram mexidas ao trocar o motor, girar
+  uma volta à mão (`z` antes, para zerar) e conferir se dá ≈ 287 ticks. Se der
+  perto de 285 a 290, o N = 287,3 continua valendo; se desviar muito, repetir a
+  medida de N.
+- [ ] Anotar a data e as condições de cada ensaio (em especial a alimentação do
+  servo: USB, fonte externa ou pilhas), porque o relatório declara a condição de
+  cada ensaio (neutro, k, Δt, ganhos e parâmetro do filtro).
