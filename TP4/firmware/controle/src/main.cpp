@@ -57,7 +57,7 @@ static const float NEU_S = 5.0f;        // duracao de cada pulso na busca do neu
 static const float NEU_DESC_S = 1.0f;   // transitorio descartado em cada pulso
 static const long  NEU_TICKS_PARADA = 2;// |ticks| ate isso em ~4 s = roda parada
 
-static float pat[5] = {30, 50, 70, 90, 110};   // mm/s, AJUSTAR com q
+static float pat[5] = {100, 115, 130, 145, 160};   // mm/s; acima de ~165 satura em +250 us
 static float v_ens = 60.0f;                    // mm/s, ensaios 2 e 3 (r)
 
 static float kp = 0.0f, ki = 0.0f, kd = 0.0f;  // sintonizar na bancada (g)
@@ -82,7 +82,7 @@ static float jan[JMAX];
 static uint8_t jn = 5, jidx = 0;
 static float alfa = 0.3f;
 static float v_lp = 0, v_mm = 0;
-static uint8_t filtro_sel = 1;          // 0 = media movel, 1 = passa-baixa
+static uint8_t filtro_sel = 0;          // 0 = media movel (escolhida, n = 5), 1 = passa-baixa
 
 // parametros dos ensaios/varredura
 static float sw_passo = 50, sw_seg = 3;
@@ -233,6 +233,11 @@ static void amostra() {
     float p = PULSO_MIN + sw_passo * i;
     if (p > PULSO_MAX) { para(F("# fim varredura")); return; }
     escreve_pulso(p);
+    pulso = pulso_cmd;
+  } else if (modo == E3 && e3_parou) {
+    // alvo atingido: corta no neutro (malha aberta). Com setpoint 0 a malha
+    // ficaria caçando o zero por causa da banda morta e a roda voltaria.
+    escreve_pulso(neutro_us);
     pulso = pulso_cmd;
   } else if (modo == FECHADA || modo == E1 || modo == E2 || modo == E3) {
     float e = setpoint - vf;

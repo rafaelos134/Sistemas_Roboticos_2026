@@ -1,0 +1,13 @@
+# data: 2026-11-17T15:12:05
+# porta: /dev/ttyUSB2
+> g 3 8 0
+# D_mm=43.40 N=287.3 k_mm_tick=0.47457 neutro_us=1495 pino_servo=10 Ts_ms=50.0
+# kp=3.0000 ki=8.0000 kd=0.0000 filtro=media_movel janela=5 alfa=0.300
+# patamares=100.0 130.0 160.0 190.0 220.0  v_ens=60.0
+> ?
+# D_mm=43.40 N=287.3 k_mm_tick=0.47457 neutro_us=1495 pino_servo=10 Ts_ms=50.0
+# kp=3.0000 ki=8.0000 kd=0.0000 filtro=media_movel janela=5 alfa=0.300
+# patamares=100.0 130.0 160.0 190.0 220.0  v_ens=60.0
+> s 150
+> x
+# parado
