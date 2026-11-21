@@ -1,17 +1,10 @@
-"""Comparacao de filtros no degrau em malha aberta (TP4, secao 5).
-
-Le dados/filtros_degrau_o1700.csv (comando 'o 1700' a partir do repouso) e refaz,
-a partir da velocidade bruta, media movel e passa-baixa com varios parametros.
-Regime = t >= 5 s. Imprime desvio em regime, desvio de dv/dt, t63, t90 e pico.
-Uso: python3 scripts/filtros.py
-"""
 import csv
 import os
 import statistics as st
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TS = 0.05
-with open(os.path.join(RAIZ, "dados", "filtros_degrau_o1700.csv")) as f:
+with open(os.path.join(RAIZ, "dados_e_resultados", "filtros_degrau_o1700.csv")) as f:
     d = [(float(r["t_s"]), float(r["v_bruta"])) for r in csv.DictReader(f)]
 t = [x[0] for x in d]
 raw = [x[1] for x in d]

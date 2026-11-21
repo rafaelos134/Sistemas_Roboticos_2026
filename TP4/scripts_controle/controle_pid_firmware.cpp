@@ -1,68 +1,35 @@
-// TP4 - Controle de velocidade da roda (Arduino Mega 2560).
-//
-// Encoder (X4) nos pinos 2 (A) e 3 (B). Servo SG90 de giro continuo no pino 10
-// (header Servo1 do shield de motores; confirmado no teste de sanidade).
-//
-// Malha: v = k*dticks/dt (dt medido com micros()) -> filtro -> PID -> correcao
-// (us) somada ao neutro. Correcao limitada a +-250 us, pulso entre 1000 e 2000.
-//
-// Convencao: pulso > neutro deve produzir ticks crescentes (v > 0). Se sair
-// invertido, troque A e B no encoder (Encoder enc(3, 2)) e registre no relatorio.
-//
-// Comandos seriais (115200, terminar com \n). Um comando por linha:
-//   h              ajuda            ?              mostra parametros
-//   n <us>         neutro medido    o <us>         malha aberta, pulso fixo
-//   s <mm/s>       malha fechada, setpoint fixo (muda o setpoint zera a integral)
-//   x              para (pulso = neutro)           z   zera ticks e integral
-//   g kp ki kd     ganhos [us/(mm/s), us/(mm/s)/s, us/(mm/s^2)]
-//   f 0|1          filtro no PID: 0 = media movel, 1 = passa-baixa
-//   w <n>          janela da media movel (1..10)   a <alfa>  alfa do passa-baixa
-//   q v1..v5       patamares do ensaio 1 (mm/s)    r <mm/s>  velocidade dos ensaios 2 e 3
-//   u <pino>       troca o pino do sinal do servo (9 ou 10), para teste
-//   l 0|1          log tambem em repouso
-//   N [ini] [fim]  BUSCA DO NEUTRO: varre de ini a fim (default 1400..1600 us) em
-//                  passos de 10 us, 5 s cada, e imprime a tabela e o neutro
-//   A [passo] [s]  curva em malha aberta: 1000..2000 us, passo (default 50 us),
-//                  cada pulso por s segundos (default 3)
-//   1              ensaio 1: cinco patamares       2   ensaio 2: inversao de sentido
-//   3 [voltas]     ensaio 3: distancia (default 3 voltas a velocidade r)
-//
-// Log CSV: t_s,ticks,s_mm,v_bruta,v_filtrada,setpoint,pulso_us,dt_us,v_mm,v_lp
-// (v_filtrada = a do filtro escolhido; v_mm e v_lp sao as duas saidas, para a
-// comparacao de filtros). Linhas que comecam com '#' sao comentarios.
-
 #include <Arduino.h>
 #include <Encoder.h>
 #include <Servo.h>
 
-// ---------------- constantes medidas na bancada ----------------
+// constantes medidas
 #define D_MM        43.40f              // paquimetro
-#define N_TICKS     287.3f              // media de 20 voltas a mao, X4
-static const float K_MM_TICK = PI * D_MM / N_TICKS;   // mm/tick
+#define N_TICKS     287.3f              // media de voltas a mao
+static const float K_MM_TICK = PI * D_MM / N_TICKS;
 
-static float neutro_us = 1500.0f;       // PREENCHER apos a busca do neutro (comando N)
+static float neutro_us = 1495.0f;       // busca do neutro
 
-// ---------------- configuracao ----------------
-static uint8_t pin_servo = 10;          // 'u <pino>' troca em tempo de execucao
+// configuracao
+static uint8_t pin_servo = 10;          // 'u <pino>' troca o pino
 static const unsigned long TS_US = 50000UL;      // periodo nominal da amostra
 static const float LIM_CORR_US = 250.0f;
 static const float PULSO_MIN = 1000.0f, PULSO_MAX = 2000.0f;
 
-static const float PAT_S   = 3.0f;      // duracao de cada patamar (ensaio 1)
-static const float INV_S   = 4.0f;      // duracao de cada sentido (ensaio 2)
-static const float PARADA_S = 1.5f;     // log apos parar (ensaio 3)
+static const float PAT_S   = 3.0f;      // duracao de cada patamar (E1)
+static const float INV_S   = 4.0f;      // duracao de cada sentido (E2)
+static const float PARADA_S = 1.5f;     // log apos parar (E3)
 static const float TMAX_E3 = 40.0f;
 
-static const float NEU_S = 5.0f;        // duracao de cada pulso na busca do neutro
-static const float NEU_DESC_S = 1.0f;   // transitorio descartado em cada pulso
-static const long  NEU_TICKS_PARADA = 2;// |ticks| ate isso em ~4 s = roda parada
+static const float NEU_S = 5.0f;        // duracao de cada pulso (neutro)
+static const float NEU_DESC_S = 1.0f;   // transitorio descartado
+static const long  NEU_TICKS_PARADA = 2;// ate isso em ~4 s = parada
 
-static float pat[5] = {30, 50, 70, 90, 110};   // mm/s, AJUSTAR com q
-static float v_ens = 60.0f;                    // mm/s, ensaios 2 e 3 (r)
+static float pat[5] = {100, 115, 130, 145, 160};   // mm/s; acima de ~165 satura
+static float v_ens = 60.0f;                    // mm/s, E2 e E3
 
-static float kp = 0.0f, ki = 0.0f, kd = 0.0f;  // sintonizar na bancada (g)
+static float kp = 0.0f, ki = 0.0f, kd = 0.0f;  // definidos com 'g'
 
-// ---------------- estado ----------------
+// estado
 enum Modo { IDLE, ABERTA, FECHADA, VARREDURA, NEUTRO, E1, E2, E3 };
 static Modo modo = IDLE;
 
@@ -82,9 +49,9 @@ static float jan[JMAX];
 static uint8_t jn = 5, jidx = 0;
 static float alfa = 0.3f;
 static float v_lp = 0, v_mm = 0;
-static uint8_t filtro_sel = 1;          // 0 = media movel, 1 = passa-baixa
+static uint8_t filtro_sel = 0;          // 0 = media movel, 1 = passa-baixa
 
-// parametros dos ensaios/varredura
+// ensaios e varredura
 static float sw_passo = 50, sw_seg = 3;
 static float e3_voltas = 3, e3_alvo_mm = 0;
 static bool e3_parou = false;
@@ -96,7 +63,7 @@ static int neu_i = -1;
 static bool neu_marcado = false;
 static long neu_tk0, neu_tk1;
 static float neu_t0, neu_t1;
-static int neu_par_min, neu_par_max;    // menor e maior pulso com roda parada
+static int neu_par_min, neu_par_max;    // faixa de pulsos com roda parada
 
 static float limita(float x, float lo, float hi) { return x < lo ? lo : (x > hi ? hi : x); }
 
@@ -111,7 +78,7 @@ static void zera_filtros() {
 }
 
 static void muda_setpoint(float sp) {
-  if (sp != setpoint) integ = 0;          // zera a integral quando o setpoint muda
+  if (sp != setpoint) integ = 0;          // zera a integral
   setpoint = sp;
 }
 
@@ -139,7 +106,7 @@ static void para(const __FlashStringHelper *msg) {
   Serial.println(msg);
 }
 
-// fecha o passo da busca do neutro e imprime uma linha da tabela
+// fecha um passo da busca do neutro
 static void fecha_passo_neutro() {
   int pulso = neu_ini + 10 * neu_i;
   long dtk = neu_tk1 - neu_tk0;
@@ -159,16 +126,16 @@ static void fecha_passo_neutro() {
 static void amostra() {
   unsigned long agora = micros();
   long ticks = enc.read();
-  float dt = (agora - t_ant) * 1e-6f;          // dt REAL medido
+  float dt = (agora - t_ant) * 1e-6f;          // dt medido
   unsigned long dt_us = agora - t_ant;
   t_ant = agora;
   float t = (agora - t_ini) * 1e-6f;
 
   float s = K_MM_TICK * ticks;
-  float v = K_MM_TICK * (ticks - ticks_ant) / dt;     // bruta, mm/s
+  float v = K_MM_TICK * (ticks - ticks_ant) / dt;     // mm/s
   ticks_ant = ticks;
 
-  // dois filtros sempre calculados
+  // filtros
   jan[jidx] = v; jidx = (jidx + 1) % jn;
   float soma = 0;
   for (uint8_t i = 0; i < jn; i++) soma += jan[i];
@@ -176,7 +143,7 @@ static void amostra() {
   v_lp += alfa * (v - v_lp);
   float vf = filtro_sel == 0 ? v_mm : v_lp;
 
-  // agenda dos ensaios
+  // ensaios
   switch (modo) {
     case NEUTRO: {
       int i = (int)(t / NEU_S);
@@ -198,7 +165,7 @@ static void amostra() {
       float tin = t - i * NEU_S;
       if (!neu_marcado && tin >= NEU_DESC_S) { neu_tk0 = ticks; neu_t0 = t; neu_marcado = true; }
       neu_tk1 = ticks; neu_t1 = t;
-      return;                                    // sem linha de CSV: so a tabela
+      return;            // sem CSV neste modo
     }
     case E1: {
       int i = (int)(t / PAT_S);
@@ -227,19 +194,24 @@ static void amostra() {
 
   float pulso = pulso_cmd;
   if (modo == ABERTA) {
-    // pulso fixo, ja escrito
+    // pulso fixo
   } else if (modo == VARREDURA) {
     int i = (int)(t / sw_seg);
     float p = PULSO_MIN + sw_passo * i;
     if (p > PULSO_MAX) { para(F("# fim varredura")); return; }
     escreve_pulso(p);
     pulso = pulso_cmd;
+  } else if (modo == E3 && e3_parou) {
+    // alvo atingido: corta no neutro (malha aberta); com setpoint 0 a malha
+    // fica caçando o zero por causa da banda morta
+    escreve_pulso(neutro_us);
+    pulso = pulso_cmd;
   } else if (modo == FECHADA || modo == E1 || modo == E2 || modo == E3) {
     float e = setpoint - vf;
-    // integral limitada: a contribuicao ki*integ nao passa de +-250 us
+    // anti-windup: ki*integ limitado a +-250 us
     integ += e * dt;
     if (ki > 0) integ = limita(integ, -LIM_CORR_US / ki, LIM_CORR_US / ki);
-    float dv = (vf - v_ant_filt) / dt;               // derivada na medida filtrada
+    float dv = (vf - v_ant_filt) / dt;               // derivada da medida
     float u = kp * e + ki * integ - kd * dv;
     u = limita(u, -LIM_CORR_US, LIM_CORR_US);
     escreve_pulso(neutro_us + u);
@@ -352,7 +324,6 @@ void setup() {
   escreve_pulso(neutro_us);
   t_ant = micros(); t_prox = t_ant + TS_US;
   Serial.println(F("# TP4 controle de velocidade"));
-  if (neutro_us == 1500.0f) Serial.println(F("# AVISO: neutro ainda e o 1500 padrao; faca a busca (comando N)"));
   params();
   ajuda();
 }
