@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Replay do Torneio</title>
+<style>
+  :root {
+    --bg:#f4f3f6; --panel:#ffffff; --fg:#1c1c22; --muted:#6a6a75; --line:#dddbe3; --accent:#960b22;
+    --blue:#2563eb; --red:#dc2626; --orange:#ea8a1a; --field:#2f7d46; --fieldline:#e9f5ec;
+    --ring:#d9c9a3; --ringline:#fffaf0; --ctf:#e8e6ee; --hover:#f1eef4; --sel:#f7e9ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#141418; --panel:#1e1e25; --fg:#ececf1; --muted:#a0a0ab; --line:#34343e; --accent:#e0526a;
+      --blue:#5b8cff; --red:#ff6b6b; --orange:#ffa44a; --field:#235c35; --fieldline:#d5eadb;
+      --ring:#5a4f3a; --ringline:#efe6d2; --ctf:#2a2a33; --hover:#26262e; --sel:#3a2429;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#141418; --panel:#1e1e25; --fg:#ececf1; --muted:#a0a0ab; --line:#34343e; --accent:#e0526a;
+    --blue:#5b8cff; --red:#ff6b6b; --orange:#ffa44a; --field:#235c35; --fieldline:#d5eadb;
+    --ring:#5a4f3a; --ringline:#efe6d2; --ctf:#2a2a33; --hover:#26262e; --sel:#3a2429;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { display:flex; gap:12px; align-items:baseline; padding:10px 16px; background:var(--panel);
+           border-bottom:3px solid var(--accent); }
+  header h1 { margin:0; font-size:18px; color:var(--accent); }
+  header .muted { color:var(--muted); font-size:13px; }
+  .wrap { display:grid; grid-template-columns:300px minmax(0,1fr); gap:14px; padding:14px 16px; }
+  @media (max-width:900px) { .wrap { grid-template-columns:1fr; } }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px; min-width:0; }
+  .filters { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:8px; }
+  select, button, input[type=text] { font:inherit; color:var(--fg); background:var(--panel); border:1px solid var(--line);
+           border-radius:6px; padding:4px 8px; }
+  button { cursor:pointer; }
+  button:hover { background:var(--hover); }
+  #lista { max-height:calc(100vh - 170px); overflow:auto; }
+  @media (max-width:900px) { #lista { max-height:260px; } }
+  .item { padding:6px 8px; border-radius:6px; cursor:pointer; border-bottom:1px solid var(--line); }
+  .item:hover { background:var(--hover); }
+  .item.sel { background:var(--sel); }
+  .item .l1 { display:flex; justify-content:space-between; font-weight:600; }
+  .item .l2 { color:var(--muted); font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .tag { font-size:11px; font-weight:500; padding:0 6px; border-radius:8px; background:var(--hover); color:var(--muted); }
+  .tag.live { background:var(--accent); color:#fff; }
+  .score { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:10px; }
+  .score .a { text-align:right; color:var(--blue); font-weight:600; }
+  .score .b { color:var(--red); font-weight:600; }
+  .score .n { font-size:28px; font-weight:800; font-variant-numeric:tabular-nums; }
+  .meta { display:flex; justify-content:space-between; color:var(--muted); font-size:12px; margin:2px 0 6px;
+          font-variant-numeric:tabular-nums; }
+  #msg { min-height:20px; text-align:center; font-size:13px; color:var(--accent); font-weight:600; }
+  canvas { width:100%; display:block; border-radius:8px; background:var(--bg); touch-action:none; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:8px; }
+  .controls input[type=range] { flex:1; min-width:160px; accent-color:var(--accent); }
+  #tempo { font-variant-numeric:tabular-nums; color:var(--muted); min-width:96px; text-align:right; }
+  #play { min-width:76px; font-weight:600; }
+  label.chk { display:flex; gap:4px; align-items:center; color:var(--muted); font-size:13px; }
+  .grid2 { display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:14px; }
+  @media (max-width:1200px) { .grid2 { grid-template-columns:1fr; } }
+  #eventos { max-height:520px; overflow:auto; font-size:13px; }
+  .ev { padding:3px 6px; border-radius:4px; cursor:pointer; display:flex; gap:8px; }
+  .ev:hover { background:var(--hover); }
+  .ev .t { color:var(--muted); font-variant-numeric:tabular-nums; min-width:44px; }
+  .ev.gol { font-weight:600; }
+  h3 { margin:0 0 6px; font-size:14px; }
+  .vazio { color:var(--muted); padding:30px; text-align:center; }
+  kbd { font:11px ui-monospace,monospace; border:1px solid var(--line); border-radius:4px; padding:0 4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Replay do Torneio</h1>
+  <span class="muted">gravações de api/ao-vivo · dados/ao_vivo/</span>
+</header>
+<div class="wrap">
+  <div class="panel">
+    <div class="filters">
+      <select id="fJogo"><option value="">todos os jogos</option><option value="sumo">Sumô</option>
+        <option value="ctf">Rouba-bandeira</option><option value="soccer">Futebol</option></select>
+      <select id="fEquipe"><option value="">todas as equipes</option></select>
+    </div>
+    <div class="filters"><button id="recarregar">↻ atualizar lista</button><span class="muted" id="contagem"></span></div>
+    <div id="lista"><div class="vazio">carregando…</div></div>
+  </div>
+  <div class="grid2">
+    <div class="panel">
+      <div class="score"><div class="a" id="nomeA">—</div><div class="n" id="placar">– : –</div><div class="b" id="nomeB">—</div></div>
+      <div class="meta"><span id="info">escolha uma partida na lista</span><span id="relogio"></span></div>
+      <div id="msg"></div>
+      <canvas id="cv"></canvas>
+      <div class="controls">
+        <button id="play" disabled>▶ play</button>
+        <button id="voltar" title="frame anterior (,)">⟨</button>
+        <button id="avancar" title="próximo frame (.)">⟩</button>
+        <input id="barra" type="range" min="0" max="0" step="0.01" value="0" disabled>
+        <span id="tempo">0:00 / 0:00</span>
+        <select id="vel" title="velocidade">
+          <option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option>
+          <option value="2">2×</option><option value="4">4×</option><option value="8">8×</option></select>
+        <label class="chk"><input type="checkbox" id="rastro" checked> rastro</label>
+        <label class="chk"><input type="checkbox" id="ids" checked> ids</label>
+      </div>
+      <div class="meta" style="margin-top:6px"><span><kbd>espaço</kbd> play · <kbd>←</kbd><kbd>→</kbd> ±2 s · <kbd>,</kbd><kbd>.</kbd> frame</span><span id="amostras"></span></div>
+    </div>
+    <div class="panel">
+      <h3>Eventos</h3>
+      <div id="eventos"><div class="vazio">—</div></div>
+    </div>
+  </div>
+</div>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const ROBOT_R = 0.037, TRAIL_S = 3.0;
+const S = { lista: [], sel: null, rep: null, t: 0, playing: false, vel: 1, last: null };
+
+// ---------------- lista ----------------
+async function carregarLista() {
+  try {
+    const r = await fetch('api/partidas');
+    S.lista = await r.json();
+  } catch (e) { $('lista').innerHTML = '<div class="vazio">erro ao listar: ' + e + '</div>'; return; }
+  const eq = new Map();
+  for (const p of S.lista) for (const [k, n] of [[p.a, p.nome_a], [p.b, p.nome_b]]) if (k) eq.set(k, n);
+  const fe = $('fEquipe'), cur = fe.value;
+  fe.innerHTML = '<option value="">todas as equipes</option>' +
+    [...eq].sort((x, y) => String(x[1]).localeCompare(String(y[1]))).map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join('');
+  fe.value = cur;
+  desenharLista();
+}
+function esc(s) { return String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+const NOME_JOGO = { sumo: 'Sumô', ctf: 'Rouba-bandeira', soccer: 'Futebol' };
+function desenharLista() {
+  const fj = $('fJogo').value, fe = $('fEquipe').value;
+  const L = S.lista.filter(p => (!fj || p.jogo === fj) && (!fe || p.a === fe || p.b === fe));
+  $('contagem').textContent = L.length + ' partidas';
+  if (!L.length) { $('lista').innerHTML = '<div class="vazio">nenhuma gravação</div>'; return; }
+  $('lista').innerHTML = L.map(p => {
+    const sel = S.sel && S.sel.jogo === p.jogo && S.sel.id === p.id ? ' sel' : '';
+    const pl = p.placar ? p.placar.join(' : ') : (p.ao_vivo ? '' : '?');
+    const quando = new Date(p.gravado * 1000).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+    return `<div class="item${sel}" data-k="${p.jogo}/${p.id}">
+      <div class="l1"><span>${NOME_JOGO[p.jogo]} #${p.id}</span><span>${pl} ${p.ao_vivo ? '<span class="tag live">ao vivo</span>' : ''}</span></div>
+      <div class="l2">${esc(p.nome_a || '?')} × ${esc(p.nome_b || '?')}</div>
+      <div class="l2">${quando} · ${p.kb} KB${p.fase ? ' · ' + esc(p.fase) : ''}</div></div>`;
+  }).join('');
+}
+$('lista').addEventListener('click', e => {
+  const it = e.target.closest('.item'); if (!it) return;
+  const [jogo, id] = it.dataset.k.split('/'); abrir(jogo, +id);
+});
+$('fJogo').onchange = desenharLista; $('fEquipe').onchange = desenharLista;
+$('recarregar').onclick = carregarLista;
+
+// ---------------- replay ----------------
+async function abrir(jogo, id) {
+  S.playing = false; atualizarPlay();
+  S.sel = S.lista.find(p => p.jogo === jogo && p.id === id) || { jogo, id };
+  desenharLista();
+  location.hash = jogo + '/' + id;
+  $('info').textContent = 'carregando…';
+  let txt;
+  try {
+    const r = await fetch(`api/replay?jogo=${jogo}&id=${id}`);
+    if (!r.ok) throw new Error(r.status);
+    txt = await r.text();
+  } catch (e) { $('info').textContent = 'erro: ' + e; return; }
+  let header = null; const A = [];
+  for (const linha of txt.split('\n')) {
+    if (!linha.trim()) continue;
+    let o; try { o = JSON.parse(linha); } catch { continue; }
+    if (o.tipo === 'inicio') { if (!header || (!header.layout && o.layout)) header = o; }
+    else if (o.ts != null && o.robots) A.push(o);
+  }
+  A.sort((x, y) => x.ts - y.ts);
+  const amostras = A.filter((o, i) => i === 0 || o.ts > A[i - 1].ts);
+  if (!amostras.length) { $('info').textContent = 'gravação vazia'; return; }
+  const t0 = amostras[0].ts;
+  for (const o of amostras) o.T = o.ts - t0;
+  S.rep = { jogo, id, header: header || {}, A: amostras, dur: amostras[amostras.length - 1].T, ev: eventos(amostras, jogo) };
+  S.t = 0;
+  const b = $('barra'); b.max = S.rep.dur.toFixed(2); b.disabled = false; $('play').disabled = false;
+  $('nomeA').textContent = S.sel.nome_a || (jogo === 'sumo' ? 'hero_0' : 'azul');
+  $('nomeB').textContent = S.sel.nome_b || (jogo === 'sumo' ? 'hero_1' : 'vermelho');
+  $('info').textContent = `${NOME_JOGO[jogo]} #${id}${S.sel.fase ? ' · ' + S.sel.fase : ''}${S.sel.inicio ? ' · ' + S.sel.inicio : ''}`;
+  $('amostras').textContent = `${amostras.length} amostras · ${(amostras.length / Math.max(S.rep.dur, 1e-6)).toFixed(1)} Hz`;
+  desenharEventos();
+  ajustarCanvas();
+  desenhar();
+}
+
+function eventos(A, jogo) {
+  const ev = []; let prev = null;
+  for (const o of A) {
+    const m = o.match || {}, sc = JSON.stringify(m.score || []);
+    if (prev) {
+      const pm = prev.match || {};
+      if (sc !== JSON.stringify(pm.score || [])) ev.push({ T: o.T, gol: true, txt: (jogo === 'soccer' ? 'gol' : jogo === 'ctf' ? 'ponto' : 'vitória') + ' → ' + (m.score || []).join(' : ') });
+      if (m.phase !== pm.phase) ev.push({ T: o.T, txt: 'fase: ' + m.phase });
+      if (o.message && o.message !== prev.message) ev.push({ T: o.T, txt: o.message });
+      if (o.carrying && prev.carrying) o.carrying.forEach((c, i) => { if (c && !prev.carrying[i]) ev.push({ T: o.T, txt: `hero_${i} pegou a bandeira` }); });
+    } else ev.push({ T: o.T, txt: 'início (fase: ' + (m.phase || '?') + ')' });
+    prev = o;
+  }
+  return ev;
+}
+function desenharEventos() {
+  const E = S.rep.ev;
+  $('eventos').innerHTML = E.length ? E.map((e, i) => `<div class="ev${e.gol ? ' gol' : ''}" data-i="${i}"><span class="t">${fmt(e.T)}</span><span>${esc(e.txt)}</span></div>`).join('')
+    : '<div class="vazio">sem eventos</div>';
+}
+$('eventos').addEventListener('click', e => {
+  const el = e.target.closest('.ev'); if (!el || !S.rep) return;
+  S.t = Math.max(0, S.rep.ev[+el.dataset.i].T - 1); desenhar();
+});
+
+// ---------------- tempo / interpolação ----------------
+function idx(t) {  // último índice com T <= t
+  const A = S.rep.A; let lo = 0, hi = A.length - 1;
+  if (t <= A[0].T) return 0;
+  if (t >= A[hi].T) return hi;
+  while (hi - lo > 1) { const m = (lo + hi) >> 1; if (A[m].T <= t) lo = m; else hi = m; }
+  return lo;
+}
+const lerp = (a, b, f) => a + (b - a) * f;
+function lerpAng(a, b, f) { let d = b - a; while (d > Math.PI) d -= 2 * Math.PI; while (d < -Math.PI) d += 2 * Math.PI; return a + d * f; }
+function estado(t) {
+  const A = S.rep.A, i = idx(t), a = A[i], b = A[Math.min(i + 1, A.length - 1)];
+  const gap = b.T - a.T, f = gap > 0 && gap < 1.0 ? Math.min(1, Math.max(0, (t - a.T) / gap)) : 0;
+  const rb = new Map(b.robots.map(r => [r.id, r]));
+  const robots = a.robots.map(r => { const q = rb.get(r.id) || r; return { ...r, x: lerp(r.x, q.x, f), y: lerp(r.y, q.y, f), yaw: lerpAng(r.yaw, q.yaw, f) }; });
+  let puck = a.puck;
+  if (a.puck && b.puck) puck = { ...a.puck, x: lerp(a.puck.x, b.puck.x, f), y: lerp(a.puck.y, b.puck.y, f) };
+  return { ...a, robots, puck, i };
+}
+function fmt(s) { s = Math.max(0, s); return Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0'); }
+
+// ---------------- desenho ----------------
+const cv = $('cv'), ctx = cv.getContext('2d');
+function limites() {
+  const j = S.rep ? S.rep.jogo : 'soccer', ar = (S.rep && S.rep.header.layout && S.rep.header.layout.arena) || {};
+  if (j === 'sumo') { const r = ar.r || 0.4; return [r + 0.08, r + 0.08]; }
+  if (j === 'ctf') return [(ar.w || 1.6) / 2 + 0.05, (ar.h || 1.6) / 2 + 0.05];
+  return [(ar.w || 2.0) / 2 + 0.04, (ar.h || 1.2) / 2 + 0.05];
+}
+function ajustarCanvas() {
+  const [hx, hy] = limites(), w = cv.clientWidth || 600;
+  const h = Math.min(w * hy / hx, window.innerHeight * 0.62);
+  cv.style.height = h + 'px';
+  const dpr = window.devicePixelRatio || 1;
+  cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+}
+window.addEventListener('resize', () => { ajustarCanvas(); desenhar(); });
+
+function equipe(jogo, id, n) {  // 0 = azul (lado a), 1 = vermelho (lado b)
+  if (jogo === 'soccer') return id < 3 ? 0 : 1;
+  if (jogo === 'ctf') return n <= 2 ? (id === 0 ? 0 : 1) : (id < 2 ? 0 : 1);
+  return id === 0 ? 0 : 1;
+}
+function desenhar() {
+  if (!S.rep) { ctx.clearRect(0, 0, cv.width, cv.height); return; }
+  const W = cv.width, H = cv.height, [hx, hy] = limites();
+  const k = Math.min(W / (2 * hx), H / (2 * hy));
+  const X = x => W / 2 + x * k, Y = y => H / 2 - y * k;
+  const st = estado(S.t), jogo = S.rep.jogo, n = st.robots.length;
+  const cor = [css('--blue'), jogo === 'sumo' ? css('--orange') : css('--red')];
+  ctx.clearRect(0, 0, W, H);
+  ctx.lineWidth = Math.max(1, k * 0.006);
+
+  if (jogo === 'sumo') {
+    const r = ((S.rep.header.layout || {}).arena || {}).r || 0.4;
+    ctx.fillStyle = css('--ring'); ctx.beginPath(); ctx.arc(X(0), Y(0), r * k, 0, 7); ctx.fill();
+    ctx.strokeStyle = css('--ringline'); ctx.lineWidth = Math.max(2, k * 0.012); ctx.stroke();
+    ctx.lineWidth = Math.max(1, k * 0.006);
+    for (const s of [-1, 1]) { ctx.beginPath(); ctx.moveTo(X(s * 0.1), Y(-0.06)); ctx.lineTo(X(s * 0.1), Y(0.06)); ctx.stroke(); }
+  } else if (jogo === 'ctf') {
+    const hw = 0.8, hb = 0.62, rb = 0.14;
+    ctx.fillStyle = css('--ctf'); ctx.fillRect(X(-hw), Y(hw), 2 * hw * k, 2 * hw * k);
+    ctx.globalAlpha = 0.10; ctx.fillStyle = cor[0]; ctx.fillRect(X(-hw), Y(hw), hw * k, 2 * hw * k);
+    ctx.fillStyle = cor[1]; ctx.fillRect(X(0), Y(hw), hw * k, 2 * hw * k); ctx.globalAlpha = 1;
+    ctx.strokeStyle = css('--muted'); ctx.strokeRect(X(-hw), Y(hw), 2 * hw * k, 2 * hw * k);
+    ctx.setLineDash([6, 4]); ctx.beginPath(); ctx.moveTo(X(0), Y(hw)); ctx.lineTo(X(0), Y(-hw)); ctx.stroke(); ctx.setLineDash([]);
+    [[-hb, cor[0]], [hb, cor[1]]].forEach(([x, c]) => { ctx.strokeStyle = c; ctx.beginPath(); ctx.arc(X(x), Y(0), rb * k, 0, 7); ctx.stroke(); });
+  } else {
+    const L = 0.9, Wd = 0.6, g = 0.2, gd = 0.1;
+    ctx.fillStyle = css('--field'); ctx.fillRect(X(-L - gd), Y(Wd), (2 * L + 2 * gd) * k, 2 * Wd * k);
+    ctx.strokeStyle = css('--fieldline'); ctx.lineWidth = Math.max(1.5, k * 0.008);
+    ctx.strokeRect(X(-L), Y(Wd), 2 * L * k, 2 * Wd * k);
+    ctx.beginPath(); ctx.moveTo(X(0), Y(Wd)); ctx.lineTo(X(0), Y(-Wd)); ctx.stroke();
+    ctx.beginPath(); ctx.arc(X(0), Y(0), 0.15 * k, 0, 7); ctx.stroke();
+    [[-1, cor[0]], [1, cor[1]]].forEach(([s, c]) => {  // gol que cada time defende
+      ctx.fillStyle = c; ctx.globalAlpha = 0.45; ctx.fillRect(X(s < 0 ? -L - gd : L), Y(g), gd * k, 2 * g * k); ctx.globalAlpha = 1;
+      ctx.strokeRect(X(s < 0 ? -L - gd : L), Y(g), gd * k, 2 * g * k);
+    });
+    ctx.lineWidth = Math.max(1, k * 0.006);
+  }
+
+  // rastros
+  if ($('rastro').checked) {
+    const A = S.rep.A, i1 = st.i, i0 = idx(S.t - TRAIL_S);
+    const ids = st.robots.map(r => r.id);
+    ids.forEach(id => {
+      ctx.strokeStyle = cor[equipe(jogo, id, n)]; ctx.globalAlpha = 0.45; ctx.beginPath(); let first = true;
+      for (let i = i0; i <= i1; i++) { const r = A[i].robots.find(q => q.id === id); if (!r) continue;
+        if (first) { ctx.moveTo(X(r.x), Y(r.y)); first = false; } else ctx.lineTo(X(r.x), Y(r.y)); }
+      ctx.stroke();
+    });
+    if (st.puck) { ctx.strokeStyle = css('--orange'); ctx.beginPath(); let first = true;
+      for (let i = i0; i <= i1; i++) { const p = A[i].puck; if (!p) continue;
+        if (first) { ctx.moveTo(X(p.x), Y(p.y)); first = false; } else ctx.lineTo(X(p.x), Y(p.y)); }
+      ctx.stroke(); }
+    ctx.globalAlpha = 1;
+  }
+
+  // bandeiras (CTF)
+  for (const m of st.markers || []) {
+    if (m.kind !== 'flag') continue;
+    const c = m.team === 'blue' ? cor[0] : cor[1], s = 0.035 * k;
+    ctx.strokeStyle = css('--fg'); ctx.beginPath(); ctx.moveTo(X(m.x), Y(m.y) + s * 0.6); ctx.lineTo(X(m.x), Y(m.y) - s); ctx.stroke();
+    ctx.fillStyle = c; ctx.beginPath(); ctx.moveTo(X(m.x), Y(m.y) - s); ctx.lineTo(X(m.x) + s, Y(m.y) - s * 0.65); ctx.lineTo(X(m.x), Y(m.y) - s * 0.3); ctx.fill();
+  }
+  // bola
+  if (st.puck) {
+    ctx.fillStyle = css('--orange'); ctx.strokeStyle = '#000'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(X(st.puck.x), Y(st.puck.y), Math.max(4, (st.puck.r || 0.0214) * k), 0, 7); ctx.fill(); ctx.stroke();
+  }
+  // robôs
+  const R = ROBOT_R * k;
+  for (const r of st.robots) {
+    const e = equipe(jogo, r.id, n), cx = X(r.x), cy = Y(r.y);
+    ctx.globalAlpha = r.held ? 0.45 : 1;
+    ctx.fillStyle = cor[e]; ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.fill();
+    ctx.strokeStyle = '#fff'; ctx.lineWidth = Math.max(1.5, R * 0.14);
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + Math.cos(r.yaw) * R, cy - Math.sin(r.yaw) * R); ctx.stroke();
+    ctx.globalAlpha = 1;
+    if (r.held) { ctx.strokeStyle = css('--muted'); ctx.setLineDash([4, 3]); ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(cx, cy, R * 1.45, 0, 7); ctx.stroke(); ctx.setLineDash([]); }
+    if (st.carrying && st.carrying[r.id]) { ctx.strokeStyle = cor[1 - e]; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(cx, cy, R * 1.3, 0, 7); ctx.stroke(); }
+    if ($('ids').checked) { ctx.fillStyle = css('--fg'); ctx.font = `${Math.max(10, R * 0.9)}px system-ui`;
+      ctx.textAlign = 'center'; ctx.fillText(r.id, cx, cy - R * 1.5); }
+  }
+
+  // placar e textos
+  const m = st.match || {};
+  $('placar').textContent = (m.score || ['–', '–']).join(' : ');
+  $('relogio').textContent = `${m.phase || ''} · relógio ${m.clock != null ? m.clock.toFixed(1) : '?'} s${m.duration ? ' / ' + m.duration : ''}`;
+  $('msg').textContent = st.message || '';
+  $('tempo').textContent = fmt(S.t) + ' / ' + fmt(S.rep.dur);
+  $('barra').value = S.t.toFixed(2);
+}
+
+// ---------------- controles ----------------
+function atualizarPlay() { $('play').textContent = S.playing ? '❚❚ pausa' : '▶ play'; }
+$('play').onclick = () => { if (!S.rep) return; if (S.t >= S.rep.dur) S.t = 0; S.playing = !S.playing; S.last = null; atualizarPlay(); };
+$('barra').oninput = e => { S.t = +e.target.value; desenhar(); };
+$('vel').onchange = e => { S.vel = +e.target.value; };
+$('rastro').onchange = desenhar; $('ids').onchange = desenhar;
+function passo(d) { if (!S.rep) return; const i = Math.min(S.rep.A.length - 1, Math.max(0, estado(S.t).i + d)); S.t = S.rep.A[i].T; desenhar(); }
+$('voltar').onclick = () => passo(-1); $('avancar').onclick = () => passo(1);
+document.addEventListener('keydown', e => {
+  if (!S.rep || e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT' && e.target.type === 'text') return;
+  if (e.key === ' ') { e.preventDefault(); $('play').click(); }
+  else if (e.key === 'ArrowRight') { S.t = Math.min(S.rep.dur, S.t + 2); desenhar(); }
+  else if (e.key === 'ArrowLeft') { S.t = Math.max(0, S.t - 2); desenhar(); }
+  else if (e.key === '.') passo(1);
+  else if (e.key === ',') passo(-1);
+});
+function loop(ts) {
+  if (S.playing && S.rep) {
+    if (S.last != null) S.t += (ts - S.last) / 1000 * S.vel;
+    if (S.t >= S.rep.dur) { S.t = S.rep.dur; S.playing = false; atualizarPlay(); }
+    desenhar();
+  }
+  S.last = S.playing ? ts : null;
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+(async () => {
+  ajustarCanvas();
+  await carregarLista();
+  // #jogo/id ou #jogo/id/segundos (abre já naquele instante)
+  const h = location.hash.slice(1).split('/');
+  if (h.length >= 2 && h[0] && +h[1]) { await abrir(h[0], +h[1]); if (h[2]) { S.t = Math.min(+h[2], S.rep.dur); desenhar(); } }
+})();
+</script>
+</body>
+</html>

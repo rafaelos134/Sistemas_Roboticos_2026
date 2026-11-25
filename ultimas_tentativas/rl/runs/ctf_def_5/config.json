@@ -1,0 +1,92 @@
+{
+  "args": {
+    "role": "def",
+    "envs": 2048,
+    "iters": 800,
+    "name": "ctf_def_5",
+    "seed": 0,
+    "init": "runs/ctf_def_4/best.pt",
+    "init_std": 0.4,
+    "att_pool": [
+      "runs/ctf_att_1/model.pt",
+      "runs/ctf_att_2/model.pt",
+      "runs/ctf_att_3/model.pt",
+      "runs/ctf_att_4/model.pt",
+      "runs/ctf_att_5/model.pt"
+    ],
+    "def_pool": [
+      "runs/ctf_def_1/model.pt",
+      "runs/ctf_def_2/model.pt",
+      "runs/ctf_def_3/model.pt",
+      "runs/ctf_def_4/best.pt"
+    ],
+    "main_mix": "{\"script\":0.5,\"latest\":0.25,\"pool\":0.15,\"stopped\":0.1}",
+    "other_mix": "{\"latest\":0.35,\"script\":0.35,\"stopped\":0.3}",
+    "easy": 0.4,
+    "episode_s": 30.0,
+    "ent": 0.005,
+    "att_styles": "[0.4,0.2,0.2,0.2]",
+    "def_styles": "[0.3,0.2,0.2,0.15,0.15]",
+    "strong": 0.5,
+    "dr_speed": 0.1,
+    "dr_delay": 0.3,
+    "obs_noise": 0.004,
+    "yaw_noise": 0.03,
+    "save_every": 100
+  },
+  "mode": "defend",
+  "main_mix": {
+    "script": 0.5,
+    "latest": 0.25,
+    "pool": 0.15,
+    "stopped": 0.1
+  },
+  "other_mix": {
+    "latest": 0.35,
+    "script": 0.35,
+    "stopped": 0.3
+  },
+  "ppo": {
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "gamma": 0.995,
+    "lam": 0.95,
+    "clip": 0.2,
+    "lr": 0.0003,
+    "ent_coef": 0.005,
+    "vf_coef": 1.0,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.02
+  },
+  "hidden": [
+    128,
+    128
+  ],
+  "reward": {
+    "conceded": -10.0,
+    "score": 2.0,
+    "tag": 2.0,
+    "tag_carrier": 3.0,
+    "enemy_pickup": -3.0,
+    "tagged": -2.0,
+    "enemy_half": -0.01,
+    "shape_guard": 1.0,
+    "guard_d": 0.1
+  },
+  "control_dt": 0.05,
+  "obs_dim": 38,
+  "att_pool": [
+    "ctf_att_1",
+    "ctf_att_2",
+    "ctf_att_3",
+    "ctf_att_4",
+    "ctf_att_5"
+  ],
+  "def_pool": [
+    "ctf_def_1",
+    "ctf_def_2",
+    "ctf_def_3",
+    "ctf_def_4"
+  ]
+}

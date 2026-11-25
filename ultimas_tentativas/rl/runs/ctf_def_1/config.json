@@ -1,0 +1,64 @@
+{
+  "args": {
+    "role": "def",
+    "envs": 2048,
+    "iters": 400,
+    "name": "ctf_def_1",
+    "seed": 0,
+    "init": null,
+    "init_std": 0.4,
+    "att_pool": [
+      "runs/ctf_att_1/model.pt"
+    ],
+    "def_pool": [],
+    "main_mix": null,
+    "other_mix": null,
+    "easy": 0.4,
+    "episode_s": 30.0,
+    "ent": 0.005
+  },
+  "mode": "defend",
+  "main_mix": {
+    "latest": 0.7,
+    "script": 0.25,
+    "stopped": 0.05
+  },
+  "other_mix": {
+    "latest": 0.5,
+    "script": 0.5
+  },
+  "ppo": {
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "gamma": 0.995,
+    "lam": 0.95,
+    "clip": 0.2,
+    "lr": 0.0003,
+    "ent_coef": 0.005,
+    "vf_coef": 1.0,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.02
+  },
+  "hidden": [
+    128,
+    128
+  ],
+  "reward": {
+    "conceded": -10.0,
+    "score": 2.0,
+    "tag": 2.0,
+    "tag_carrier": 3.0,
+    "enemy_pickup": -3.0,
+    "tagged": -2.0,
+    "enemy_half": -0.01,
+    "shape_guard": 1.0,
+    "guard_d": 0.1
+  },
+  "control_dt": 0.05,
+  "obs_dim": 38,
+  "att_pool": [
+    "ctf_att_1"
+  ],
+  "def_pool": []
+}

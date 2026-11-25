@@ -1,0 +1,133 @@
+partida,data,fase,azul,vermelho,placar_azul,placar_vermelho,amostras,arquivo
+639,2026-11-25 09:29,liga,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,1567,partidas/639.jsonl.gz
+640,2026-11-25 09:33,liga,Grupo 2 · RTech Tabajara,Grupo 7 · Tech,0,4,1690,partidas/640.jsonl.gz
+641,2026-11-25 09:37,liga,Claude (agente da disciplina),Grupo 1 · TuoLing,0,0,1713,partidas/641.jsonl.gz
+642,2026-11-25 09:42,liga,Grupo 3 · Nyx,Grupo 6 · SoLaDaBot,0,0,1722,partidas/642.jsonl.gz
+643,2026-11-25 09:46,liga,Grupo 5 · Corsa,Grupo 7 · Tech,0,0,1672,partidas/643.jsonl.gz
+644,2026-11-25 09:50,liga,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,1714,partidas/644.jsonl.gz
+645,2026-11-25 09:54,liga,Grupo 3 · Nyx,Claude (agente da disciplina),0,6,1687,partidas/645.jsonl.gz
+646,2026-11-25 09:58,liga,Grupo 1 · TuoLing,Grupo 7 · Tech,0,1,1705,partidas/646.jsonl.gz
+647,2026-11-25 10:03,,?,?,2,0,1685,partidas/647.jsonl.gz
+648,2026-11-25 10:07,,?,?,0,0,1684,partidas/648.jsonl.gz
+649,2026-11-25 10:11,liga,Claude (agente da disciplina),Grupo 7 · Tech,0,0,1712,partidas/649.jsonl.gz
+650,2026-11-25 10:15,liga,Grupo 2 · RTech Tabajara,Grupo 3 · Nyx,5,0,1710,partidas/650.jsonl.gz
+651,2026-11-25 10:19,liga,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,1680,partidas/651.jsonl.gz
+652,2026-11-25 10:23,liga,Grupo 5 · Corsa,Grupo 6 · SoLaDaBot,3,0,1688,partidas/652.jsonl.gz
+653,2026-11-25 10:28,liga,Grupo 2 · RTech Tabajara,Claude (agente da disciplina),0,3,1717,partidas/653.jsonl.gz
+654,2026-11-25 10:32,liga,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,1711,partidas/654.jsonl.gz
+655,2026-11-25 10:36,liga,Grupo 5 · Corsa,Grupo 3 · Nyx,2,0,1688,partidas/655.jsonl.gz
+656,2026-11-25 10:40,liga,Grupo 1 · TuoLing,Grupo 6 · SoLaDaBot,1,0,1716,partidas/656.jsonl.gz
+657,2026-11-25 10:44,liga,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,1664,partidas/657.jsonl.gz
+658,2026-11-25 10:48,liga,Grupo 5 · Corsa,Grupo 2 · RTech Tabajara,1,0,1709,partidas/658.jsonl.gz
+659,2026-11-25 10:53,liga,Grupo 7 · Tech,Grupo 6 · SoLaDaBot,2,0,1678,partidas/659.jsonl.gz
+660,2026-11-25 10:57,liga,Grupo 1 · TuoLing,Grupo 3 · Nyx,5,0,1718,partidas/660.jsonl.gz
+661,2026-11-25 11:01,liga,Grupo 5 · Corsa,Claude (agente da disciplina),0,0,1716,partidas/661.jsonl.gz
+662,2026-11-25 11:05,liga,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,1,0,1718,partidas/662.jsonl.gz
+663,2026-11-25 11:09,liga,Grupo 1 · TuoLing,Grupo 2 · RTech Tabajara,3,0,1688,partidas/663.jsonl.gz
+664,2026-11-25 11:13,liga,Grupo 7 · Tech,Grupo 3 · Nyx,4,0,1695,partidas/664.jsonl.gz
+665,2026-11-25 11:18,liga,Claude (agente da disciplina),Grupo 6 · SoLaDaBot,4,0,1686,partidas/665.jsonl.gz
+666,2026-11-25 11:22,liga,Grupo 1 · TuoLing,Grupo 5 · Corsa,0,4,1676,partidas/666.jsonl.gz
+667,2026-11-25 11:26,liga,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,1690,partidas/667.jsonl.gz
+668,2026-11-25 11:30,liga,Grupo 7 · Tech,Grupo 2 · RTech Tabajara,5,0,1703,partidas/668.jsonl.gz
+669,2026-11-25 11:34,liga,Grupo 1 · TuoLing,Claude (agente da disciplina),0,0,1706,partidas/669.jsonl.gz
+670,2026-11-25 11:39,liga,Grupo 6 · SoLaDaBot,Grupo 3 · Nyx,0,0,1692,partidas/670.jsonl.gz
+671,2026-11-25 11:43,liga,Grupo 7 · Tech,Grupo 5 · Corsa,0,0,1709,partidas/671.jsonl.gz
+672,2026-11-25 11:47,liga,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,1698,partidas/672.jsonl.gz
+673,2026-11-25 11:51,liga,Claude (agente da disciplina),Grupo 3 · Nyx,6,0,1707,partidas/673.jsonl.gz
+674,2026-11-25 11:55,liga,Grupo 7 · Tech,Grupo 1 · TuoLing,1,0,1626,partidas/674.jsonl.gz
+675,2026-11-25 11:59,liga,Grupo 6 · SoLaDaBot,Grupo 2 · RTech Tabajara,0,0,1602,partidas/675.jsonl.gz
+676,2026-11-25 12:04,liga,Grupo 4 · R2D2,Grupo 5 · Corsa,0,0,1712,partidas/676.jsonl.gz
+677,2026-11-25 12:08,liga,Grupo 7 · Tech,Claude (agente da disciplina),0,0,1705,partidas/677.jsonl.gz
+678,2026-11-25 12:12,liga,Grupo 3 · Nyx,Grupo 2 · RTech Tabajara,0,5,1715,partidas/678.jsonl.gz
+679,2026-11-25 12:16,liga,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,1715,partidas/679.jsonl.gz
+680,2026-11-25 12:20,liga,Grupo 6 · SoLaDaBot,Grupo 5 · Corsa,0,3,1713,partidas/680.jsonl.gz
+681,2026-11-25 12:24,liga,Claude (agente da disciplina),Grupo 2 · RTech Tabajara,6,0,1710,partidas/681.jsonl.gz
+682,2026-11-25 12:29,liga,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,1679,partidas/682.jsonl.gz
+683,2026-11-25 12:33,liga,Grupo 3 · Nyx,Grupo 5 · Corsa,0,2,1710,partidas/683.jsonl.gz
+684,2026-11-25 12:37,liga,Grupo 6 · SoLaDaBot,Grupo 1 · TuoLing,0,1,1706,partidas/684.jsonl.gz
+685,2026-11-25 12:41,liga,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,1688,partidas/685.jsonl.gz
+686,2026-11-25 12:45,liga,Grupo 2 · RTech Tabajara,Grupo 5 · Corsa,0,1,1684,partidas/686.jsonl.gz
+687,2026-11-25 12:50,liga,Grupo 6 · SoLaDaBot,Grupo 7 · Tech,0,5,1678,partidas/687.jsonl.gz
+688,2026-11-25 12:54,liga,Grupo 3 · Nyx,Grupo 1 · TuoLing,0,4,1717,partidas/688.jsonl.gz
+689,2026-11-25 12:58,liga,Claude (agente da disciplina),Grupo 5 · Corsa,0,0,1677,partidas/689.jsonl.gz
+690,2026-11-25 13:02,liga,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,1690,partidas/690.jsonl.gz
+691,2026-11-25 13:06,liga,Grupo 2 · RTech Tabajara,Grupo 1 · TuoLing,0,1,1699,partidas/691.jsonl.gz
+692,2026-11-25 13:10,liga,Grupo 3 · Nyx,Grupo 7 · Tech,0,6,1710,partidas/692.jsonl.gz
+693,2026-11-25 13:15,liga,Grupo 6 · SoLaDaBot,Claude (agente da disciplina),0,4,1695,partidas/693.jsonl.gz
+694,2026-11-25 13:19,liga,Grupo 5 · Corsa,Grupo 1 · TuoLing,3,0,1707,partidas/694.jsonl.gz
+695,2026-11-25 13:23,liga,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,1702,partidas/695.jsonl.gz
+696,2026-11-25 13:27,liga,Grupo 2 · RTech Tabajara,Grupo 7 · Tech,0,3,1706,partidas/696.jsonl.gz
+697,2026-11-25 13:31,liga,Claude (agente da disciplina),Grupo 1 · TuoLing,0,0,1689,partidas/697.jsonl.gz
+698,2026-11-25 13:35,liga,Grupo 3 · Nyx,Grupo 6 · SoLaDaBot,0,0,1702,partidas/698.jsonl.gz
+699,2026-11-25 13:40,liga,Grupo 5 · Corsa,Grupo 7 · Tech,0,0,1669,partidas/699.jsonl.gz
+700,2026-11-25 13:44,liga,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,1709,partidas/700.jsonl.gz
+701,2026-11-25 13:48,liga,Grupo 3 · Nyx,Claude (agente da disciplina),0,6,1691,partidas/701.jsonl.gz
+702,2026-11-25 13:52,liga,Grupo 1 · TuoLing,Grupo 7 · Tech,0,3,1698,partidas/702.jsonl.gz
+703,2026-11-25 13:56,,?,?,0,0,1683,partidas/703.jsonl.gz
+704,2026-11-25 14:01,,?,?,0,0,1706,partidas/704.jsonl.gz
+705,2026-11-25 14:05,liga,Claude (agente da disciplina),Grupo 7 · Tech,0,0,1700,partidas/705.jsonl.gz
+706,2026-11-25 14:09,liga,Grupo 2 · RTech Tabajara,Grupo 3 · Nyx,2,0,1661,partidas/706.jsonl.gz
+707,2026-11-25 14:13,liga,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,1684,partidas/707.jsonl.gz
+708,2026-11-25 14:17,liga,Grupo 5 · Corsa,Grupo 6 · SoLaDaBot,0,0,1708,partidas/708.jsonl.gz
+709,2026-11-25 14:21,liga,Grupo 2 · RTech Tabajara,Claude (agente da disciplina),0,4,1692,partidas/709.jsonl.gz
+710,2026-11-25 14:26,liga,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,1702,partidas/710.jsonl.gz
+711,2026-11-25 14:30,liga,Grupo 5 · Corsa,Grupo 3 · Nyx,5,0,1693,partidas/711.jsonl.gz
+712,2026-11-25 14:34,liga,Grupo 1 · TuoLing,Grupo 6 · SoLaDaBot,5,0,1704,partidas/712.jsonl.gz
+713,2026-11-25 14:38,liga,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,1683,partidas/713.jsonl.gz
+714,2026-11-25 14:42,liga,Grupo 5 · Corsa,Grupo 2 · RTech Tabajara,4,0,1701,partidas/714.jsonl.gz
+715,2026-11-25 14:47,liga,Grupo 7 · Tech,Grupo 6 · SoLaDaBot,5,0,1681,partidas/715.jsonl.gz
+716,2026-11-25 14:51,liga,Grupo 1 · TuoLing,Grupo 3 · Nyx,2,0,1699,partidas/716.jsonl.gz
+717,2026-11-25 14:55,liga,Grupo 5 · Corsa,Claude (agente da disciplina),0,0,1706,partidas/717.jsonl.gz
+718,2026-11-25 14:59,liga,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,1,0,1682,partidas/718.jsonl.gz
+719,2026-11-25 15:03,liga,Grupo 1 · TuoLing,Grupo 2 · RTech Tabajara,0,0,1707,partidas/719.jsonl.gz
+720,2026-11-25 15:07,liga,Grupo 7 · Tech,Grupo 3 · Nyx,6,0,1713,partidas/720.jsonl.gz
+721,2026-11-25 15:12,liga,Claude (agente da disciplina),Grupo 6 · SoLaDaBot,5,0,1729,partidas/721.jsonl.gz
+722,2026-11-25 15:16,liga,Grupo 1 · TuoLing,Grupo 5 · Corsa,0,0,1705,partidas/722.jsonl.gz
+723,2026-11-25 15:20,liga,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,1711,partidas/723.jsonl.gz
+724,2026-11-25 15:24,liga,Grupo 7 · Tech,Grupo 2 · RTech Tabajara,2,1,1700,partidas/724.jsonl.gz
+725,2026-11-25 15:28,liga,Grupo 1 · TuoLing,Claude (agente da disciplina),0,0,1676,partidas/725.jsonl.gz
+726,2026-11-25 15:33,liga,Grupo 6 · SoLaDaBot,Grupo 3 · Nyx,0,0,1677,partidas/726.jsonl.gz
+727,2026-11-25 15:37,liga,Grupo 7 · Tech,Grupo 5 · Corsa,0,4,1693,partidas/727.jsonl.gz
+728,2026-11-25 15:41,liga,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,3,1714,partidas/728.jsonl.gz
+729,2026-11-25 15:45,liga,Claude (agente da disciplina),Grupo 3 · Nyx,6,0,1691,partidas/729.jsonl.gz
+730,2026-11-25 15:49,liga,Grupo 7 · Tech,Grupo 1 · TuoLing,2,0,1694,partidas/730.jsonl.gz
+731,2026-11-25 15:53,liga,Grupo 6 · SoLaDaBot,Grupo 2 · RTech Tabajara,0,1,1713,partidas/731.jsonl.gz
+732,2026-11-25 15:58,,?,?,0,1,1701,partidas/732.jsonl.gz
+733,2026-11-25 16:02,liga,Grupo 7 · Tech,Claude (agente da disciplina),0,0,1730,partidas/733.jsonl.gz
+734,2026-11-25 16:06,liga,Grupo 3 · Nyx,Grupo 2 · RTech Tabajara,0,2,1711,partidas/734.jsonl.gz
+735,2026-11-25 16:10,liga,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,1703,partidas/735.jsonl.gz
+736,2026-11-25 16:14,liga,Grupo 6 · SoLaDaBot,Grupo 5 · Corsa,0,1,1701,partidas/736.jsonl.gz
+737,2026-11-25 16:18,liga,Claude (agente da disciplina),Grupo 2 · RTech Tabajara,1,0,1703,partidas/737.jsonl.gz
+738,2026-11-25 16:23,liga,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,1713,partidas/738.jsonl.gz
+739,2026-11-25 16:27,liga,Grupo 3 · Nyx,Grupo 5 · Corsa,0,0,1668,partidas/739.jsonl.gz
+740,2026-11-25 16:31,liga,Grupo 6 · SoLaDaBot,Grupo 1 · TuoLing,0,1,1714,partidas/740.jsonl.gz
+741,2026-11-25 16:35,liga,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,1683,partidas/741.jsonl.gz
+742,2026-11-25 16:39,liga,Grupo 2 · RTech Tabajara,Grupo 5 · Corsa,0,1,1698,partidas/742.jsonl.gz
+743,2026-11-25 16:44,liga,Grupo 6 · SoLaDaBot,Grupo 7 · Tech,0,1,1706,partidas/743.jsonl.gz
+744,2026-11-25 16:48,liga,Grupo 3 · Nyx,Grupo 1 · TuoLing,0,1,1704,partidas/744.jsonl.gz
+745,2026-11-25 16:52,liga,Claude (agente da disciplina),Grupo 5 · Corsa,0,0,1702,partidas/745.jsonl.gz
+746,2026-11-25 16:56,liga,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,1,1692,partidas/746.jsonl.gz
+747,2026-11-25 17:00,liga,Grupo 2 · RTech Tabajara,Grupo 1 · TuoLing,0,0,1691,partidas/747.jsonl.gz
+748,2026-11-25 17:04,liga,Grupo 3 · Nyx,Grupo 7 · Tech,0,6,1708,partidas/748.jsonl.gz
+749,2026-11-25 17:09,liga,Grupo 6 · SoLaDaBot,Claude (agente da disciplina),0,4,1696,partidas/749.jsonl.gz
+750,2026-11-25 17:13,liga,Grupo 5 · Corsa,Grupo 1 · TuoLing,1,0,1688,partidas/750.jsonl.gz
+751,2026-11-25 17:17,liga,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,1691,partidas/751.jsonl.gz
+752,2026-11-25 17:21,liga,Grupo 2 · RTech Tabajara,Grupo 7 · Tech,1,0,1714,partidas/752.jsonl.gz
+753,2026-11-25 17:25,liga,Claude (agente da disciplina),Grupo 1 · TuoLing,0,0,1686,partidas/753.jsonl.gz
+754,2026-11-25 17:30,liga,Grupo 3 · Nyx,Grupo 6 · SoLaDaBot,0,0,1691,partidas/754.jsonl.gz
+755,2026-11-25 17:34,liga,Grupo 5 · Corsa,Grupo 7 · Tech,3,0,1704,partidas/755.jsonl.gz
+756,2026-11-25 17:38,liga,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,1,0,1709,partidas/756.jsonl.gz
+757,2026-11-25 17:42,liga,Grupo 3 · Nyx,Claude (agente da disciplina),0,6,1705,partidas/757.jsonl.gz
+758,2026-11-25 17:46,,?,?,0,0,1693,partidas/758.jsonl.gz
+759,2026-11-25 17:50,,?,?,4,0,1692,partidas/759.jsonl.gz
+760,2026-11-25 17:55,,?,?,1,0,1692,partidas/760.jsonl.gz
+761,2026-11-25 17:59,liga,Claude (agente da disciplina),Grupo 7 · Tech,0,0,1717,partidas/761.jsonl.gz
+762,2026-11-25 18:03,liga,Grupo 2 · RTech Tabajara,Grupo 3 · Nyx,0,0,1710,partidas/762.jsonl.gz
+763,2026-11-25 18:07,liga,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,1707,partidas/763.jsonl.gz
+764,2026-11-25 18:11,liga,Grupo 5 · Corsa,Grupo 6 · SoLaDaBot,5,0,1708,partidas/764.jsonl.gz
+765,2026-11-25 18:15,liga,Grupo 2 · RTech Tabajara,Claude (agente da disciplina),0,0,1688,partidas/765.jsonl.gz
+766,2026-11-25 18:20,liga,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,1709,partidas/766.jsonl.gz
+767,2026-11-25 18:24,liga,Grupo 5 · Corsa,Grupo 3 · Nyx,0,0,1681,partidas/767.jsonl.gz
+768,2026-11-25 18:28,liga,Grupo 1 · TuoLing,Grupo 6 · SoLaDaBot,2,0,1700,partidas/768.jsonl.gz
+769,2026-11-25 18:32,,?,?,0,0,1693,partidas/769.jsonl.gz
+770,2026-11-25 18:36,,?,?,1,0,1697,partidas/770.jsonl.gz

@@ -1,0 +1,50 @@
+[
+ {
+  "id": "prof",
+  "nome": "Claude (agente da disciplina)",
+  "curto": "Claude",
+  "cor": null
+ },
+ {
+  "id": "g1",
+  "nome": "Grupo 3 · Nyx",
+  "curto": "Nyx",
+  "cor": null
+ },
+ {
+  "id": "g2",
+  "nome": "Grupo 1 · TuoLing",
+  "curto": "TuoLing",
+  "cor": null
+ },
+ {
+  "id": "g3",
+  "nome": "Grupo 6 · SoLaDaBot",
+  "curto": "SoLaDaBot",
+  "cor": null
+ },
+ {
+  "id": "g4",
+  "nome": "Grupo 5 · Corsa",
+  "curto": "Corsa",
+  "cor": null
+ },
+ {
+  "id": "g5",
+  "nome": "Grupo 4 · R2D2",
+  "curto": "R2D2",
+  "cor": null
+ },
+ {
+  "id": "g6",
+  "nome": "Grupo 2 · RTech Tabajara",
+  "curto": "RTech Tabajara",
+  "cor": null
+ },
+ {
+  "id": "g7",
+  "nome": "Grupo 7 · Tech",
+  "curto": "Tech",
+  "cor": null
+ }
+]

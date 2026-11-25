@@ -1,0 +1,53 @@
+{
+  "args": {
+    "stage": "D",
+    "envs": 1024,
+    "iters": 800,
+    "name": "soccer_def",
+    "seed": 0,
+    "init": null,
+    "init_std": 0.35,
+    "attacker": "runs/soccer_att_a3/model.pt",
+    "snapshot_every": 100,
+    "ent": null
+  },
+  "stage": {
+    "mode": "defend",
+    "red": {
+      "latest": 0.85,
+      "script": 0.15
+    },
+    "keeper": "stopped"
+  },
+  "ppo": {
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "clip": 0.2,
+    "lr": 0.0003,
+    "ent_coef": 0.005,
+    "vf_coef": 1.0,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.02
+  },
+  "hidden": [
+    128,
+    128
+  ],
+  "reward": {
+    "conceded": -10.0,
+    "scored": 0.0,
+    "clear": 0.5,
+    "clear_speed": 0.15,
+    "leave_zone": -0.05,
+    "zone_x": -0.3,
+    "shape_ball": 2.0,
+    "shape_guard": 1.0,
+    "stall_own_half": -0.05
+  },
+  "control_dt": 0.05,
+  "max_steps": 1200,
+  "obs_dim": 28
+}

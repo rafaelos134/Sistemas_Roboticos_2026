@@ -1,0 +1,12 @@
+MALHA ABERTA (erro médio do comando, unidades de V_MAX/W_MAX):
+  attacker  n= 47473  MAE 0.518   (prever a média: 0.341)
+  defender  n= 52719  MAE 0.120   (prever a média: 0.253)
+  attacker  só quando o real se mexe: n= 30880  MAE 0.472
+  defender  só quando o real se mexe: n= 32631  MAE 0.125
+     atacante campo próprio      n= 19672  erro lin 0.402  ang 0.577
+     atacante indo (x<0.45)      n=  7321  erro lin 0.384  ang 0.515
+     atacante perto da bandeira  n= 18918  erro lin 0.480  ang 0.700
+     atacante com bandeira       n=  1562  erro lin 0.216  ang 0.432
+MALHA FECHADA no psr_sim contra ctf_hibrido_v4
+  {"defensor_na_base": 0.9013032243568139, "atacante_dist_defensor_p1_p5_p50": [0.101, 0.106, 0.194], "esperas_por_partida": 8.25, "placares_nyx_x_contra": [[0, 0], [0, 0], [0, 0], [0, 0]]}
+  real (gravações): defensor_na_base 0.63, atacante_dist_defensor p1/p5/p50 = 0.108/0.126/0.140, esperas ~1,7 por partida

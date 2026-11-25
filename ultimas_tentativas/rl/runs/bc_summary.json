@@ -1,0 +1,250 @@
+{
+ "Claude (agente da disciplina)|att": {
+  "path": "runs/bc_claude_agente_da_disciplina_att/model.pt",
+  "n_train": 14422,
+  "n_val": 1814,
+  "mae_train": 0.09321145713329315,
+  "mae_val": 0.10783416777849197,
+  "mae_const": 0.3759925365447998,
+  "sign_val": 0.8869901299476624,
+  "val_matches": [
+   685,
+   697,
+   709
+  ]
+ },
+ "Claude (agente da disciplina)|def": {
+  "path": "runs/bc_claude_agente_da_disciplina_def/model.pt",
+  "n_train": 31949,
+  "n_val": 4781,
+  "mae_train": 0.04251745715737343,
+  "mae_val": 0.03424029424786568,
+  "mae_const": 0.09872699528932571,
+  "sign_val": 0.6603221297264099,
+  "val_matches": [
+   685,
+   697,
+   709
+  ]
+ },
+ "Grupo 1 · TuoLing|att": {
+  "path": "runs/bc_grupo_1_tuoling_att/model.pt",
+  "n_train": 12824,
+  "n_val": 1926,
+  "mae_train": 0.12048405408859253,
+  "mae_val": 0.07027225941419601,
+  "mae_const": 0.35512107610702515,
+  "sign_val": 0.8904465436935425,
+  "val_matches": [
+   688,
+   697,
+   712
+  ]
+ },
+ "Grupo 1 · TuoLing|def": {
+  "path": "runs/bc_grupo_1_tuoling_def/model.pt",
+  "n_train": 31931,
+  "n_val": 4802,
+  "mae_train": 0.21404249966144562,
+  "mae_val": 0.22360332310199738,
+  "mae_const": 0.47156646847724915,
+  "sign_val": 0.7673885822296143,
+  "val_matches": [
+   688,
+   697,
+   712
+  ]
+ },
+ "Grupo 2 · RTech Tabajara|att": {
+  "path": "runs/bc_grupo_2_rtech_tabajara_att/model.pt",
+  "n_train": 11883,
+  "n_val": 2833,
+  "mae_train": 0.10176274925470352,
+  "mae_val": 0.20884889364242554,
+  "mae_const": 0.3860293924808502,
+  "sign_val": 0.8012707233428955,
+  "val_matches": [
+   686,
+   696,
+   714
+  ]
+ },
+ "Grupo 2 · RTech Tabajara|def": {
+  "path": "runs/bc_grupo_2_rtech_tabajara_def/model.pt",
+  "n_train": 30344,
+  "n_val": 4790,
+  "mae_train": 0.08794260770082474,
+  "mae_val": 0.08247671276330948,
+  "mae_const": 0.22732172906398773,
+  "sign_val": 0.8010438084602356,
+  "val_matches": [
+   686,
+   696,
+   714
+  ]
+ },
+ "Grupo 3 · Nyx|att": {
+  "path": "runs/bc_grupo_3_nyx_att/model.pt",
+  "n_train": 29164,
+  "n_val": 5885,
+  "mae_train": 0.10362064838409424,
+  "mae_val": 0.06504519283771515,
+  "mae_const": 0.28730854392051697,
+  "sign_val": 0.5230246186256409,
+  "val_matches": [
+   664,
+   683,
+   695,
+   706
+  ]
+ },
+ "Grupo 3 · Nyx|def": {
+  "path": "runs/bc_grupo_3_nyx_def/model.pt",
+  "n_train": 31852,
+  "n_val": 6373,
+  "mae_train": 0.0473376102745533,
+  "mae_val": 0.053431641310453415,
+  "mae_const": 0.26551178097724915,
+  "sign_val": 0.7898948788642883,
+  "val_matches": [
+   664,
+   683,
+   695,
+   706
+  ]
+ },
+ "Grupo 5 · Corsa|att": {
+  "path": "runs/bc_grupo_5_corsa_att/model.pt",
+  "n_train": 11271,
+  "n_val": 2596,
+  "mae_train": 0.09830384701490402,
+  "mae_val": 0.10676775127649307,
+  "mae_const": 0.4729953110218048,
+  "sign_val": 0.9383667707443237,
+  "val_matches": [
+   686,
+   694,
+   711
+  ]
+ },
+ "Grupo 5 · Corsa|def": {
+  "path": "runs/bc_grupo_5_corsa_def/model.pt",
+  "n_train": 27121,
+  "n_val": 4774,
+  "mae_train": 0.09645304083824158,
+  "mae_val": 0.139169842004776,
+  "mae_const": 0.3036813735961914,
+  "sign_val": 0.7878089547157288,
+  "val_matches": [
+   686,
+   694,
+   711
+  ]
+ },
+ "Grupo 6 · SoLaDaBot|att": {
+  "path": "runs/bc_grupo_6_soladabot_att/model.pt",
+  "n_train": 19936,
+  "n_val": 4212,
+  "mae_train": 0.11339700222015381,
+  "mae_val": 0.1259385347366333,
+  "mae_const": 0.35274529457092285,
+  "sign_val": 0.9560778737068176,
+  "val_matches": [
+   687,
+   693,
+   715
+  ]
+ },
+ "Grupo 6 · SoLaDaBot|def": {
+  "path": "runs/bc_grupo_6_soladabot_def/model.pt",
+  "n_train": 28704,
+  "n_val": 4736,
+  "mae_train": 0.11760295927524567,
+  "mae_val": 0.10831157863140106,
+  "mae_const": 0.25167301297187805,
+  "sign_val": 0.8929476737976074,
+  "val_matches": [
+   687,
+   693,
+   715
+  ]
+ },
+ "Grupo 7 · Tech|att": {
+  "path": "runs/bc_grupo_7_tech_att/model.pt",
+  "n_train": 15671,
+  "n_val": 2258,
+  "mae_train": 0.10942839831113815,
+  "mae_val": 0.07950802892446518,
+  "mae_const": 0.33815333247184753,
+  "sign_val": 0.903897225856781,
+  "val_matches": [
+   664,
+   682,
+   696,
+   705
+  ]
+ },
+ "Grupo 7 · Tech|def": {
+  "path": "runs/bc_grupo_7_tech_def/model.pt",
+  "n_train": 31820,
+  "n_val": 6389,
+  "mae_train": 0.0625748485326767,
+  "mae_val": 0.049179140478372574,
+  "mae_const": 0.17909608781337738,
+  "sign_val": 0.8400375843048096,
+  "val_matches": [
+   664,
+   682,
+   696,
+   705
+  ]
+ },
+ "todos|att": {
+  "path": "runs/bc_todos_att/model.pt",
+  "n_train": 116687,
+  "n_val": 20008,
+  "mae_train": 0.09403229504823685,
+  "mae_val": 0.08275493234395981,
+  "mae_const": 0.37049102783203125,
+  "sign_val": 0.8758496642112732,
+  "val_matches": [
+   640,
+   642,
+   645,
+   655,
+   662,
+   665,
+   681,
+   685,
+   690,
+   697,
+   708,
+   712,
+   723
+  ]
+ },
+ "todos|def": {
+  "path": "runs/bc_todos_def/model.pt",
+  "n_train": 215230,
+  "n_val": 35136,
+  "mae_train": 0.09669113159179688,
+  "mae_val": 0.09090902656316757,
+  "mae_const": 0.2421918362379074,
+  "sign_val": 0.7709187269210815,
+  "val_matches": [
+   640,
+   642,
+   645,
+   655,
+   662,
+   665,
+   681,
+   685,
+   690,
+   697,
+   708,
+   712,
+   723
+  ]
+ }
+}
