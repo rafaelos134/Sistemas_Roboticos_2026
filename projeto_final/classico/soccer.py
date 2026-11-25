@@ -138,6 +138,59 @@ def predict_ball(b, v, t):
     return x, y
 
 
+# --- telemetria para os logs do torneio ---------------------------------------
+# A cada TEL_PERIOD s (relógio do ROS) escreve no log uma linha "TEL {json}" com a
+# posição de todos os robôs, bola/bandeiras, estado do jogo e o comando enviado.
+# Mudanças de placar/estado do jogo saem na hora como "EVT {json}", e os parâmetros
+# do nó saem uma vez como "TELINIT {json}". Os logs aparecem em api/log do site
+# do torneio. Isso só gera log: o comportamento do robô continua igual.
+TIPO = "classico"
+TEL_PERIOD = 1.0  # s entre linhas TEL; 0 desliga (site guarda ~400 linhas)
+TEL_IGNORAR = ("field", "ring_radius", "base_x", "base_radius")  # constantes: não vão para o log
+TEL_RELOGIO = ("t", "time", "round_time", "held", "message")  # não disparam EVT (vêm junto de placar/tags)
+
+
+def _tel_r(p, n=3):
+    """Arredonda (x, y[, yaw, ...]) para caber no log; None continua None."""
+    if p is None:
+        return None
+    return [round(float(x), n) for x in p]
+
+
+class Telemetria:
+    def __init__(self, period=TEL_PERIOD):
+        self.period, self.last, self.ultimo_jogo, self.t0 = period, -1e9, None, None
+        self.init, self.eventos = None, True  # eventos=False: este nó não escreve EVT
+
+    @staticmethod
+    def _log(tag, campos):
+        try:
+            rospy.loginfo("%s %s", tag, json.dumps(campos, separators=(",", ":")))
+        except Exception as e:  # nunca derrubar o nó por causa do log
+            rospy.logwarn_throttle(10.0, "telemetria: %s" % e)
+
+    def inicio(self, eventos=True, **campos):
+        self.init, self.eventos = campos, eventos
+
+    def __call__(self, now, game=None, **campos):
+        if self.period <= 0:
+            return
+        if self.t0 is None:
+            self.t0 = now
+            if self.init is not None:
+                self._log("TELINIT", self.init)
+        t = round(now - self.t0, 2)  # s desde o início do nó
+        game = {k: v for k, v in (game or {}).items() if k not in TEL_IGNORAR}
+        chave = json.dumps({k: v for k, v in game.items() if k not in TEL_RELOGIO}, sort_keys=True)
+        if self.eventos and self.ultimo_jogo is not None and chave != self.ultimo_jogo:
+            self._log("EVT", dict(t=t, jogo=game))
+        self.ultimo_jogo = chave
+        if now - self.last < self.period:
+            return
+        self.last = now
+        self._log("TEL", dict(t=t, jogo=game, **campos))
+
+
 class Soccer:
     def __init__(self):
         rospy.init_node("soccer")
@@ -152,6 +205,9 @@ class Soccer:
         self.score = None
         self.now = 0.0
         self.init_state()
+        self.game = {}  # último /game/state (telemetria)
+        self.tel = Telemetria()
+        self.tel.inicio(jogo="soccer", tipo=TIPO, team=team, ids=self.ids, opp_ids=self.opp_ids)
 
         self.pubs = {i: rospy.Publisher("/hero_%d/cmd_vel" % i, Twist, queue_size=1) for i in self.ids}
         for i in range(6):
@@ -189,6 +245,7 @@ class Soccer:
     def on_state(self, msg):
         try:
             s = json.loads(msg.data)
+            self.game = s
             score = (s.get("blue"), s.get("red"))
         except (ValueError, AttributeError):
             return
@@ -526,6 +583,10 @@ class Soccer:
                     cmd = Twist()
                     cmd.linear.x, cmd.angular.z = v, w
                     self.pubs[i].publish(cmd)
+                self.tel(self.now, self.game, ball=_tel_r(tuple(self.ball) + tuple(self.ball_vel)),
+                         robots={i: _tel_r(self.poses[i]) for i in sorted(self.poses)},
+                         striker=self.striker,
+                         cmd={i: _tel_r(c) for i, c in zip(self.ids, cmds)})
             rate.sleep()
 
 
