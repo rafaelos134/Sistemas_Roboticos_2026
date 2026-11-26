@@ -7,7 +7,7 @@ Do not edit by hand: train again and export. Documentation: rl/docs/documentacao
 Same interface as the template kit/exercicios/sumo/sumo.py, plus the lidar and one parameter:
   parameters  ~robot (own id), ~opponent (opponent id),
               ~noise_level (-1 = estimated online; >= 0 fixes the noise level s of rl/sumo_fusion.py)
-  subscribes  /hero_<robot>/odom, /hero_<opponent>/odom, /hero_<robot>/scan, /game/state
+  subscribes  /hero_<robot>/odom, /hero_<opponent>/odom, /hero_<robot>/laser, /game/state
 
 Sensor fusion (rl/sumo_fusion.py): one EKF with both robots, state = pose + odometry drift of each. It
 predicts with the odometry twists, corrects with the odometry poses, with every lidar beam that hits the
@@ -581,7 +581,7 @@ class Sumo:
         self.pub = rospy.Publisher("/hero_%d/cmd_vel" % self.robot, Twist, queue_size=1)
         rospy.Subscriber("/hero_%d/odom" % self.robot, Odometry, self.on_me, queue_size=1)
         rospy.Subscriber("/hero_%d/odom" % self.opponent, Odometry, self.on_opp, queue_size=1)
-        rospy.Subscriber("/hero_%d/scan" % self.robot, LaserScan, self.on_scan, queue_size=1)
+        rospy.Subscriber("/hero_%d/laser" % self.robot, LaserScan, self.on_scan, queue_size=1)
         rospy.Subscriber("/game/state", String, self.on_game, queue_size=1)
 
     def on_scan(self, msg):
