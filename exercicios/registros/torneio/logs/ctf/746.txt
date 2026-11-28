@@ -1,0 +1,187 @@
+16:56:38 INFO  /ctf_3 hero_3 (defender): GUARD
+16:56:38 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:56:47 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:56:47 INFO  /ctf_2 hero_2 (attacker): HELD
+16:56:47 INFO  /ctf_3 hero_3 (defender): GUARD
+16:56:49 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:56:49 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:56:51 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:56:52 INFO  /ctf_3 hero_3 (defender): GUARD
+16:56:52 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:56:52 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:56:52 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:56:53 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:56:55 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:56:56 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:56:57 INFO  /ctf_3 hero_3 (defender): GUARD
+16:56:58 INFO  /ctf_2 hero_2 (attacker): HELD
+16:56:59 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:00 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:02 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:57:03 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:57:03 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:57:04 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:05 INFO  /ctf_2 hero_2 (attacker): HELD
+16:57:05 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:57:05 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:57:07 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:09 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:57:09 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:10 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:10 INFO  /ctf_2 hero_2 (attacker): RETURN forward
+16:57:12 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:12 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:57:13 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:57:13 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:20 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:21 INFO  /ctf_2 hero_2 (attacker): HELD
+16:57:21 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:23 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:23 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:57:25 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:57:25 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:26 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:57:26 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:57:26 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:57:27 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:29 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:57:30 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:57:31 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:32 INFO  /ctf_2 hero_2 (attacker): HELD
+16:57:33 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:34 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:36 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:57:37 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:57:37 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:57:38 INFO  /ctf_2 hero_2 (attacker): HELD
+16:57:38 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:38 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:57:39 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:57:41 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:42 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:57:43 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:44 INFO  /ctf_2 hero_2 (attacker): HELD
+16:57:44 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:48 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:57:49 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:49 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:57:49 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:57:49 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:57:51 INFO  /ctf_2 hero_2 (attacker): HELD
+16:57:51 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:57:51 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:53 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:54 INFO  /ctf_3 hero_3 (defender): GUARD
+16:57:55 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:57:56 INFO  /ctf_2 hero_2 (attacker): HELD
+16:57:59 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:57:59 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:58:00 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:01 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:01 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:02 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:58:03 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:03 INFO  /ctf_2 hero_2 (attacker): HELD
+16:58:05 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:07 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:08 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:09 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:58:09 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:58:09 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:09 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:58:11 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:13 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:58:13 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:14 INFO  /ctf_2 hero_2 (attacker): HELD
+16:58:15 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:18 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:19 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:19 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:19 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:58:20 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:58:21 INFO  /ctf_2 hero_2 (attacker): HELD
+16:58:22 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:23 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:25 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:25 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:26 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:26 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:58:26 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:58:29 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:30 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:58:30 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:58:32 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:32 INFO  /ctf_2 hero_2 (attacker): HELD
+16:58:34 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:35 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:36 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:37 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:38 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:58:39 INFO  /ctf_2 hero_2 (attacker): HELD
+16:58:40 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:40 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:58:42 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:43 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:44 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:44 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:44 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:58:44 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:58:45 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:45 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:49 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:50 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:58:53 INFO  /ctf_2 hero_2 (attacker): HELD
+16:58:55 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:58:55 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:58:57 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:58:57 INFO  /ctf_3 hero_3 (defender): GUARD
+16:58:58 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:58:58 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:58:58 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:58:59 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:01 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:02 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:59:04 INFO  /ctf_2 hero_2 (attacker): HELD
+16:59:05 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:05 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:59:08 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:08 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:59:09 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:59:09 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:59:09 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:10 INFO  /ctf_2 hero_2 (attacker): HELD
+16:59:11 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:14 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:59:15 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:15 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:59:16 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:59:16 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:59:16 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:59:18 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:20 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:20 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:59:21 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:21 INFO  /ctf_2 hero_2 (attacker): HELD
+16:59:25 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:59:26 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:26 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:59:26 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:59:27 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG
+16:59:28 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:28 INFO  /ctf_2 hero_2 (attacker): HELD
+16:59:30 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:31 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:32 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:59:33 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:59:33 INFO  /ctf_2 hero_2 (attacker): BAIT
+16:59:34 INFO  /ctf_2 hero_2 (attacker): HELD with flag
+16:59:36 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:36 INFO  /ctf_3 hero_3 (defender): HELD_NO_FLAG hero_0: push
+16:59:38 INFO  /ctf_2 hero_2 (attacker): RETURN reverse
+16:59:38 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:39 INFO  /ctf_2 hero_2 (attacker): HELD
+16:59:40 INFO  /ctf_3 hero_3 (defender): INTERCEPT hero_0
+16:59:42 INFO  /ctf_3 hero_3 (defender): GUARD
+16:59:43 INFO  /ctf_2 hero_2 (attacker): PREPARE
+16:59:44 INFO  /ctf_2 hero_2 (attacker): GRAB
+16:59:45 INFO  /ctf_2 hero_2 (attacker): GO_TO_FLAG

@@ -1,0 +1,400 @@
+00:12:03 INFO  /soccer_red EVT {"t":1795576323.99,"jogo":{"blue":0,"red":0,"t":173.04,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.04,"jogo":{"blue":0,"red":0,"t":173.08,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.09,"jogo":{"blue":0,"red":0,"t":173.12,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.14,"jogo":{"blue":0,"red":0,"t":173.2,"message":""}}
+00:12:04 INFO  /soccer_red TEL {"t":1795576324.14,"jogo":{"blue":0,"red":0,"t":173.2,"message":""},"ball":[0.024,0.579,0.002,-0.001],"robots":{"0":[-0.82,0.153,-1.571],"1":[-0.006,0.527,2.887],"2":[-0.179,-0.201,3.094],"3":[0.859,0.177,-1.571],"4":[0.243,0.438,-0.568],"5":[0.179,0.563,-1.096]},"striker":5,"cmd":{"3":[0.0,-0.0],"4":[0.0,-0.008],"5":[-0.078,4.0]}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.19,"jogo":{"blue":0,"red":0,"t":173.24,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.24,"jogo":{"blue":0,"red":0,"t":173.28,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.29,"jogo":{"blue":0,"red":0,"t":173.32,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.34,"jogo":{"blue":0,"red":0,"t":173.4,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.39,"jogo":{"blue":0,"red":0,"t":173.44,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.44,"jogo":{"blue":0,"red":0,"t":173.48,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.49,"jogo":{"blue":0,"red":0,"t":173.52,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.54,"jogo":{"blue":0,"red":0,"t":173.6,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.59,"jogo":{"blue":0,"red":0,"t":173.64,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.64,"jogo":{"blue":0,"red":0,"t":173.68,"message":""}}
+00:12:04 INFO  /soccer_red TEL {"t":1795576324.64,"jogo":{"blue":0,"red":0,"t":173.68,"message":""},"ball":[0.024,0.579,0.0,-0.0],"robots":{"0":[-0.82,0.153,-1.571],"1":[-0.022,0.525,3.077],"2":[-0.179,-0.201,3.094],"3":[0.859,0.177,-1.571],"4":[0.243,0.438,-0.57],"5":[0.179,0.563,-1.09]},"striker":5,"cmd":{"3":[0.0,-0.0],"4":[0.0,0.001],"5":[-0.079,4.0]}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.69,"jogo":{"blue":0,"red":0,"t":173.72,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.74,"jogo":{"blue":0,"red":0,"t":173.8,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.79,"jogo":{"blue":0,"red":0,"t":173.84,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.84,"jogo":{"blue":0,"red":0,"t":173.88,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.89,"jogo":{"blue":0,"red":0,"t":173.92,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.94,"jogo":{"blue":0,"red":0,"t":174.0,"message":""}}
+00:12:04 INFO  /soccer_red EVT {"t":1795576324.99,"jogo":{"blue":0,"red":0,"t":174.04,"message":""}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.04,"jogo":{"blue":0,"red":0,"t":174.08,"message":""}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.09,"jogo":{"blue":0,"red":0,"t":174.12,"message":""}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.14,"jogo":{"blue":0,"red":0,"t":174.2,"message":""}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.19,"jogo":{"blue":0,"red":0,"t":174.24,"message":""}}
+00:12:05 INFO  /soccer_red TEL {"t":1795576325.19,"jogo":{"blue":0,"red":0,"t":174.24,"message":""},"ball":[0.033,0.579,0.006,-0.0],"robots":{"0":[-0.82,0.153,-1.571],"1":[-0.022,0.527,2.97],"2":[-0.179,-0.201,3.094],"3":[0.859,0.177,-1.571],"4":[0.243,0.438,-0.581],"5":[0.178,0.563,-1.093]},"striker":5,"cmd":{"3":[0.0,-0.0],"4":[0.0,-0.035],"5":[-0.08,4.0]}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.24,"jogo":{"blue":0,"red":0,"t":174.28,"message":""}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.29,"jogo":{"blue":0,"red":0,"t":174.32,"message":""}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.34,"jogo":{"blue":0,"red":0,"t":174.4,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.39,"jogo":{"blue":0,"red":0,"t":174.44,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.44,"jogo":{"blue":0,"red":0,"t":174.48,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.49,"jogo":{"blue":0,"red":0,"t":174.52,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.54,"jogo":{"blue":0,"red":0,"t":174.56,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.59,"jogo":{"blue":0,"red":0,"t":174.64,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.64,"jogo":{"blue":0,"red":0,"t":174.68,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.69,"jogo":{"blue":0,"red":0,"t":174.72,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red TEL {"t":1795576325.69,"jogo":{"blue":0,"red":0,"t":174.72,"message":"Bola presa: reposta no ponto neutro"},"ball":[0.45,0.3,0.0,0.0],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.049,0.512,2.797],"2":[-0.137,-0.203,3.138],"3":[0.859,0.177,-1.571],"4":[0.275,0.424,-0.093],"5":[0.202,0.535,-0.666]},"striker":4,"cmd":{"3":[0.0,-0.0],"4":[0.199,0.337],"5":[0.2,0.213]}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.74,"jogo":{"blue":0,"red":0,"t":174.8,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.79,"jogo":{"blue":0,"red":0,"t":174.84,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.84,"jogo":{"blue":0,"red":0,"t":174.88,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.89,"jogo":{"blue":0,"red":0,"t":174.92,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.94,"jogo":{"blue":0,"red":0,"t":175.0,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:05 INFO  /soccer_red EVT {"t":1795576325.99,"jogo":{"blue":0,"red":0,"t":175.04,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.04,"jogo":{"blue":0,"red":0,"t":175.08,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.09,"jogo":{"blue":0,"red":0,"t":175.12,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.14,"jogo":{"blue":0,"red":0,"t":175.2,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.19,"jogo":{"blue":0,"red":0,"t":175.24,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.24,"jogo":{"blue":0,"red":0,"t":175.28,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red TEL {"t":1795576326.24,"jogo":{"blue":0,"red":0,"t":175.28,"message":"Bola presa: reposta no ponto neutro"},"ball":[0.45,0.3,0.0,0.0],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.152,0.469,2.702],"2":[-0.026,-0.202,-3.133],"3":[0.859,0.177,-1.571],"4":[0.385,0.421,-0.069],"5":[0.291,0.47,-0.703]},"striker":4,"cmd":{"3":[0.0,-0.0],"4":[0.2,-0.082],"5":[0.179,-1.634]}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.29,"jogo":{"blue":0,"red":0,"t":175.32,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.34,"jogo":{"blue":0,"red":0,"t":175.4,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.39,"jogo":{"blue":0,"red":0,"t":175.44,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.44,"jogo":{"blue":0,"red":0,"t":175.48,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.49,"jogo":{"blue":0,"red":0,"t":175.52,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.54,"jogo":{"blue":0,"red":0,"t":175.6,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.59,"jogo":{"blue":0,"red":0,"t":175.64,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.64,"jogo":{"blue":0,"red":0,"t":175.68,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.69,"jogo":{"blue":0,"red":0,"t":175.72,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.74,"jogo":{"blue":0,"red":0,"t":175.8,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.79,"jogo":{"blue":0,"red":0,"t":175.84,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red TEL {"t":1795576326.79,"jogo":{"blue":0,"red":0,"t":175.84,"message":"Bola presa: reposta no ponto neutro"},"ball":[0.45,0.3,0.0,0.0],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.253,0.42,2.616],"2":[0.086,-0.201,-3.133],"3":[0.859,0.177,-1.571],"4":[0.488,0.415,0.139],"5":[0.353,0.385,-0.928]},"striker":4,"cmd":{"3":[0.0,-0.0],"4":[0.154,-2.512],"5":[0.192,1.007]}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.84,"jogo":{"blue":0,"red":0,"t":175.88,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.89,"jogo":{"blue":0,"red":0,"t":175.92,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.94,"jogo":{"blue":0,"red":0,"t":176.0,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:06 INFO  /soccer_red EVT {"t":1795576326.99,"jogo":{"blue":0,"red":0,"t":176.04,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.04,"jogo":{"blue":0,"red":0,"t":176.08,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.09,"jogo":{"blue":0,"red":0,"t":176.12,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.14,"jogo":{"blue":0,"red":0,"t":176.2,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.19,"jogo":{"blue":0,"red":0,"t":176.24,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.24,"jogo":{"blue":0,"red":0,"t":176.28,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.29,"jogo":{"blue":0,"red":0,"t":176.32,"message":"Bola presa: reposta no ponto neutro"}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.34,"jogo":{"blue":0,"red":0,"t":176.36,"message":""}}
+00:12:07 INFO  /soccer_red TEL {"t":1795576327.34,"jogo":{"blue":0,"red":0,"t":176.36,"message":""},"ball":[0.472,0.285,0.161,-0.102],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.339,0.364,2.525],"2":[0.187,-0.2,-3.133],"3":[0.859,0.177,-1.571],"4":[0.569,0.395,-0.652],"5":[0.424,0.318,-0.57]},"striker":4,"cmd":{"3":[0.0,-0.0],"4":[0.198,-0.539],"5":[0.2,-0.041]}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.39,"jogo":{"blue":0,"red":0,"t":176.44,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.44,"jogo":{"blue":0,"red":0,"t":176.48,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.49,"jogo":{"blue":0,"red":0,"t":176.52,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.54,"jogo":{"blue":0,"red":0,"t":176.6,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.59,"jogo":{"blue":0,"red":0,"t":176.64,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.64,"jogo":{"blue":0,"red":0,"t":176.68,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.69,"jogo":{"blue":0,"red":0,"t":176.72,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.74,"jogo":{"blue":0,"red":0,"t":176.8,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.79,"jogo":{"blue":0,"red":0,"t":176.84,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.84,"jogo":{"blue":0,"red":0,"t":176.88,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.89,"jogo":{"blue":0,"red":0,"t":176.92,"message":""}}
+00:12:07 INFO  /soccer_red TEL {"t":1795576327.89,"jogo":{"blue":0,"red":0,"t":176.92,"message":""},"ball":[0.566,0.228,0.165,-0.095],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.431,0.299,2.574],"2":[0.272,-0.2,-3.141],"3":[0.859,0.154,-1.571],"4":[0.651,0.322,-0.645],"5":[0.515,0.258,-0.703]},"striker":4,"cmd":{"3":[0.068,0.0],"4":[0.199,0.39],"5":[0.186,-1.322]}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.94,"jogo":{"blue":0,"red":0,"t":177.0,"message":""}}
+00:12:07 INFO  /soccer_red EVT {"t":1795576327.99,"jogo":{"blue":0,"red":0,"t":177.04,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.04,"jogo":{"blue":0,"red":0,"t":177.08,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.09,"jogo":{"blue":0,"red":0,"t":177.12,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.14,"jogo":{"blue":0,"red":0,"t":177.2,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.19,"jogo":{"blue":0,"red":0,"t":177.24,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.24,"jogo":{"blue":0,"red":0,"t":177.28,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.29,"jogo":{"blue":0,"red":0,"t":177.32,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.34,"jogo":{"blue":0,"red":0,"t":177.4,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.39,"jogo":{"blue":0,"red":0,"t":177.44,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.44,"jogo":{"blue":0,"red":0,"t":177.48,"message":""}}
+00:12:08 INFO  /soccer_red TEL {"t":1795576328.44,"jogo":{"blue":0,"red":0,"t":177.48,"message":""},"ball":[0.649,0.185,0.128,-0.056],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.533,0.26,2.916],"2":[0.362,-0.2,3.14],"3":[0.859,0.082,-1.571],"4":[0.745,0.263,-0.399],"5":[0.574,0.172,-1.28]},"striker":4,"cmd":{"3":[0.0,0.0],"4":[0.194,0.895],"5":[0.192,1.002]}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.49,"jogo":{"blue":0,"red":0,"t":177.52,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.54,"jogo":{"blue":0,"red":0,"t":177.6,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.59,"jogo":{"blue":0,"red":0,"t":177.64,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.64,"jogo":{"blue":0,"red":0,"t":177.68,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.69,"jogo":{"blue":0,"red":0,"t":177.72,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.74,"jogo":{"blue":0,"red":0,"t":177.8,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.79,"jogo":{"blue":0,"red":0,"t":177.84,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.84,"jogo":{"blue":0,"red":0,"t":177.88,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.89,"jogo":{"blue":0,"red":0,"t":177.92,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.94,"jogo":{"blue":0,"red":0,"t":178.0,"message":""}}
+00:12:08 INFO  /soccer_red EVT {"t":1795576328.99,"jogo":{"blue":0,"red":0,"t":178.04,"message":""}}
+00:12:08 INFO  /soccer_red TEL {"t":1795576328.99,"jogo":{"blue":0,"red":0,"t":178.04,"message":""},"ball":[0.709,0.167,0.085,-0.011],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.627,0.211,2.438],"2":[0.439,-0.2,-3.141],"3":[0.859,0.119,-1.571],"4":[0.823,0.245,-0.297],"5":[0.626,0.083,-0.661]},"striker":4,"cmd":{"3":[0.077,-0.0],"4":[0.2,0.15],"5":[0.185,-0.251]}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.04,"jogo":{"blue":0,"red":0,"t":178.08,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.09,"jogo":{"blue":0,"red":0,"t":178.12,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.14,"jogo":{"blue":0,"red":0,"t":178.16,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.19,"jogo":{"blue":0,"red":0,"t":178.24,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.24,"jogo":{"blue":0,"red":0,"t":178.28,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.29,"jogo":{"blue":0,"red":0,"t":178.32,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.34,"jogo":{"blue":0,"red":0,"t":178.4,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.39,"jogo":{"blue":0,"red":0,"t":178.44,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.44,"jogo":{"blue":0,"red":0,"t":178.48,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.49,"jogo":{"blue":0,"red":0,"t":178.52,"message":""}}
+00:12:09 INFO  /soccer_red TEL {"t":1795576329.49,"jogo":{"blue":0,"red":0,"t":178.52,"message":""},"ball":[0.759,0.163,0.152,-0.01],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.692,0.156,2.311],"2":[0.483,-0.2,-3.141],"3":[0.859,0.107,-1.571],"4":[0.842,0.236,0.399],"5":[0.684,0.035,-0.841]},"striker":4,"cmd":{"3":[-0.198,-0.0],"4":[0.111,3.654],"5":[0.102,-0.97]}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.54,"jogo":{"blue":0,"red":0,"t":178.6,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.59,"jogo":{"blue":0,"red":0,"t":178.64,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.64,"jogo":{"blue":0,"red":0,"t":178.68,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.69,"jogo":{"blue":0,"red":0,"t":178.72,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.74,"jogo":{"blue":0,"red":0,"t":178.8,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.79,"jogo":{"blue":0,"red":0,"t":178.84,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.84,"jogo":{"blue":0,"red":0,"t":178.88,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.89,"jogo":{"blue":0,"red":0,"t":178.92,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.94,"jogo":{"blue":0,"red":0,"t":179.0,"message":""}}
+00:12:09 INFO  /soccer_red EVT {"t":1795576329.99,"jogo":{"blue":0,"red":0,"t":179.04,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.04,"jogo":{"blue":0,"red":0,"t":179.08,"message":""}}
+00:12:10 INFO  /soccer_red TEL {"t":1795576330.04,"jogo":{"blue":0,"red":0,"t":179.08,"message":""},"ball":[0.802,0.169,0.0,0.017],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.714,0.213,0.783],"2":[0.485,-0.2,-3.141],"3":[0.861,0.185,-1.542],"4":[0.852,0.265,1.038],"5":[0.711,-0.011,-1.316]},"striker":4,"cmd":{"3":[-0.08,0.378],"4":[-0.2,-0.001],"5":[0.056,-0.105]}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.09,"jogo":{"blue":0,"red":0,"t":179.12,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.14,"jogo":{"blue":0,"red":0,"t":179.2,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.19,"jogo":{"blue":0,"red":0,"t":179.24,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.24,"jogo":{"blue":0,"red":0,"t":179.28,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.29,"jogo":{"blue":0,"red":0,"t":179.32,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.34,"jogo":{"blue":0,"red":0,"t":179.4,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.39,"jogo":{"blue":0,"red":0,"t":179.44,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.44,"jogo":{"blue":0,"red":0,"t":179.48,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.49,"jogo":{"blue":0,"red":0,"t":179.52,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.54,"jogo":{"blue":0,"red":0,"t":179.6,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.59,"jogo":{"blue":0,"red":0,"t":179.64,"message":""}}
+00:12:10 INFO  /soccer_red TEL {"t":1795576330.59,"jogo":{"blue":0,"red":0,"t":179.64,"message":""},"ball":[0.802,0.164,-0.004,-0.118],"robots":{"0":[-0.82,0.153,-1.571],"1":[0.728,0.196,2.043],"2":[0.485,-0.2,-3.141],"3":[0.864,0.19,-1.383],"4":[0.797,0.222,1.219],"5":[0.716,-0.03,-1.775]},"striker":4,"cmd":{"3":[0.0,-0.939],"4":[0.2,0.197],"5":[0.026,1.951]}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.64,"jogo":{"blue":0,"red":0,"t":179.68,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.69,"jogo":{"blue":0,"red":0,"t":179.72,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.74,"jogo":{"blue":0,"red":0,"t":179.8,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.79,"jogo":{"blue":0,"red":0,"t":179.84,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.84,"jogo":{"blue":0,"red":0,"t":179.88,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.89,"jogo":{"blue":0,"red":0,"t":179.92,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.94,"jogo":{"blue":0,"red":0,"t":179.96,"message":""}}
+00:12:10 INFO  /soccer_red EVT {"t":1795576330.99,"jogo":{"blue":0,"red":0,"t":180.04,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.04,"jogo":{"blue":0,"red":0,"t":180.08,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.09,"jogo":{"blue":0,"red":0,"t":180.12,"message":""}}
+00:12:11 INFO  /soccer_red TEL {"t":1795576331.09,"jogo":{"blue":0,"red":0,"t":180.12,"message":""},"ball":[0.824,0.1,0.08,-0.247],"robots":{"0":[-0.82,0.149,-1.571],"1":[0.768,0.118,2.31],"2":[0.485,-0.2,-3.141],"3":[0.866,0.142,-1.752],"4":[0.806,0.23,0.256],"5":[0.715,-0.045,-1.389]},"striker":4,"cmd":{"3":[0.17,0.118],"4":[-0.011,4.0],"5":[0.081,-0.443]}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.14,"jogo":{"blue":0,"red":0,"t":180.2,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.19,"jogo":{"blue":0,"red":0,"t":180.24,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.24,"jogo":{"blue":0,"red":0,"t":180.28,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.29,"jogo":{"blue":0,"red":0,"t":180.32,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.34,"jogo":{"blue":0,"red":0,"t":180.4,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.39,"jogo":{"blue":0,"red":0,"t":180.44,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.44,"jogo":{"blue":0,"red":0,"t":180.48,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.49,"jogo":{"blue":0,"red":0,"t":180.52,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.54,"jogo":{"blue":0,"red":0,"t":180.6,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.59,"jogo":{"blue":0,"red":0,"t":180.64,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.64,"jogo":{"blue":0,"red":0,"t":180.68,"message":""}}
+00:12:11 INFO  /soccer_red TEL {"t":1795576331.64,"jogo":{"blue":0,"red":0,"t":180.68,"message":""},"ball":[0.857,-0.025,0.036,-0.202],"robots":{"0":[-0.82,0.066,-1.571],"1":[0.796,0.054,1.603],"2":[0.485,-0.2,-3.141],"3":[0.869,0.042,-1.666],"4":[0.783,0.185,1.416],"5":[0.718,-0.089,-1.625]},"striker":5,"cmd":{"3":[0.2,-0.231],"4":[-0.122,-2.444],"5":[-0.053,-4.0]}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.69,"jogo":{"blue":0,"red":0,"t":180.72,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.74,"jogo":{"blue":0,"red":0,"t":180.8,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.79,"jogo":{"blue":0,"red":0,"t":180.84,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.84,"jogo":{"blue":0,"red":0,"t":180.88,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.89,"jogo":{"blue":0,"red":0,"t":180.92,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.94,"jogo":{"blue":0,"red":0,"t":181.0,"message":""}}
+00:12:11 INFO  /soccer_red EVT {"t":1795576331.99,"jogo":{"blue":0,"red":0,"t":181.04,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.04,"jogo":{"blue":0,"red":0,"t":181.08,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.09,"jogo":{"blue":0,"red":0,"t":181.12,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.14,"jogo":{"blue":0,"red":0,"t":181.2,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.19,"jogo":{"blue":0,"red":0,"t":181.24,"message":""}}
+00:12:12 INFO  /soccer_red TEL {"t":1795576332.19,"jogo":{"blue":0,"red":0,"t":181.24,"message":""},"ball":[0.865,-0.127,0.001,-0.191],"robots":{"0":[-0.82,-0.044,-1.571],"1":[0.768,-0.026,0.915],"2":[0.486,-0.2,-2.764],"3":[0.858,-0.069,-1.627],"4":[0.758,0.152,0.238],"5":[0.733,-0.091,2.671]},"striker":5,"cmd":{"3":[0.199,0.369],"4":[-0.059,2.78],"5":[-0.049,-4.0]}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.24,"jogo":{"blue":0,"red":0,"t":181.28,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.29,"jogo":{"blue":0,"red":0,"t":181.32,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.34,"jogo":{"blue":0,"red":0,"t":181.4,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.39,"jogo":{"blue":0,"red":0,"t":181.44,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.44,"jogo":{"blue":0,"red":0,"t":181.48,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.49,"jogo":{"blue":0,"red":0,"t":181.52,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.54,"jogo":{"blue":0,"red":0,"t":181.6,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.59,"jogo":{"blue":0,"red":0,"t":181.64,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.64,"jogo":{"blue":0,"red":0,"t":181.68,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.69,"jogo":{"blue":0,"red":0,"t":181.72,"message":""}}
+00:12:12 INFO  /soccer_red TEL {"t":1795576332.69,"jogo":{"blue":0,"red":0,"t":181.72,"message":""},"ball":[0.866,-0.222,0.001,-0.2],"robots":{"0":[-0.82,-0.129,-1.571],"1":[0.741,-0.077,1.735],"2":[0.506,-0.144,-1.56],"3":[0.858,-0.164,-1.534],"4":[0.732,0.127,1.326],"5":[0.748,-0.152,1.516]},"striker":5,"cmd":{"3":[0.164,-0.009],"4":[-0.151,0.637],"5":[-0.182,1.513]}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.74,"jogo":{"blue":0,"red":0,"t":181.76,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.79,"jogo":{"blue":0,"red":0,"t":181.84,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.84,"jogo":{"blue":0,"red":0,"t":181.88,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.89,"jogo":{"blue":0,"red":0,"t":181.92,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.94,"jogo":{"blue":0,"red":0,"t":182.0,"message":""}}
+00:12:12 INFO  /soccer_red EVT {"t":1795576332.99,"jogo":{"blue":0,"red":0,"t":182.04,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.04,"jogo":{"blue":0,"red":0,"t":182.08,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.09,"jogo":{"blue":0,"red":0,"t":182.12,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.14,"jogo":{"blue":0,"red":0,"t":182.2,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.19,"jogo":{"blue":0,"red":0,"t":182.24,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.24,"jogo":{"blue":0,"red":0,"t":182.28,"message":""}}
+00:12:13 INFO  /soccer_red TEL {"t":1795576333.24,"jogo":{"blue":0,"red":0,"t":182.28,"message":""},"ball":[0.866,-0.323,0.0,-0.158],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.772,-0.181,1.869],"2":[0.504,-0.033,-1.551],"3":[0.859,-0.205,-1.572],"4":[0.722,0.039,1.543],"5":[0.759,-0.254,2.004]},"striker":5,"cmd":{"3":[0.0,0.008],"4":[-0.169,0.059],"5":[-0.139,-2.926]}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.29,"jogo":{"blue":0,"red":0,"t":182.32,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.34,"jogo":{"blue":0,"red":0,"t":182.4,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.39,"jogo":{"blue":0,"red":0,"t":182.44,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.44,"jogo":{"blue":0,"red":0,"t":182.48,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.49,"jogo":{"blue":0,"red":0,"t":182.52,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.54,"jogo":{"blue":0,"red":0,"t":182.6,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.59,"jogo":{"blue":0,"red":0,"t":182.64,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.64,"jogo":{"blue":0,"red":0,"t":182.68,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.69,"jogo":{"blue":0,"red":0,"t":182.72,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.74,"jogo":{"blue":0,"red":0,"t":182.8,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.79,"jogo":{"blue":0,"red":0,"t":182.84,"message":""}}
+00:12:13 INFO  /soccer_red TEL {"t":1795576333.79,"jogo":{"blue":0,"red":0,"t":182.84,"message":""},"ball":[0.866,-0.399,0.0,-0.114],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.793,-0.272,1.476],"2":[0.502,0.079,-1.553],"3":[0.859,-0.205,-1.571],"4":[0.72,-0.053,1.566],"5":[0.774,-0.343,2.339]},"striker":5,"cmd":{"3":[0.0,-0.001],"4":[-0.145,0.011],"5":[-0.062,-4.0]}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.84,"jogo":{"blue":0,"red":0,"t":182.88,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.89,"jogo":{"blue":0,"red":0,"t":182.92,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.94,"jogo":{"blue":0,"red":0,"t":183.0,"message":""}}
+00:12:13 INFO  /soccer_red EVT {"t":1795576333.99,"jogo":{"blue":0,"red":0,"t":183.04,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.04,"jogo":{"blue":0,"red":0,"t":183.08,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.09,"jogo":{"blue":0,"red":0,"t":183.12,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.14,"jogo":{"blue":0,"red":0,"t":183.2,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.19,"jogo":{"blue":0,"red":0,"t":183.24,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.24,"jogo":{"blue":0,"red":0,"t":183.28,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.29,"jogo":{"blue":0,"red":0,"t":183.32,"message":""}}
+00:12:14 INFO  /soccer_red TEL {"t":1795576334.29,"jogo":{"blue":0,"red":0,"t":183.32,"message":""},"ball":[0.866,-0.444,-0.0,-0.076],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.793,-0.337,1.484],"2":[0.501,0.166,-1.553],"3":[0.859,-0.205,-1.571],"4":[0.72,-0.119,1.57],"5":[0.783,-0.411,1.426]},"striker":5,"cmd":{"3":[0.0,0.0],"4":[-0.114,0.002],"5":[0.138,-2.951]}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.34,"jogo":{"blue":0,"red":0,"t":183.4,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.39,"jogo":{"blue":0,"red":0,"t":183.44,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.44,"jogo":{"blue":0,"red":0,"t":183.48,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.49,"jogo":{"blue":0,"red":0,"t":183.52,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.54,"jogo":{"blue":0,"red":0,"t":183.56,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.59,"jogo":{"blue":0,"red":0,"t":183.64,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.64,"jogo":{"blue":0,"red":0,"t":183.68,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.69,"jogo":{"blue":0,"red":0,"t":183.72,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.74,"jogo":{"blue":0,"red":0,"t":183.8,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.79,"jogo":{"blue":0,"red":0,"t":183.84,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.84,"jogo":{"blue":0,"red":0,"t":183.88,"message":""}}
+00:12:14 INFO  /soccer_red TEL {"t":1795576334.84,"jogo":{"blue":0,"red":0,"t":183.88,"message":""},"ball":[0.879,-0.476,-0.008,-0.04],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.782,-0.41,1.504],"2":[0.5,0.184,-1.553],"3":[0.859,-0.187,-1.571],"4":[0.72,-0.177,1.571],"5":[0.821,-0.472,1.186]},"striker":5,"cmd":{"3":[0.0,0.0],"4":[-0.075,0.0],"5":[0.193,0.96]}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.89,"jogo":{"blue":0,"red":0,"t":183.92,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.94,"jogo":{"blue":0,"red":0,"t":184.0,"message":""}}
+00:12:14 INFO  /soccer_red EVT {"t":1795576334.99,"jogo":{"blue":0,"red":0,"t":184.04,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.04,"jogo":{"blue":0,"red":0,"t":184.08,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.09,"jogo":{"blue":0,"red":0,"t":184.12,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.14,"jogo":{"blue":0,"red":0,"t":184.2,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.19,"jogo":{"blue":0,"red":0,"t":184.24,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.24,"jogo":{"blue":0,"red":0,"t":184.28,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.29,"jogo":{"blue":0,"red":0,"t":184.32,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.34,"jogo":{"blue":0,"red":0,"t":184.4,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.39,"jogo":{"blue":0,"red":0,"t":184.44,"message":""}}
+00:12:15 INFO  /soccer_red TEL {"t":1795576335.39,"jogo":{"blue":0,"red":0,"t":184.44,"message":""},"ball":[0.879,-0.485,-0.0,-0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.766,-0.498,1.614],"2":[0.5,0.184,-1.553],"3":[0.859,-0.187,-1.571],"4":[0.72,-0.212,1.571],"5":[0.815,-0.553,1.262]},"striker":5,"cmd":{"3":[0.0,-0.0],"4":[-0.034,0.0],"5":[0.176,-1.763]}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.44,"jogo":{"blue":0,"red":0,"t":184.48,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.49,"jogo":{"blue":0,"red":0,"t":184.52,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.54,"jogo":{"blue":0,"red":0,"t":184.6,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.59,"jogo":{"blue":0,"red":0,"t":184.64,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.64,"jogo":{"blue":0,"red":0,"t":184.68,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.69,"jogo":{"blue":0,"red":0,"t":184.72,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.74,"jogo":{"blue":0,"red":0,"t":184.8,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.79,"jogo":{"blue":0,"red":0,"t":184.84,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.84,"jogo":{"blue":0,"red":0,"t":184.88,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.89,"jogo":{"blue":0,"red":0,"t":184.92,"message":""}}
+00:12:15 INFO  /soccer_red TEL {"t":1795576335.89,"jogo":{"blue":0,"red":0,"t":184.92,"message":""},"ball":[0.878,-0.471,-0.009,0.159],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.789,-0.549,2.905],"2":[0.5,0.184,-1.553],"3":[0.859,-0.187,-1.571],"4":[0.72,-0.219,2.127],"5":[0.86,-0.527,1.021]},"striker":5,"cmd":{"3":[0.0,0.0],"4":[0.0,0.026],"5":[0.191,1.079]}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.94,"jogo":{"blue":0,"red":0,"t":185.0,"message":""}}
+00:12:15 INFO  /soccer_red EVT {"t":1795576335.99,"jogo":{"blue":0,"red":0,"t":185.04,"message":""}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.04,"jogo":{"blue":0,"red":0,"t":185.08,"message":""}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.09,"jogo":{"blue":0,"red":0,"t":185.12,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.14,"jogo":{"blue":0,"red":0,"t":185.2,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.19,"jogo":{"blue":0,"red":0,"t":185.24,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.24,"jogo":{"blue":0,"red":0,"t":185.28,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.29,"jogo":{"blue":0,"red":0,"t":185.32,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.34,"jogo":{"blue":0,"red":0,"t":185.36,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.39,"jogo":{"blue":0,"red":0,"t":185.44,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.44,"jogo":{"blue":0,"red":0,"t":185.48,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red TEL {"t":1795576336.44,"jogo":{"blue":0,"red":0,"t":185.48,"message":"Fim de jogo"},"ball":[0.879,-0.376,0.0,0.15],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.821,-0.544,-1.662],"2":[0.5,0.184,-1.553],"3":[0.859,-0.212,-1.57],"4":[0.72,-0.219,2.194],"5":[0.863,-0.483,-0.015]},"striker":5,"cmd":{"3":[0.0,-0.003],"4":[0.092,-3.118],"5":[-0.195,0.778]}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.49,"jogo":{"blue":0,"red":0,"t":185.52,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.54,"jogo":{"blue":0,"red":0,"t":185.6,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.59,"jogo":{"blue":0,"red":0,"t":185.64,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.64,"jogo":{"blue":0,"red":0,"t":185.68,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.69,"jogo":{"blue":0,"red":0,"t":185.72,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.74,"jogo":{"blue":0,"red":0,"t":185.8,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.79,"jogo":{"blue":0,"red":0,"t":185.84,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.84,"jogo":{"blue":0,"red":0,"t":185.88,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.89,"jogo":{"blue":0,"red":0,"t":185.92,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.94,"jogo":{"blue":0,"red":0,"t":186.0,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red EVT {"t":1795576336.99,"jogo":{"blue":0,"red":0,"t":186.04,"message":"Fim de jogo"}}
+00:12:16 INFO  /soccer_red TEL {"t":1795576336.99,"jogo":{"blue":0,"red":0,"t":186.04,"message":"Fim de jogo"},"ball":[0.879,-0.305,0.0,0.105],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.225,-1.57],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.08,-0.002],"4":[0.129,-3.192],"5":[-0.005,-4.0]}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.04,"jogo":{"blue":0,"red":0,"t":186.08,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.09,"jogo":{"blue":0,"red":0,"t":186.12,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.14,"jogo":{"blue":0,"red":0,"t":186.2,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.19,"jogo":{"blue":0,"red":0,"t":186.24,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.24,"jogo":{"blue":0,"red":0,"t":186.28,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.29,"jogo":{"blue":0,"red":0,"t":186.32,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.34,"jogo":{"blue":0,"red":0,"t":186.4,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.39,"jogo":{"blue":0,"red":0,"t":186.44,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.44,"jogo":{"blue":0,"red":0,"t":186.48,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.49,"jogo":{"blue":0,"red":0,"t":186.52,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.54,"jogo":{"blue":0,"red":0,"t":186.6,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red TEL {"t":1795576337.54,"jogo":{"blue":0,"red":0,"t":186.6,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[-0.15,2.5],"5":[-0.062,-4.0]}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.59,"jogo":{"blue":0,"red":0,"t":186.64,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.64,"jogo":{"blue":0,"red":0,"t":186.68,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.69,"jogo":{"blue":0,"red":0,"t":186.72,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.74,"jogo":{"blue":0,"red":0,"t":186.8,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.79,"jogo":{"blue":0,"red":0,"t":186.84,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.84,"jogo":{"blue":0,"red":0,"t":186.88,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.89,"jogo":{"blue":0,"red":0,"t":186.92,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.94,"jogo":{"blue":0,"red":0,"t":187.0,"message":"Fim de jogo"}}
+00:12:17 INFO  /soccer_red EVT {"t":1795576337.99,"jogo":{"blue":0,"red":0,"t":187.04,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.04,"jogo":{"blue":0,"red":0,"t":187.08,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red TEL {"t":1795576338.04,"jogo":{"blue":0,"red":0,"t":187.08,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.09,"jogo":{"blue":0,"red":0,"t":187.12,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.14,"jogo":{"blue":0,"red":0,"t":187.16,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.19,"jogo":{"blue":0,"red":0,"t":187.24,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.24,"jogo":{"blue":0,"red":0,"t":187.28,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.29,"jogo":{"blue":0,"red":0,"t":187.32,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.34,"jogo":{"blue":0,"red":0,"t":187.4,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.39,"jogo":{"blue":0,"red":0,"t":187.44,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.44,"jogo":{"blue":0,"red":0,"t":187.48,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.49,"jogo":{"blue":0,"red":0,"t":187.52,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.54,"jogo":{"blue":0,"red":0,"t":187.6,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red TEL {"t":1795576338.54,"jogo":{"blue":0,"red":0,"t":187.6,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.59,"jogo":{"blue":0,"red":0,"t":187.64,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.64,"jogo":{"blue":0,"red":0,"t":187.68,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.69,"jogo":{"blue":0,"red":0,"t":187.72,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.74,"jogo":{"blue":0,"red":0,"t":187.8,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.79,"jogo":{"blue":0,"red":0,"t":187.84,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.84,"jogo":{"blue":0,"red":0,"t":187.88,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.89,"jogo":{"blue":0,"red":0,"t":187.92,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.94,"jogo":{"blue":0,"red":0,"t":188.0,"message":"Fim de jogo"}}
+00:12:18 INFO  /soccer_red EVT {"t":1795576338.99,"jogo":{"blue":0,"red":0,"t":188.04,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.04,"jogo":{"blue":0,"red":0,"t":188.08,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red TEL {"t":1795576339.04,"jogo":{"blue":0,"red":0,"t":188.08,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[-0.15,-2.5],"5":[-0.062,-4.0]}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.09,"jogo":{"blue":0,"red":0,"t":188.12,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.14,"jogo":{"blue":0,"red":0,"t":188.2,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.19,"jogo":{"blue":0,"red":0,"t":188.24,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.24,"jogo":{"blue":0,"red":0,"t":188.28,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.29,"jogo":{"blue":0,"red":0,"t":188.32,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.34,"jogo":{"blue":0,"red":0,"t":188.4,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.39,"jogo":{"blue":0,"red":0,"t":188.44,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.44,"jogo":{"blue":0,"red":0,"t":188.48,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.49,"jogo":{"blue":0,"red":0,"t":188.52,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.54,"jogo":{"blue":0,"red":0,"t":188.6,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red TEL {"t":1795576339.54,"jogo":{"blue":0,"red":0,"t":188.6,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.59,"jogo":{"blue":0,"red":0,"t":188.64,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.64,"jogo":{"blue":0,"red":0,"t":188.68,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.69,"jogo":{"blue":0,"red":0,"t":188.72,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.74,"jogo":{"blue":0,"red":0,"t":188.8,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.79,"jogo":{"blue":0,"red":0,"t":188.84,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.84,"jogo":{"blue":0,"red":0,"t":188.88,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.89,"jogo":{"blue":0,"red":0,"t":188.92,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.94,"jogo":{"blue":0,"red":0,"t":188.96,"message":"Fim de jogo"}}
+00:12:19 INFO  /soccer_red EVT {"t":1795576339.99,"jogo":{"blue":0,"red":0,"t":189.04,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.04,"jogo":{"blue":0,"red":0,"t":189.08,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.09,"jogo":{"blue":0,"red":0,"t":189.12,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red TEL {"t":1795576340.09,"jogo":{"blue":0,"red":0,"t":189.12,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.14,"jogo":{"blue":0,"red":0,"t":189.2,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.19,"jogo":{"blue":0,"red":0,"t":189.24,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.24,"jogo":{"blue":0,"red":0,"t":189.28,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.29,"jogo":{"blue":0,"red":0,"t":189.32,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.34,"jogo":{"blue":0,"red":0,"t":189.4,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.39,"jogo":{"blue":0,"red":0,"t":189.44,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.44,"jogo":{"blue":0,"red":0,"t":189.48,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.49,"jogo":{"blue":0,"red":0,"t":189.52,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.54,"jogo":{"blue":0,"red":0,"t":189.6,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.59,"jogo":{"blue":0,"red":0,"t":189.64,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red TEL {"t":1795576340.59,"jogo":{"blue":0,"red":0,"t":189.64,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[-0.15,-2.5],"5":[-0.062,-4.0]}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.64,"jogo":{"blue":0,"red":0,"t":189.68,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.69,"jogo":{"blue":0,"red":0,"t":189.72,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.74,"jogo":{"blue":0,"red":0,"t":189.8,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.79,"jogo":{"blue":0,"red":0,"t":189.84,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.84,"jogo":{"blue":0,"red":0,"t":189.88,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.89,"jogo":{"blue":0,"red":0,"t":189.92,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.94,"jogo":{"blue":0,"red":0,"t":190.0,"message":"Fim de jogo"}}
+00:12:20 INFO  /soccer_red EVT {"t":1795576340.99,"jogo":{"blue":0,"red":0,"t":190.04,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.04,"jogo":{"blue":0,"red":0,"t":190.08,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.09,"jogo":{"blue":0,"red":0,"t":190.12,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.14,"jogo":{"blue":0,"red":0,"t":190.2,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red TEL {"t":1795576341.14,"jogo":{"blue":0,"red":0,"t":190.2,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.19,"jogo":{"blue":0,"red":0,"t":190.24,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.24,"jogo":{"blue":0,"red":0,"t":190.28,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.29,"jogo":{"blue":0,"red":0,"t":190.32,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.34,"jogo":{"blue":0,"red":0,"t":190.4,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.44,"jogo":{"blue":0,"red":0,"t":190.48,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.49,"jogo":{"blue":0,"red":0,"t":190.52,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.54,"jogo":{"blue":0,"red":0,"t":190.6,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.59,"jogo":{"blue":0,"red":0,"t":190.64,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.64,"jogo":{"blue":0,"red":0,"t":190.68,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red TEL {"t":1795576341.64,"jogo":{"blue":0,"red":0,"t":190.68,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.69,"jogo":{"blue":0,"red":0,"t":190.72,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.74,"jogo":{"blue":0,"red":0,"t":190.76,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.79,"jogo":{"blue":0,"red":0,"t":190.84,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.84,"jogo":{"blue":0,"red":0,"t":190.88,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.89,"jogo":{"blue":0,"red":0,"t":190.92,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.94,"jogo":{"blue":0,"red":0,"t":191.0,"message":"Fim de jogo"}}
+00:12:21 INFO  /soccer_red EVT {"t":1795576341.99,"jogo":{"blue":0,"red":0,"t":191.04,"message":"Fim de jogo"}}
+00:12:22 INFO  /soccer_red EVT {"t":1795576342.04,"jogo":{"blue":0,"red":0,"t":191.08,"message":"Fim de jogo"}}
+00:12:22 INFO  /soccer_red EVT {"t":1795576342.09,"jogo":{"blue":0,"red":0,"t":191.12,"message":"Fim de jogo"}}
+00:12:22 INFO  /soccer_red TEL {"t":1795576342.14,"jogo":{"blue":0,"red":0,"t":191.12,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[-0.15,2.5],"5":[-0.062,-4.0]}}
+00:12:22 INFO  /soccer_red TEL {"t":1795576342.69,"jogo":{"blue":0,"red":0,"t":191.12,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}
+00:12:23 INFO  /soccer_red TEL {"t":1795576343.19,"jogo":{"blue":0,"red":0,"t":191.12,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[-0.15,2.5],"5":[-0.062,-4.0]}}
+00:12:23 INFO  /soccer_red TEL {"t":1795576343.74,"jogo":{"blue":0,"red":0,"t":191.12,"message":"Fim de jogo"},"ball":[0.879,-0.279,-0.0,0.0],"robots":{"0":[-0.82,-0.152,-1.571],"1":[0.814,-0.535,-1.142],"2":[0.5,0.184,-1.553],"3":[0.859,-0.224,-1.565],"4":[0.72,-0.219,2.209],"5":[0.863,-0.478,-0.13]},"striker":5,"cmd":{"3":[-0.075,-0.104],"4":[0.129,-3.192],"5":[-0.062,-4.0]}}

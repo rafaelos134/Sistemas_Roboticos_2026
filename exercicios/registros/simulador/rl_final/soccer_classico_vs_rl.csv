@@ -1,0 +1,4 @@
+match,blue,red,teleports,goal_times_s
+1,0,2,0,r@7.6 r@23.0
+2,0,1,0,r@16.8
+3,0,4,0,r@19.2 r@38.6 r@63.0 r@73.2

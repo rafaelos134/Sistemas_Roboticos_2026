@@ -1,0 +1,4 @@
+match 1 (5 min): ctf_script 0 x 3 ctf_zs_robusto | pegadas 0 x 18 | segurados 0 x 30
+match 2 (5 min): ctf_script 0 x 2 ctf_zs_robusto | pegadas 0 x 18 | segurados 0 x 35
+match 3 (5 min): ctf_script 0 x 2 ctf_zs_robusto | pegadas 0 x 16 | segurados 0 x 30
+RESULT ctf_script (blue) vs ctf_zs_robusto (red): 3 matches of 5 min, points 0 x 7, pickups 0 x 52, held 0 x 95

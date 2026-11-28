@@ -1,0 +1,103 @@
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_sumo.py ../classico/entrega/sumo_classico.py --rounds 10 --side 0 --csv ../classico/entrega/results/sumo_classico_vs_parado_side0.csv
+round  1: win  in  4.04 s  (hero_0 venceu)
+round  2: win  in  3.98 s  (hero_0 venceu)
+round  3: win  in  4.06 s  (hero_0 venceu)
+round  4: win  in  3.80 s  (hero_0 venceu)
+round  5: win  in  4.50 s  (hero_0 venceu)
+round  6: win  in  4.06 s  (hero_0 venceu)
+round  7: draw in 40.00 s  (Empate (tempo))
+round  8: win  in  3.82 s  (hero_0 venceu)
+round  9: win  in  3.98 s  (hero_0 venceu)
+round 10: win  in  3.84 s  (hero_0 venceu)
+RESULT sumo_classico.py as hero_0 vs stopped as hero_1: win 9, lose 0, draw 1 of 10; mean win time 4.01 s
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_sumo.py ../classico/entrega/sumo_classico.py --opponent ../classico/entrega/sumo_classico_simples.py --rounds 10 --side 0 --csv ../classico/entrega/results/sumo_classico_vs_simples_side0.csv
+round  1: draw in 40.02 s  (Empate (tempo))
+round  2: win  in 21.64 s  (hero_0 venceu)
+round  3: draw in 40.00 s  (Empate (tempo))
+round  4: draw in 40.02 s  (Empate (tempo))
+round  5: draw in 40.02 s  (Empate (tempo))
+round  6: draw in 40.02 s  (Empate (tempo))
+round  7: draw in 40.02 s  (Empate (tempo))
+round  8: draw in 40.02 s  (Empate (tempo))
+round  9: draw in 40.02 s  (Empate (tempo))
+round 10: draw in 40.02 s  (Empate (tempo))
+RESULT sumo_classico.py as hero_0 vs sumo_classico_simples.py as hero_1: win 1, lose 0, draw 9 of 10; mean win time 21.64 s
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_sumo.py ../classico/entrega/sumo_classico.py --opponent exports/sumo/sumo_rl_v5.py --rounds 10 --side 0 --csv ../classico/entrega/results/sumo_classico_vs_rl_v5_side0.csv
+round  1: lose in 11.26 s  (hero_1 venceu)
+round  2: lose in  7.56 s  (hero_1 venceu)
+round  3: lose in 17.28 s  (hero_1 venceu)
+round  4: lose in  8.14 s  (hero_1 venceu)
+round  5: lose in 12.98 s  (hero_1 venceu)
+round  6: lose in  7.76 s  (hero_1 venceu)
+round  7: lose in 11.36 s  (hero_1 venceu)
+round  8: lose in 24.20 s  (hero_1 venceu)
+round  9: lose in 10.18 s  (hero_1 venceu)
+round 10: lose in  9.36 s  (hero_1 venceu)
+RESULT sumo_classico.py as hero_0 vs sumo_rl_v5.py as hero_1: win 0, lose 10, draw 0 of 10; mean win time -
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_sumo.py ../classico/entrega/sumo_classico.py --rounds 10 --side 1 --csv ../classico/entrega/results/sumo_classico_vs_parado_side1.csv
+round  1: win  in  4.04 s  (hero_1 venceu)
+round  2: win  in  3.96 s  (hero_1 venceu)
+round  3: win  in  4.06 s  (hero_1 venceu)
+round  4: win  in  3.86 s  (hero_1 venceu)
+round  5: win  in  3.92 s  (hero_1 venceu)
+round  6: win  in  3.92 s  (hero_1 venceu)
+round  7: draw in 40.00 s  (Empate (tempo))
+round  8: win  in  3.88 s  (hero_1 venceu)
+round  9: win  in  4.06 s  (hero_1 venceu)
+round 10: win  in  4.02 s  (hero_1 venceu)
+RESULT sumo_classico.py as hero_1 vs stopped as hero_0: win 9, lose 0, draw 1 of 10; mean win time 3.97 s
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_sumo.py ../classico/entrega/sumo_classico.py --opponent ../classico/entrega/sumo_classico_simples.py --rounds 10 --side 1 --csv ../classico/entrega/results/sumo_classico_vs_simples_side1.csv
+round  1: draw in 40.02 s  (Empate (tempo))
+round  2: draw in 40.00 s  (Empate (tempo))
+round  3: draw in 40.00 s  (Empate (tempo))
+round  4: win  in 13.70 s  (hero_1 venceu)
+round  5: draw in 40.02 s  (Empate (tempo))
+round  6: draw in 40.02 s  (Empate (tempo))
+round  7: draw in 40.02 s  (Empate (tempo))
+round  8: draw in 40.02 s  (Empate (tempo))
+round  9: draw in 40.02 s  (Empate (tempo))
+round 10: draw in 40.02 s  (Empate (tempo))
+RESULT sumo_classico.py as hero_1 vs sumo_classico_simples.py as hero_0: win 1, lose 0, draw 9 of 10; mean win time 13.70 s
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_sumo.py ../classico/entrega/sumo_classico.py --opponent exports/sumo/sumo_rl_v5.py --rounds 10 --side 1 --csv ../classico/entrega/results/sumo_classico_vs_rl_v5_side1.csv
+round  1: draw in 40.02 s  (Empate (tempo))
+round  2: lose in  8.50 s  (hero_0 venceu)
+round  3: lose in 18.22 s  (hero_0 venceu)
+round  4: lose in  9.66 s  (hero_0 venceu)
+round  5: lose in  4.44 s  (hero_0 venceu)
+round  6: lose in 22.14 s  (hero_0 venceu)
+round  7: lose in 11.20 s  (hero_0 venceu)
+round  8: lose in  9.48 s  (hero_0 venceu)
+round  9: lose in  9.26 s  (hero_0 venceu)
+round 10: lose in  8.60 s  (hero_0 venceu)
+RESULT sumo_classico.py as hero_1 vs sumo_rl_v5.py as hero_0: win 0, lose 9, draw 1 of 10; mean win time -
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_ctf.py --blue ../classico/entrega/eval_ctf_classico.py --minutes 5 --matches 3 --csv ../classico/entrega/results/ctf_classico_vs_parado.csv
+match 1 (5 min): eval_ctf_classico 22 x 0 parado | pegadas 22 x 0 | segurados 0 x 0
+match 2 (5 min): eval_ctf_classico 22 x 0 parado | pegadas 22 x 0 | segurados 0 x 0
+match 3 (5 min): eval_ctf_classico 22 x 0 parado | pegadas 22 x 0 | segurados 0 x 0
+RESULT eval_ctf_classico (blue) vs parado (red): 3 matches of 5 min, points 66 x 0, pickups 66 x 0, held 0 x 0
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_ctf.py --red ../classico/entrega/eval_ctf_classico.py --minutes 5 --matches 3 --csv ../classico/entrega/results/ctf_parado_vs_classico.csv
+match 1 (5 min): parado 0 x 22 eval_ctf_classico | pegadas 0 x 22 | segurados 0 x 0
+match 2 (5 min): parado 0 x 22 eval_ctf_classico | pegadas 0 x 22 | segurados 0 x 0
+match 3 (5 min): parado 0 x 22 eval_ctf_classico | pegadas 0 x 22 | segurados 0 x 0
+RESULT parado (blue) vs eval_ctf_classico (red): 3 matches of 5 min, points 0 x 66, pickups 0 x 66, held 0 x 0
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_ctf.py --blue ../classico/entrega/eval_ctf_classico.py --red ../classico/entrega/eval_ctf_classico_anterior.py --minutes 5 --matches 3 --csv ../classico/entrega/results/ctf_classico_vs_anterior.csv
+match 1 (5 min): eval_ctf_classico 0 x 0 eval_ctf_classico_anterior | pegadas 0 x 0 | segurados 52 x 52
+match 2 (5 min): eval_ctf_classico 0 x 0 eval_ctf_classico_anterior | pegadas 0 x 0 | segurados 52 x 52
+match 3 (5 min): eval_ctf_classico 0 x 0 eval_ctf_classico_anterior | pegadas 0 x 0 | segurados 52 x 52
+RESULT eval_ctf_classico (blue) vs eval_ctf_classico_anterior (red): 3 matches of 5 min, points 0 x 0, pickups 0 x 0, held 156 x 156
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_ctf.py --blue ../classico/entrega/eval_ctf_classico_anterior.py --red ../classico/entrega/eval_ctf_classico.py --minutes 5 --matches 3 --csv ../classico/entrega/results/ctf_anterior_vs_classico.csv
+match 1 (5 min): eval_ctf_classico_anterior 0 x 0 eval_ctf_classico | pegadas 0 x 0 | segurados 52 x 52
+match 2 (5 min): eval_ctf_classico_anterior 0 x 0 eval_ctf_classico | pegadas 0 x 0 | segurados 52 x 52
+match 3 (5 min): eval_ctf_classico_anterior 0 x 0 eval_ctf_classico | pegadas 0 x 0 | segurados 52 x 52
+RESULT eval_ctf_classico_anterior (blue) vs eval_ctf_classico (red): 3 matches of 5 min, points 0 x 0, pickups 0 x 0, held 156 x 156
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_ctf.py --blue ../classico/entrega/eval_ctf_classico.py --red exports/ctf/ctf_hibrido_v4.py --minutes 5 --matches 3 --csv ../classico/entrega/results/ctf_classico_vs_hibrido_v4.csv
+match 1 (5 min): eval_ctf_classico 0 x 0 ctf_hibrido_v4 | pegadas 0 x 1 | segurados 52 x 20
+match 2 (5 min): eval_ctf_classico 0 x 0 ctf_hibrido_v4 | pegadas 0 x 0 | segurados 52 x 15
+match 3 (5 min): eval_ctf_classico 0 x 0 ctf_hibrido_v4 | pegadas 0 x 0 | segurados 52 x 15
+RESULT eval_ctf_classico (blue) vs ctf_hibrido_v4 (red): 3 matches of 5 min, points 0 x 0, pickups 0 x 1, held 156 x 50
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_ctf.py --blue exports/ctf/ctf_hibrido_v4.py --red ../classico/entrega/eval_ctf_classico.py --minutes 5 --matches 3 --csv ../classico/entrega/results/ctf_hibrido_v4_vs_classico.csv
+match 1 (5 min): ctf_hibrido_v4 0 x 0 eval_ctf_classico | pegadas 1 x 0 | segurados 26 x 52
+match 2 (5 min): ctf_hibrido_v4 0 x 0 eval_ctf_classico | pegadas 1 x 0 | segurados 19 x 52
+match 3 (5 min): ctf_hibrido_v4 0 x 0 eval_ctf_classico | pegadas 0 x 0 | segurados 15 x 52
+RESULT ctf_hibrido_v4 (blue) vs eval_ctf_classico (red): 3 matches of 5 min, points 0 x 0, pickups 2 x 0, held 60 x 156
+FIM

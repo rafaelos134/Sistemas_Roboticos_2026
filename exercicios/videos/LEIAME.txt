@@ -1,0 +1,16 @@
+Vídeos gravados no psr_sim (câmera fixa, placar e tempo no topo).
+
+Sumô
+  sumo_rl_vs_parado.mp4           RL final (fase 6) x robô parado, 3 rodadas
+  sumo_rl_vs_classico.mp4         RL final (azul) x clássico (laranja), 3 rodadas
+  sumo_classico_vs_parado.mp4     clássico x robô parado, 3 rodadas
+
+Rouba-bandeira
+  ctf_rl_vs_parado.mp4            RL final x time parado, 60 s
+  ctf_rl_vs_classico.mp4          RL final (azul) x clássico (vermelho), 120 s
+  ctf_classico_vs_parado.mp4      clássico x time parado, 60 s
+
+Futebol
+  futebol_rl_vs_classico.mp4      RL final A2w (azul) x clássico (vermelho), 90 s
+  futebol_rl_vs_a2_anterior.mp4   RL final A2w x A2 (versão anterior), 90 s
+  futebol_classico_vs_parado.mp4  clássico x time parado, 60 s

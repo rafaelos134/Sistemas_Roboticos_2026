@@ -1,0 +1,25 @@
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_0 vs stopped as hero_1: win 20, lose 0, draw 0 of 20; mean win time 3.92 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_1 vs stopped as hero_0: win 20, lose 0, draw 0 of 20; mean win time 3.97 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_1 vs stopped as hero_0: win 20, lose 0, draw 0 of 20; mean win time 4.28 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_0 vs stopped as hero_1: win 20, lose 0, draw 0 of 20; mean win time 4.75 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_chaser.py as hero_1: win 20, lose 0, draw 0 of 20; mean win time 8.08 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_chaser.py as hero_0: win 20, lose 0, draw 0 of 20; mean win time 9.86 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_chaser.py as hero_1: win 6, lose 0, draw 14 of 20; mean win time 9.65 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_chaser.py as hero_0: win 3, lose 0, draw 17 of 20; mean win time 11.95 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_flanker.py as hero_0: win 20, lose 0, draw 0 of 20; mean win time 8.78 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_flanker.py as hero_1: win 20, lose 0, draw 0 of 20; mean win time 9.71 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_flanker.py as hero_0: win 20, lose 0, draw 0 of 20; mean win time 10.17 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_flanker.py as hero_1: win 20, lose 0, draw 0 of 20; mean win time 11.45 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_rl_v3.py as hero_0: win 8, lose 10, draw 2 of 20; mean win time 13.27 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_rl_v3.py as hero_1: win 10, lose 3, draw 7 of 20; mean win time 16.63 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_rl_v3.py as hero_1: win 1, lose 1, draw 18 of 20; mean win time 5.52 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_rl_v3.py as hero_0: win 2, lose 0, draw 18 of 20; mean win time 28.35 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_rl_v5.py as hero_1: win 4, lose 16, draw 0 of 20; mean win time 11.11 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_rl_v5.py as hero_0: win 20, lose 0, draw 0 of 20; mean win time 8.98 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_rl_v5.py as hero_1: win 18, lose 0, draw 2 of 20; mean win time 9.05 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_rl_v5.py as hero_0: win 19, lose 0, draw 1 of 20; mean win time 11.14 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_classico.py as hero_0: win 20, lose 0, draw 0 of 20; mean win time 8.61 s
+RUIDOKIT RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_classico.py as hero_1: win 19, lose 1, draw 0 of 20; mean win time 10.67 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_1 vs sumo_classico.py as hero_0: win 20, lose 0, draw 0 of 20; mean win time 15.99 s
+SEMRUIDO RESULT sumo_rl_v6_fusao.py as hero_0 vs sumo_classico.py as hero_1: win 19, lose 0, draw 1 of 20; mean win time 18.81 s
+FIM

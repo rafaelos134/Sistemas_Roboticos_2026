@@ -1,0 +1,95 @@
+{
+  "args": {
+    "name": "ctf_zs_fuga",
+    "net": "separate",
+    "envs": 2048,
+    "iters": 600,
+    "seed": 0,
+    "init_std": 0.3,
+    "ent": 0.003,
+    "easy": 0.8,
+    "episode_s": 30.0,
+    "score": 20.0,
+    "conceded": -10.0,
+    "promote": 0.7,
+    "min_stage_iters": 50,
+    "stage": 1,
+    "att_styles": "[1,0,0,0]",
+    "def_styles": "[1,0,0,0,0]",
+    "strong": 1.0,
+    "dr_speed": 0.1,
+    "dr_delay": 0.3,
+    "obs_noise": 0.004,
+    "yaw_noise": 0.03,
+    "save_every": 100,
+    "easy_mate": 0.0,
+    "d_guard": 0.3,
+    "mix": "{\"script\": 0.8, \"er\": 0.2}",
+    "def_script": true,
+    "init": "runs/ctf_zs_base"
+  },
+  "ppo": {
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "gamma": 0.995,
+    "lam": 0.95,
+    "clip": 0.2,
+    "lr": 0.0003,
+    "ent_coef": 0.003,
+    "vf_coef": 1.0,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.02
+  },
+  "team_reward": {
+    "score": 20.0,
+    "conceded": -10.0,
+    "team_pickup": 1.5,
+    "d_pickup": 3.0,
+    "d_tag": 2.0,
+    "d_tag_carrier": 3.0,
+    "d_enemy_pickup": -3.0,
+    "d_tagged": -1.0,
+    "d_tagged_carrying": -2.0,
+    "d_home": 2.0,
+    "d_chase": 1.0,
+    "d_guard": 0.3,
+    "guard_d": 0.1,
+    "time_cost": 0.0,
+    "draw": 0.0
+  },
+  "att_reward": {
+    "score": 10.0,
+    "conceded": -5.0,
+    "pickup": 3.0,
+    "tagged": -1.0,
+    "tagged_carrying": -2.0,
+    "tag": 1.0,
+    "shape_flag": 2.0,
+    "shape_home": 2.0,
+    "d0": 1.3,
+    "avoid": 2.0,
+    "avoid_r": 0.18,
+    "immune_pickup": 1.0
+  },
+  "er_teams": [
+    "Claude",
+    "TuoLing",
+    "RTech",
+    "Nyx",
+    "R2D2",
+    "Corsa",
+    "SoLaDaBot",
+    "Tech"
+  ],
+  "stages": [
+    {
+      "stopped": 1.0
+    },
+    {
+      "script": 0.8,
+      "er": 0.2
+    }
+  ],
+  "obs": "ctf_obs.py"
+}

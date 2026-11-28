@@ -1,0 +1,274 @@
+jogo,id,status,azul,vermelho,placar_azul,placar_vermelho,nosso_lado,commit,versao,inicio,fim
+ctf,455,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,e656985,outra,2026-11-24 20:35:03,2026-11-24 20:39:07
+ctf,458,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,e656985,outra,2026-11-24 20:47:35,2026-11-24 20:51:43
+ctf,461,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,e656985,outra,2026-11-24 21:00:09,2026-11-24 21:04:15
+ctf,466,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,vermelho,e656985,outra,2026-11-24 21:21:06,2026-11-24 21:25:12
+ctf,471,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,vermelho,e656985,outra,2026-11-24 21:42:02,2026-11-24 21:46:08
+ctf,483,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,e88539c,outra,2026-11-24 22:32:20,2026-11-24 22:36:25
+ctf,486,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,e88539c,outra,2026-11-24 22:44:53,2026-11-24 22:48:57
+ctf,489,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,e88539c,outra,2026-11-24 22:57:27,2026-11-24 23:01:32
+ctf,494,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,0,0,azul,e88539c,outra,2026-11-24 23:18:24,2026-11-24 23:22:31
+ctf,499,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,e88539c,outra,2026-11-24 23:39:22,2026-11-24 23:43:28
+ctf,504,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,fe1299b,classico,2026-11-25 00:00:20,2026-11-25 00:04:27
+ctf,511,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,5ca7b4d,classico,2026-11-25 00:29:41,2026-11-25 00:33:46
+ctf,514,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,1,azul,5ca7b4d,classico,2026-11-25 00:42:13,2026-11-25 00:46:18
+ctf,517,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,5ca7b4d,classico,2026-11-25 00:54:45,2026-11-25 00:58:51
+ctf,522,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,1,0,vermelho,09e24b2,rl,2026-11-25 01:15:42,2026-11-25 01:19:48
+ctf,527,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 01:36:37,2026-11-25 01:40:41
+ctf,532,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 01:57:31,2026-11-25 02:01:37
+ctf,536,rodando,Grupo 5 · Corsa,Grupo 4 · R2D2,,,vermelho,09e24b2,rl,2026-11-25 02:14:14,
+ctf,539,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 02:26:48,2026-11-25 02:30:55
+ctf,542,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,3,0,vermelho,09e24b2,rl,2026-11-25 02:39:24,2026-11-25 02:43:29
+ctf,545,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,1,0,vermelho,09e24b2,rl,2026-11-25 02:51:55,2026-11-25 02:56:01
+ctf,550,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,0,2,azul,09e24b2,rl,2026-11-25 03:12:50,2026-11-25 03:16:56
+ctf,555,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,09e24b2,rl,2026-11-25 03:33:44,2026-11-25 03:37:51
+ctf,560,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,1,azul,09e24b2,rl,2026-11-25 03:54:41,2026-11-25 03:58:47
+ctf,567,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,09e24b2,rl,2026-11-25 04:24:01,2026-11-25 04:28:06
+ctf,570,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,1,0,azul,09e24b2,rl,2026-11-25 04:36:32,2026-11-25 04:40:38
+ctf,573,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,3,azul,09e24b2,rl,2026-11-25 04:49:05,2026-11-25 04:53:10
+ctf,578,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 05:09:56,2026-11-25 05:14:02
+ctf,583,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 05:34:53,2026-11-25 05:39:00
+ctf,588,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,1,0,vermelho,09e24b2,rl,2026-11-25 05:55:43,2026-11-25 05:59:48
+ctf,595,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 06:24:55,2026-11-25 06:29:00
+ctf,598,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,1,0,vermelho,09e24b2,rl,2026-11-25 06:37:25,2026-11-25 06:41:30
+ctf,601,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 06:49:57,2026-11-25 06:54:03
+ctf,606,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,0,1,azul,09e24b2,rl,2026-11-25 07:10:52,2026-11-25 07:14:56
+ctf,611,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,09e24b2,rl,2026-11-25 07:31:45,2026-11-25 07:35:52
+ctf,616,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,09e24b2,rl,2026-11-25 07:52:38,2026-11-25 07:56:42
+ctf,620,rodando,Grupo 4 · R2D2,Grupo 5 · Corsa,,,azul,09e24b2,rl,2026-11-25 08:09:20,
+ctf,623,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,09e24b2,rl,2026-11-25 08:21:53,2026-11-25 08:25:58
+ctf,626,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,09e24b2,rl,2026-11-25 08:34:24,2026-11-25 08:38:29
+ctf,629,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,1,azul,09e24b2,rl,2026-11-25 08:46:55,2026-11-25 08:51:02
+ctf,634,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,vermelho,deb2374,classico,2026-11-25 09:07:49,2026-11-25 09:11:55
+ctf,639,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,vermelho,deb2374,classico,2026-11-25 09:28:41,2026-11-25 09:32:47
+ctf,644,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,deb2374,classico,2026-11-25 09:49:36,2026-11-25 09:53:40
+ctf,651,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,eaf1f0f,classico,2026-11-25 10:18:49,2026-11-25 10:22:53
+ctf,654,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,eaf1f0f,classico,2026-11-25 10:31:20,2026-11-25 10:35:25
+ctf,657,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,eaf1f0f,classico,2026-11-25 10:43:51,2026-11-25 10:47:57
+ctf,662,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,1,0,azul,72ca51b,classico,2026-11-25 11:04:45,2026-11-25 11:08:50
+ctf,667,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,72ca51b,classico,2026-11-25 11:25:38,2026-11-25 11:29:42
+ctf,672,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,72ca51b,classico,2026-11-25 11:46:30,2026-11-25 11:50:36
+ctf,676,rodando,Grupo 4 · R2D2,Grupo 5 · Corsa,,,azul,72ca51b,classico,2026-11-25 12:03:11,
+ctf,679,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,8f155dd,classico,2026-11-25 12:15:41,2026-11-25 12:19:47
+ctf,682,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,d26d33c,classico,2026-11-25 12:28:15,2026-11-25 12:32:21
+ctf,685,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,d26d33c,classico,2026-11-25 12:40:47,2026-11-25 12:44:51
+ctf,690,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 13:01:38,2026-11-25 13:05:43
+ctf,695,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 13:22:30,2026-11-25 13:26:37
+ctf,700,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 13:43:25,2026-11-25 13:47:30
+ctf,707,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 14:12:42,2026-11-25 14:16:47
+ctf,710,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 14:25:13,2026-11-25 14:29:19
+ctf,713,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 14:37:47,2026-11-25 14:41:53
+ctf,718,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,1,0,azul,d26d33c,classico,2026-11-25 14:58:44,2026-11-25 15:02:50
+ctf,723,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,d26d33c,classico,2026-11-25 15:19:40,2026-11-25 15:23:46
+ctf,728,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,3,azul,d26d33c,classico,2026-11-25 15:40:34,2026-11-25 15:44:39
+ctf,735,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,3a1c055,classico,2026-11-25 16:09:46,2026-11-25 16:13:52
+ctf,738,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,3a1c055,classico,2026-11-25 16:22:17,2026-11-25 16:26:22
+ctf,741,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,3a1c055,classico,2026-11-25 16:34:50,2026-11-25 16:38:55
+ctf,746,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,1,vermelho,3a1c055,classico,2026-11-25 16:55:45,2026-11-25 16:59:50
+ctf,751,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,vermelho,3a1c055,classico,2026-11-25 17:16:38,2026-11-25 17:20:43
+ctf,756,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,1,0,vermelho,3a1c055,classico,2026-11-25 17:37:30,2026-11-25 17:41:35
+ctf,763,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,3a1c055,classico,2026-11-25 18:06:46,2026-11-25 18:10:51
+ctf,766,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,3a1c055,classico,2026-11-25 18:19:17,2026-11-25 18:23:23
+ctf,769,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,3a1c055,classico,2026-11-25 18:31:50,2026-11-25 18:35:56
+ctf,774,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,4f2689e,classico,2026-11-25 18:52:43,2026-11-25 18:56:48
+ctf,779,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,4f2689e,classico,2026-11-25 19:13:39,2026-11-25 19:17:43
+ctf,784,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,3,azul,4f2689e,classico,2026-11-25 19:34:35,2026-11-25 19:38:41
+ctf,791,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,4f2689e,classico,2026-11-25 20:04:11,2026-11-25 20:08:29
+ctf,794,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,4f2689e,classico,2026-11-25 20:18:00,2026-11-25 20:22:45
+ctf,797,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,4f2689e,classico,2026-11-25 20:32:38,2026-11-25 20:37:24
+ctf,802,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,vermelho,4f2689e,classico,2026-11-25 20:56:51,2026-11-25 21:01:33
+ctf,807,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,0,vermelho,4f2689e,classico,2026-11-25 21:21:09,2026-11-25 21:25:57
+ctf,812,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,2,0,vermelho,4f2689e,classico,2026-11-25 21:44:28,2026-11-25 21:48:44
+ctf,816,rodando,Grupo 5 · Corsa,Grupo 4 · R2D2,,,vermelho,4f2689e,classico,2026-11-25 22:04:12,
+ctf,819,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,4f2689e,classico,2026-11-25 22:21:16,2026-11-25 22:26:09
+ctf,822,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,4f2689e,classico,2026-11-25 22:36:07,2026-11-25 22:40:57
+soccer,469,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,1,9,vermelho,e656985,outra,2026-11-24 21:24:50,2026-11-24 21:28:55
+soccer,472,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,e656985,outra,2026-11-24 21:37:22,2026-11-24 21:41:28
+soccer,475,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,1,2,vermelho,e656985,outra,2026-11-24 21:49:57,2026-11-24 21:54:02
+soccer,480,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,5,1,azul,e656985,outra,2026-11-24 22:10:52,2026-11-24 22:14:58
+soccer,485,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,4,0,azul,e88539c,outra,2026-11-24 22:31:50,2026-11-24 22:35:59
+soccer,490,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,3,4,azul,e88539c,outra,2026-11-24 22:52:51,2026-11-24 22:56:57
+soccer,494,rodando,Grupo 4 · R2D2,Grupo 5 · Corsa,,,azul,e88539c,outra,2026-11-24 23:09:38,
+soccer,497,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,4,0,azul,e88539c,outra,2026-11-24 23:22:11,2026-11-24 23:26:17
+soccer,500,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,e88539c,outra,2026-11-24 23:34:45,2026-11-24 23:38:51
+soccer,503,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),3,1,azul,e88539c,outra,2026-11-24 23:47:19,2026-11-24 23:51:28
+soccer,508,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,vermelho,fe1299b,classico,2026-11-25 00:08:18,2026-11-25 00:12:24
+soccer,513,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,1,1,vermelho,5ca7b4d,classico,2026-11-25 00:29:13,2026-11-25 00:33:19
+soccer,518,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,2,0,vermelho,5ca7b4d,classico,2026-11-25 00:50:10,2026-11-25 00:54:15
+soccer,525,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,5,vermelho,09e24b2,rl,2026-11-25 01:19:23,2026-11-25 01:23:28
+soccer,528,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,1,0,vermelho,09e24b2,rl,2026-11-25 01:31:54,2026-11-25 01:35:59
+soccer,531,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,4,vermelho,09e24b2,rl,2026-11-25 01:44:26,2026-11-25 01:48:32
+soccer,536,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,5,1,azul,09e24b2,rl,2026-11-25 02:05:21,2026-11-25 02:09:27
+soccer,541,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,2,0,azul,09e24b2,rl,2026-11-25 02:26:16,2026-11-25 02:30:21
+soccer,546,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,4,3,azul,09e24b2,rl,2026-11-25 02:47:06,2026-11-25 02:51:14
+soccer,550,rodando,Grupo 4 · R2D2,Grupo 5 · Corsa,,,azul,09e24b2,rl,2026-11-25 03:03:53,
+soccer,553,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,3,1,azul,09e24b2,rl,2026-11-25 03:16:25,2026-11-25 03:20:31
+soccer,556,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,1,1,azul,09e24b2,rl,2026-11-25 03:28:58,2026-11-25 03:33:04
+soccer,559,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),2,0,azul,09e24b2,rl,2026-11-25 03:41:29,2026-11-25 03:45:35
+soccer,564,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,3,1,vermelho,09e24b2,rl,2026-11-25 04:02:26,2026-11-25 04:06:30
+soccer,569,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,4,vermelho,09e24b2,rl,2026-11-25 04:23:19,2026-11-25 04:27:23
+soccer,574,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,4,2,vermelho,09e24b2,rl,2026-11-25 04:44:14,2026-11-25 04:48:19
+soccer,581,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,1,13,vermelho,09e24b2,rl,2026-11-25 05:18:12,2026-11-25 05:22:21
+soccer,584,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,1,2,vermelho,09e24b2,rl,2026-11-25 05:30:46,2026-11-25 05:34:50
+soccer,587,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,6,vermelho,09e24b2,rl,2026-11-25 05:43:15,2026-11-25 05:47:21
+soccer,592,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,2,0,azul,09e24b2,rl,2026-11-25 06:04:09,2026-11-25 06:08:15
+soccer,597,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,09e24b2,rl,2026-11-25 06:25:01,2026-11-25 06:29:08
+soccer,602,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,3,2,azul,09e24b2,rl,2026-11-25 06:45:55,2026-11-25 06:50:01
+soccer,609,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,3,0,azul,09e24b2,rl,2026-11-25 07:15:15,2026-11-25 07:19:20
+soccer,612,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,1,1,azul,09e24b2,rl,2026-11-25 07:27:48,2026-11-25 07:31:54
+soccer,615,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),2,1,azul,09e24b2,rl,2026-11-25 07:40:20,2026-11-25 07:44:27
+soccer,620,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,5,vermelho,09e24b2,rl,2026-11-25 08:01:16,2026-11-25 08:05:22
+soccer,625,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,2,0,vermelho,09e24b2,rl,2026-11-25 08:22:12,2026-11-25 08:26:16
+soccer,630,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,3,1,vermelho,09e24b2,rl,2026-11-25 08:43:06,2026-11-25 08:47:12
+soccer,637,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,1,1,vermelho,deb2374,classico,2026-11-25 09:12:23,2026-11-25 09:16:29
+soccer,640,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,deb2374,classico,2026-11-25 09:24:57,2026-11-25 09:29:02
+soccer,643,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,2,0,vermelho,deb2374,classico,2026-11-25 09:37:32,2026-11-25 09:41:37
+soccer,648,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,0,0,azul,cb14cf5,classico,2026-11-25 09:58:28,2026-11-25 10:02:35
+soccer,653,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,eaf1f0f,classico,2026-11-25 10:19:26,2026-11-25 10:23:32
+soccer,658,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,eaf1f0f,classico,2026-11-25 10:40:19,2026-11-25 10:44:25
+soccer,665,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,72ca51b,classico,2026-11-25 11:09:37,2026-11-25 11:13:43
+soccer,668,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,2,azul,72ca51b,classico,2026-11-25 11:22:10,2026-11-25 11:26:17
+soccer,671,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,1,azul,72ca51b,classico,2026-11-25 11:34:44,2026-11-25 11:38:50
+soccer,676,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,0,vermelho,72ca51b,classico,2026-11-25 11:55:38,2026-11-25 11:59:44
+soccer,681,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,2,1,vermelho,8f155dd,classico,2026-11-25 12:16:34,2026-11-25 12:20:39
+soccer,686,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,2,0,vermelho,d26d33c,classico,2026-11-25 12:37:30,2026-11-25 12:41:35
+soccer,693,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 13:06:47,2026-11-25 13:10:55
+soccer,696,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,1,0,vermelho,d26d33c,classico,2026-11-25 13:19:23,2026-11-25 13:23:30
+soccer,699,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,d26d33c,classico,2026-11-25 13:31:58,2026-11-25 13:36:03
+soccer,704,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,0,1,azul,d26d33c,classico,2026-11-25 13:52:52,2026-11-25 13:56:59
+soccer,709,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,d26d33c,classico,2026-11-25 14:13:49,2026-11-25 14:17:54
+soccer,714,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,2,azul,d26d33c,classico,2026-11-25 14:34:43,2026-11-25 14:38:49
+soccer,718,rodando,Grupo 4 · R2D2,Grupo 5 · Corsa,,,azul,d26d33c,classico,2026-11-25 14:51:27,
+soccer,721,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,d26d33c,classico,2026-11-25 15:04:02,2026-11-25 15:08:10
+soccer,724,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,1,0,azul,d26d33c,classico,2026-11-25 15:16:35,2026-11-25 15:20:42
+soccer,727,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,d26d33c,classico,2026-11-25 15:29:09,2026-11-25 15:33:16
+soccer,732,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,1,0,vermelho,d26d33c,classico,2026-11-25 15:50:07,2026-11-25 15:54:12
+soccer,737,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,1,vermelho,3a1c055,classico,2026-11-25 16:11:04,2026-11-25 16:15:10
+soccer,742,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,1,0,vermelho,3a1c055,classico,2026-11-25 16:31:59,2026-11-25 16:36:05
+soccer,749,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,3a1c055,classico,2026-11-25 17:01:17,2026-11-25 17:05:23
+soccer,752,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,6,0,vermelho,3a1c055,classico,2026-11-25 17:13:52,2026-11-25 17:17:57
+soccer,755,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,3a1c055,classico,2026-11-25 17:26:26,2026-11-25 17:30:32
+soccer,760,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,0,0,azul,3a1c055,classico,2026-11-25 17:47:18,2026-11-25 17:51:25
+soccer,765,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,0,azul,3a1c055,classico,2026-11-25 18:08:15,2026-11-25 18:12:22
+soccer,770,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,3a1c055,classico,2026-11-25 18:29:10,2026-11-25 18:33:15
+soccer,774,rodando,Grupo 4 · R2D2,Grupo 5 · Corsa,,,azul,3a1c055,classico,2026-11-25 18:45:54,
+soccer,777,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,1,0,azul,4f2689e,classico,2026-11-25 18:58:25,2026-11-25 19:02:31
+soccer,780,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,1,azul,4f2689e,classico,2026-11-25 19:10:59,2026-11-25 19:15:06
+soccer,783,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,2,azul,4f2689e,classico,2026-11-25 19:23:31,2026-11-25 19:27:38
+soccer,788,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,1,0,vermelho,4f2689e,classico,2026-11-25 19:44:27,2026-11-25 19:48:33
+soccer,793,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,1,1,vermelho,4f2689e,classico,2026-11-25 20:05:53,2026-11-25 20:10:01
+soccer,798,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,2,0,vermelho,4f2689e,classico,2026-11-25 20:29:23,2026-11-25 20:34:13
+soccer,802,rodando,Grupo 5 · Corsa,Grupo 4 · R2D2,,,vermelho,4f2689e,classico,2026-11-25 20:48:51,
+soccer,805,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,1,0,vermelho,4f2689e,classico,2026-11-25 21:03:25,2026-11-25 21:08:13
+soccer,808,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,1,0,vermelho,4f2689e,classico,2026-11-25 21:18:05,2026-11-25 21:23:03
+soccer,811,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,1,0,vermelho,4f2689e,classico,2026-11-25 21:33:31,2026-11-25 21:37:37
+soccer,816,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,0,0,azul,4f2689e,classico,2026-11-25 21:56:04,2026-11-25 22:01:02
+soccer,821,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,0,1,azul,4f2689e,classico,2026-11-25 22:24:01,2026-11-25 22:28:56
+soccer,826,erro,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,,,azul,4f2689e,classico,2026-11-25 22:48:56,
+sumo,599,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,e656985,outra,2026-11-24 20:27:10,2026-11-24 20:31:47
+sumo,602,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,1,0,azul,e656985,outra,2026-11-24 20:37:41,2026-11-24 20:42:12
+sumo,605,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),1,0,azul,e656985,outra,2026-11-24 20:47:41,2026-11-24 20:52:14
+sumo,610,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,e656985,outra,2026-11-24 21:00:50,2026-11-24 21:02:32
+sumo,615,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,e656985,outra,2026-11-24 21:17:42,2026-11-24 21:19:15
+sumo,620,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,2,vermelho,e656985,outra,2026-11-24 21:31:55,2026-11-24 21:35:42
+sumo,624,rodando,Grupo 5 · Corsa,Grupo 4 · R2D2,,,vermelho,e656985,outra,2026-11-24 21:46:12,
+sumo,627,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,e656985,outra,2026-11-24 21:55:04,2026-11-24 21:59:41
+sumo,630,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,2,vermelho,e656985,outra,2026-11-24 22:05:31,2026-11-24 22:09:28
+sumo,633,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,3,vermelho,e656985,outra,2026-11-24 22:15:32,2026-11-24 22:19:04
+sumo,638,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,e88539c,outra,2026-11-24 22:28:31,2026-11-24 22:30:17
+sumo,643,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,3,0,azul,e88539c,outra,2026-11-24 22:47:12,2026-11-24 22:48:44
+sumo,648,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,3,0,azul,e88539c,outra,2026-11-24 23:02:10,2026-11-24 23:05:05
+sumo,655,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,e88539c,outra,2026-11-24 23:24:24,2026-11-24 23:29:01
+sumo,658,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,2,0,azul,e88539c,outra,2026-11-24 23:34:48,2026-11-24 23:39:00
+sumo,661,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),2,0,azul,e88539c,outra,2026-11-24 23:45:33,2026-11-24 23:49:31
+sumo,666,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,fe1299b,rl_v3 (marcado como classico),2026-11-24 23:59:06,2026-11-25 00:00:51
+sumo,671,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,5ca7b4d,rl_v3 (marcado como classico),2026-11-25 00:14:46,2026-11-25 00:16:46
+sumo,676,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,5ca7b4d,rl_v3 (marcado como classico),2026-11-25 00:28:02,2026-11-25 00:32:39
+sumo,680,rodando,Grupo 5 · Corsa,Grupo 4 · R2D2,,,vermelho,5ca7b4d,rl_v3 (marcado como classico),2026-11-25 00:43:45,
+sumo,683,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,5ca7b4d,rl_v3 (marcado como classico),2026-11-25 00:52:17,2026-11-25 00:56:53
+sumo,686,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,2,vermelho,09e24b2,rl,2026-11-25 01:03:46,2026-11-25 01:08:05
+sumo,689,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 01:13:56,2026-11-25 01:16:47
+sumo,694,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,09e24b2,rl,2026-11-25 01:28:02,2026-11-25 01:29:51
+sumo,699,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,3,0,azul,09e24b2,rl,2026-11-25 01:44:34,2026-11-25 01:46:10
+sumo,704,rodando,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,,,azul,09e24b2,rl,2026-11-25 02:00:00,
+sumo,711,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,09e24b2,rl,2026-11-25 02:21:58,2026-11-25 02:26:35
+sumo,714,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,3,0,azul,09e24b2,rl,2026-11-25 02:32:44,2026-11-25 02:35:19
+sumo,717,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),3,0,azul,09e24b2,rl,2026-11-25 02:41:43,2026-11-25 02:44:36
+sumo,722,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 02:53:11,2026-11-25 02:55:10
+sumo,727,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 03:10:44,2026-11-25 03:13:05
+sumo,732,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 03:24:03,2026-11-25 03:26:53
+sumo,739,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 03:45:38,2026-11-25 03:50:14
+sumo,742,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 03:56:32,2026-11-25 03:59:39
+sumo,745,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 04:05:24,2026-11-25 04:09:00
+sumo,750,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,09e24b2,rl,2026-11-25 04:18:17,2026-11-25 04:20:06
+sumo,755,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,3,0,azul,09e24b2,rl,2026-11-25 04:34:32,2026-11-25 04:36:20
+sumo,760,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,3,1,azul,09e24b2,rl,2026-11-25 04:48:26,2026-11-25 04:51:57
+sumo,767,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,09e24b2,rl,2026-11-25 05:06:54,2026-11-25 05:11:29
+sumo,770,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,2,0,azul,09e24b2,rl,2026-11-25 05:21:05,2026-11-25 05:25:09
+sumo,773,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),2,0,azul,09e24b2,rl,2026-11-25 05:29:20,2026-11-25 05:33:29
+sumo,778,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 05:42:58,2026-11-25 05:44:45
+sumo,783,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 05:58:38,2026-11-25 06:00:13
+sumo,788,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 06:12:36,2026-11-25 06:14:50
+sumo,795,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,09e24b2,rl,2026-11-25 06:34:31,2026-11-25 06:39:06
+sumo,798,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,2,vermelho,09e24b2,rl,2026-11-25 06:46:16,2026-11-25 06:50:18
+sumo,801,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,1,vermelho,09e24b2,rl,2026-11-25 06:54:14,2026-11-25 06:58:46
+sumo,806,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,09e24b2,rl,2026-11-25 07:06:52,2026-11-25 07:08:38
+sumo,811,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,3,0,azul,09e24b2,rl,2026-11-25 07:22:33,2026-11-25 07:24:10
+sumo,816,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,2,1,azul,09e24b2,rl,2026-11-25 07:37:15,2026-11-25 07:40:47
+sumo,823,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,09e24b2,rl,2026-11-25 08:00:42,2026-11-25 08:05:18
+sumo,826,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,09e24b2,rl,2026-11-25 08:12:20,2026-11-25 08:16:56
+sumo,829,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),3,0,azul,09e24b2,rl,2026-11-25 08:23:24,2026-11-25 08:26:32
+sumo,834,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 08:34:30,2026-11-25 08:36:19
+sumo,839,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,09e24b2,rl,2026-11-25 08:50:27,2026-11-25 08:52:04
+sumo,844,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,834c680,rl_v3 (marcado como classico),2026-11-25 09:04:57,2026-11-25 09:09:34
+sumo,851,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,deb2374,rl_v3 (marcado como classico),2026-11-25 09:28:35,2026-11-25 09:33:10
+sumo,854,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,deb2374,rl_v3 (marcado como classico),2026-11-25 09:39:02,2026-11-25 09:43:38
+sumo,857,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,deb2374,rl_v3 (marcado como classico),2026-11-25 09:47:34,2026-11-25 09:52:10
+sumo,862,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,cb14cf5,rl_v3 (marcado como classico),2026-11-25 10:02:17,2026-11-25 10:04:05
+sumo,867,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,1,0,azul,eaf1f0f,rl_v3 (marcado como classico),2026-11-25 10:17:49,2026-11-25 10:22:23
+sumo,872,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,eaf1f0f,rl_v3 (marcado como classico),2026-11-25 10:34:24,2026-11-25 10:39:00
+sumo,879,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,72ca51b,rl_v3 (marcado como classico),2026-11-25 10:57:51,2026-11-25 11:02:27
+sumo,882,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,72ca51b,rl_v3 (marcado como classico),2026-11-25 11:08:39,2026-11-25 11:13:17
+sumo,885,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,72ca51b,rl_v3 (marcado como classico),2026-11-25 11:19:26,2026-11-25 11:24:02
+sumo,890,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,72ca51b,rl_v3 (marcado como classico),2026-11-25 11:33:20,2026-11-25 11:35:28
+sumo,895,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,72ca51b,rl_v3 (marcado como classico),2026-11-25 11:51:36,2026-11-25 11:53:48
+sumo,900,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,72ca51b,rl_v3 (marcado como classico),2026-11-25 12:06:01,2026-11-25 12:10:36
+sumo,907,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,2,1,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 12:30:29,2026-11-25 12:34:33
+sumo,910,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 12:43:39,2026-11-25 12:48:15
+sumo,913,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 12:54:27,2026-11-25 12:59:04
+sumo,918,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,d26d33c,rl_v3 (marcado como classico),2026-11-25 13:08:54,2026-11-25 13:10:39
+sumo,923,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,2,0,azul,d26d33c,rl_v3 (marcado como classico),2026-11-25 13:24:34,2026-11-25 13:28:11
+sumo,928,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,d26d33c,rl_v3 (marcado como classico),2026-11-25 13:42:36,2026-11-25 13:47:12
+sumo,935,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,2,0,azul,d26d33c,rl_v3 (marcado como classico),2026-11-25 14:08:08,2026-11-25 14:12:23
+sumo,938,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,d26d33c,rl_v3 (marcado como classico),2026-11-25 14:18:49,2026-11-25 14:23:27
+sumo,941,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,d26d33c,rl_v3 (marcado como classico),2026-11-25 14:29:28,2026-11-25 14:34:04
+sumo,946,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 14:44:15,2026-11-25 14:46:22
+sumo,951,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,2,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 15:00:23,2026-11-25 15:03:54
+sumo,956,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 15:17:55,2026-11-25 15:22:33
+sumo,963,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 15:42:20,2026-11-25 15:46:57
+sumo,966,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,d26d33c,rl_v3 (marcado como classico),2026-11-25 15:54:17,2026-11-25 15:58:53
+sumo,969,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,3a1c055,rl_v3 (marcado como classico),2026-11-25 16:05:04,2026-11-25 16:09:42
+sumo,974,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,3a1c055,rl_v3 (marcado como classico),2026-11-25 16:19:11,2026-11-25 16:21:14
+sumo,979,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,1,0,azul,3a1c055,rl_v3 (marcado como classico),2026-11-25 16:35:43,2026-11-25 16:39:49
+sumo,984,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,3a1c055,rl_v3 (marcado como classico),2026-11-25 16:51:48,2026-11-25 16:56:25
+sumo,991,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,3a1c055,rl_v3 (marcado como classico),2026-11-25 17:17:11,2026-11-25 17:21:47
+sumo,994,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,3a1c055,rl_v3 (marcado como classico),2026-11-25 17:29:18,2026-11-25 17:33:54
+sumo,997,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,3a1c055,rl_v3 (marcado como classico),2026-11-25 17:37:44,2026-11-25 17:42:20
+sumo,1002,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,3a1c055,rl_v3 (marcado como classico),2026-11-25 17:51:20,2026-11-25 17:53:42
+sumo,1007,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,3a1c055,rl_v3 (marcado como classico),2026-11-25 18:08:16,2026-11-25 18:09:48
+sumo,1012,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,3a1c055,rl_v3 (marcado como classico),2026-11-25 18:22:51,2026-11-25 18:27:27
+sumo,1019,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,3a1c055,rl_v3 (marcado como classico),2026-11-25 18:49:10,2026-11-25 18:53:46
+sumo,1022,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 19:00:38,2026-11-25 19:05:14
+sumo,1025,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 19:11:20,2026-11-25 19:15:57
+sumo,1030,concluida,Grupo 4 · R2D2,Grupo 6 · SoLaDaBot,3,0,azul,4f2689e,rl_v3 (marcado como classico),2026-11-25 19:24:11,2026-11-25 19:26:03
+sumo,1035,concluida,Grupo 4 · R2D2,Grupo 3 · Nyx,2,0,azul,4f2689e,rl_v3 (marcado como classico),2026-11-25 19:40:07,2026-11-25 19:43:37
+sumo,1040,concluida,Grupo 4 · R2D2,Grupo 2 · RTech Tabajara,0,0,azul,4f2689e,rl_v3 (marcado como classico),2026-11-25 19:55:41,2026-11-25 20:00:19
+sumo,1047,concluida,Grupo 4 · R2D2,Grupo 1 · TuoLing,0,0,azul,4f2689e,rl_v3 (marcado como classico),2026-11-25 20:23:19,2026-11-25 20:28:38
+sumo,1050,concluida,Grupo 4 · R2D2,Grupo 7 · Tech,0,0,azul,4f2689e,rl_v3 (marcado como classico),2026-11-25 20:35:39,2026-11-25 20:40:56
+sumo,1053,concluida,Grupo 4 · R2D2,Claude (agente da disciplina),0,0,azul,4f2689e,rl_v3 (marcado como classico),2026-11-25 20:47:15,2026-11-25 20:52:32
+sumo,1058,concluida,Grupo 6 · SoLaDaBot,Grupo 4 · R2D2,0,3,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 21:03:34,2026-11-25 21:05:57
+sumo,1063,concluida,Grupo 3 · Nyx,Grupo 4 · R2D2,0,3,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 21:23:26,2026-11-25 21:26:30
+sumo,1068,concluida,Grupo 2 · RTech Tabajara,Grupo 4 · R2D2,0,0,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 21:42:19,2026-11-25 21:47:04
+sumo,1075,concluida,Grupo 1 · TuoLing,Grupo 4 · R2D2,0,0,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 22:13:29,2026-11-25 22:19:38
+sumo,1078,concluida,Grupo 7 · Tech,Grupo 4 · R2D2,0,0,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 22:28:47,2026-11-25 22:34:11
+sumo,1081,concluida,Claude (agente da disciplina),Grupo 4 · R2D2,0,0,vermelho,4f2689e,rl_v3 (marcado como classico),2026-11-25 22:39:16,2026-11-25 22:44:39

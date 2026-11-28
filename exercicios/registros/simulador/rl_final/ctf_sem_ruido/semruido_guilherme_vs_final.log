@@ -1,0 +1,4 @@
+match 1 (5 min): eval_ctf_classico 0 x 3 ctf_zs_robusto | pegadas 0 x 8 | segurados 52 x 38
+match 2 (5 min): eval_ctf_classico 0 x 3 ctf_zs_robusto | pegadas 0 x 11 | segurados 51 x 39
+match 3 (5 min): eval_ctf_classico 0 x 3 ctf_zs_robusto | pegadas 0 x 16 | segurados 52 x 39
+RESULT eval_ctf_classico (blue) vs ctf_zs_robusto (red): 3 matches of 5 min, points 0 x 9, pickups 0 x 35, held 155 x 116

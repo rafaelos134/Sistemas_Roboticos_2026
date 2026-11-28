@@ -1,0 +1,400 @@
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.55,"jogo":{"wins":[0,2],"draws":0,"t":31.54,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.6,"jogo":{"wins":[0,2],"draws":0,"t":31.58,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.65,"jogo":{"wins":[0,2],"draws":0,"t":31.62,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.7,"jogo":{"wins":[0,2],"draws":0,"t":31.7,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.75,"jogo":{"wins":[0,2],"draws":0,"t":31.74,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 TEL {"t":1795575631.75,"jogo":{"wins":[0,2],"draws":0,"t":31.74,"message":"hero_1 venceu"},"me":[-0.026,0.327,1.392,-0.0,-0.0],"opp":[-0.02,0.402,-1.471,0.0,0.0],"cmd":[0.2,-1.219]}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.8,"jogo":{"wins":[0,2],"draws":0,"t":31.78,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.85,"jogo":{"wins":[0,2],"draws":0,"t":31.82,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.9,"jogo":{"wins":[0,2],"draws":0,"t":31.9,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575631.95,"jogo":{"wins":[0,2],"draws":0,"t":31.94,"message":"hero_1 venceu"}}
+00:00:31 INFO  /sumo_1 EVT {"t":1795575632.0,"jogo":{"wins":[0,2],"draws":0,"t":31.98,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.05,"jogo":{"wins":[0,2],"draws":0,"t":32.02,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.1,"jogo":{"wins":[0,2],"draws":0,"t":32.1,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.15,"jogo":{"wins":[0,2],"draws":0,"t":32.14,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.2,"jogo":{"wins":[0,2],"draws":0,"t":32.18,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.25,"jogo":{"wins":[0,2],"draws":0,"t":32.22,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.3,"jogo":{"wins":[0,2],"draws":0,"t":32.3,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 TEL {"t":1795575632.3,"jogo":{"wins":[0,2],"draws":0,"t":32.3,"message":"hero_1 venceu"},"me":[-0.026,0.327,1.392,0.0,-0.0],"opp":[-0.02,0.402,-1.471,-0.0,0.0],"cmd":[0.195,-3.531]}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.35,"jogo":{"wins":[0,2],"draws":0,"t":32.34,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.4,"jogo":{"wins":[0,2],"draws":0,"t":32.38,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.45,"jogo":{"wins":[0,2],"draws":0,"t":32.42,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.5,"jogo":{"wins":[0,2],"draws":0,"t":32.5,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.55,"jogo":{"wins":[0,2],"draws":0,"t":32.54,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.6,"jogo":{"wins":[0,2],"draws":0,"t":32.58,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.65,"jogo":{"wins":[0,2],"draws":0,"t":32.62,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.7,"jogo":{"wins":[0,2],"draws":0,"t":32.7,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.75,"jogo":{"wins":[0,2],"draws":0,"t":32.74,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.8,"jogo":{"wins":[0,2],"draws":0,"t":32.78,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 TEL {"t":1795575632.8,"jogo":{"wins":[0,2],"draws":0,"t":32.78,"message":"hero_1 venceu"},"me":[-0.026,0.327,1.392,-0.0,-0.0],"opp":[-0.02,0.402,-1.471,-0.0,-0.0],"cmd":[0.139,-3.075]}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.85,"jogo":{"wins":[0,2],"draws":0,"t":32.82,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.9,"jogo":{"wins":[0,2],"draws":0,"t":32.9,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575632.95,"jogo":{"wins":[0,2],"draws":0,"t":32.94,"message":"hero_1 venceu"}}
+00:00:32 INFO  /sumo_1 EVT {"t":1795575633.0,"jogo":{"wins":[0,2],"draws":0,"t":32.98,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.05,"jogo":{"wins":[0,2],"draws":0,"t":33.02,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.1,"jogo":{"wins":[0,2],"draws":0,"t":33.1,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.15,"jogo":{"wins":[0,2],"draws":0,"t":33.14,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.2,"jogo":{"wins":[0,2],"draws":0,"t":33.18,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.25,"jogo":{"wins":[0,2],"draws":0,"t":33.22,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.3,"jogo":{"wins":[0,2],"draws":0,"t":33.26,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.35,"jogo":{"wins":[0,2],"draws":0,"t":33.34,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 TEL {"t":1795575633.35,"jogo":{"wins":[0,2],"draws":0,"t":33.34,"message":"hero_1 venceu"},"me":[-0.026,0.327,1.392,-0.0,-0.0],"opp":[-0.02,0.402,-1.471,0.0,-0.0],"cmd":[0.139,-3.32]}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.4,"jogo":{"wins":[0,2],"draws":0,"t":33.38,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.45,"jogo":{"wins":[0,2],"draws":0,"t":33.42,"message":"hero_1 venceu"}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.5,"jogo":{"wins":[0,2],"draws":0,"t":33.5,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.55,"jogo":{"wins":[0,2],"draws":0,"t":33.54,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.6,"jogo":{"wins":[0,2],"draws":0,"t":33.58,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.65,"jogo":{"wins":[0,2],"draws":0,"t":33.62,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.7,"jogo":{"wins":[0,2],"draws":0,"t":33.7,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.75,"jogo":{"wins":[0,2],"draws":0,"t":33.74,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.8,"jogo":{"wins":[0,2],"draws":0,"t":33.78,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.85,"jogo":{"wins":[0,2],"draws":0,"t":33.82,"message":""}}
+00:00:33 INFO  /sumo_1 TEL {"t":1795575633.85,"jogo":{"wins":[0,2],"draws":0,"t":33.82,"message":""},"me":[0.131,0.024,-2.712,0.194,2.193],"opp":[-0.128,0.011,0.143,0.196,0.487],"cmd":[0.2,-0.784]}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.9,"jogo":{"wins":[0,2],"draws":0,"t":33.9,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575633.95,"jogo":{"wins":[0,2],"draws":0,"t":33.94,"message":""}}
+00:00:33 INFO  /sumo_1 EVT {"t":1795575634.0,"jogo":{"wins":[0,2],"draws":0,"t":33.98,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.05,"jogo":{"wins":[0,2],"draws":0,"t":34.02,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.1,"jogo":{"wins":[0,2],"draws":0,"t":34.1,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.15,"jogo":{"wins":[0,2],"draws":0,"t":34.14,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.2,"jogo":{"wins":[0,2],"draws":0,"t":34.18,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.25,"jogo":{"wins":[0,2],"draws":0,"t":34.22,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.3,"jogo":{"wins":[0,2],"draws":0,"t":34.3,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.35,"jogo":{"wins":[0,2],"draws":0,"t":34.34,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.4,"jogo":{"wins":[0,2],"draws":0,"t":34.38,"message":""}}
+00:00:34 INFO  /sumo_1 TEL {"t":1795575634.4,"jogo":{"wins":[0,2],"draws":0,"t":34.38,"message":""},"me":[0.034,0.002,2.886,0.027,0.266],"opp":[-0.03,0.038,0.162,0.015,-2.037],"cmd":[0.2,-0.341]}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.45,"jogo":{"wins":[0,2],"draws":0,"t":34.42,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.5,"jogo":{"wins":[0,2],"draws":0,"t":34.5,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.55,"jogo":{"wins":[0,2],"draws":0,"t":34.54,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.6,"jogo":{"wins":[0,2],"draws":0,"t":34.58,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.65,"jogo":{"wins":[0,2],"draws":0,"t":34.62,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.7,"jogo":{"wins":[0,2],"draws":0,"t":34.7,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.75,"jogo":{"wins":[0,2],"draws":0,"t":34.74,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.8,"jogo":{"wins":[0,2],"draws":0,"t":34.78,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.85,"jogo":{"wins":[0,2],"draws":0,"t":34.82,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.9,"jogo":{"wins":[0,2],"draws":0,"t":34.9,"message":""}}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575634.95,"jogo":{"wins":[0,2],"draws":0,"t":34.94,"message":""}}
+00:00:34 INFO  /sumo_1 TEL {"t":1795575634.95,"jogo":{"wins":[0,2],"draws":0,"t":34.94,"message":""},"me":[0.011,0.003,2.351,0.058,-0.423],"opp":[-0.022,0.069,-0.386,0.03,-0.944],"cmd":[0.2,-1.811]}
+00:00:34 INFO  /sumo_1 EVT {"t":1795575635.0,"jogo":{"wins":[0,2],"draws":0,"t":34.98,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.05,"jogo":{"wins":[0,2],"draws":0,"t":35.02,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.1,"jogo":{"wins":[0,2],"draws":0,"t":35.06,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.15,"jogo":{"wins":[0,2],"draws":0,"t":35.14,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.2,"jogo":{"wins":[0,2],"draws":0,"t":35.18,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.25,"jogo":{"wins":[0,2],"draws":0,"t":35.22,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.3,"jogo":{"wins":[0,2],"draws":0,"t":35.3,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.35,"jogo":{"wins":[0,2],"draws":0,"t":35.34,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.4,"jogo":{"wins":[0,2],"draws":0,"t":35.38,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.45,"jogo":{"wins":[0,2],"draws":0,"t":35.42,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.5,"jogo":{"wins":[0,2],"draws":0,"t":35.5,"message":""}}
+00:00:35 INFO  /sumo_1 TEL {"t":1795575635.5,"jogo":{"wins":[0,2],"draws":0,"t":35.5,"message":""},"me":[-0.02,0.025,1.296,0.076,-1.586],"opp":[0.019,0.088,-0.834,0.082,-2.521],"cmd":[0.2,-2.166]}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.55,"jogo":{"wins":[0,2],"draws":0,"t":35.54,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.6,"jogo":{"wins":[0,2],"draws":0,"t":35.58,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.65,"jogo":{"wins":[0,2],"draws":0,"t":35.62,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.7,"jogo":{"wins":[0,2],"draws":0,"t":35.7,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.75,"jogo":{"wins":[0,2],"draws":0,"t":35.74,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.8,"jogo":{"wins":[0,2],"draws":0,"t":35.78,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.85,"jogo":{"wins":[0,2],"draws":0,"t":35.82,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.9,"jogo":{"wins":[0,2],"draws":0,"t":35.9,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575635.95,"jogo":{"wins":[0,2],"draws":0,"t":35.94,"message":""}}
+00:00:35 INFO  /sumo_1 EVT {"t":1795575636.0,"jogo":{"wins":[0,2],"draws":0,"t":35.98,"message":""}}
+00:00:35 INFO  /sumo_1 TEL {"t":1795575636.0,"jogo":{"wins":[0,2],"draws":0,"t":35.98,"message":""},"me":[-0.002,0.071,0.092,0.096,-3.084],"opp":[0.071,0.055,-1.931,0.123,-2.048],"cmd":[0.2,-3.008]}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.05,"jogo":{"wins":[0,2],"draws":0,"t":36.02,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.1,"jogo":{"wins":[0,2],"draws":0,"t":36.1,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.15,"jogo":{"wins":[0,2],"draws":0,"t":36.14,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.2,"jogo":{"wins":[0,2],"draws":0,"t":36.18,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.25,"jogo":{"wins":[0,2],"draws":0,"t":36.22,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.3,"jogo":{"wins":[0,2],"draws":0,"t":36.3,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.35,"jogo":{"wins":[0,2],"draws":0,"t":36.34,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.4,"jogo":{"wins":[0,2],"draws":0,"t":36.38,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.45,"jogo":{"wins":[0,2],"draws":0,"t":36.42,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.5,"jogo":{"wins":[0,2],"draws":0,"t":36.5,"message":""}}
+00:00:36 INFO  /sumo_1 TEL {"t":1795575636.5,"jogo":{"wins":[0,2],"draws":0,"t":36.5,"message":""},"me":[0.055,0.054,-1.15,0.096,-0.87],"opp":[0.088,-0.012,2.724,-0.044,-3.772],"cmd":[0.2,-0.277]}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.55,"jogo":{"wins":[0,2],"draws":0,"t":36.54,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.6,"jogo":{"wins":[0,2],"draws":0,"t":36.58,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.65,"jogo":{"wins":[0,2],"draws":0,"t":36.62,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.7,"jogo":{"wins":[0,2],"draws":0,"t":36.7,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.75,"jogo":{"wins":[0,2],"draws":0,"t":36.74,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.8,"jogo":{"wins":[0,2],"draws":0,"t":36.78,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.85,"jogo":{"wins":[0,2],"draws":0,"t":36.82,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.9,"jogo":{"wins":[0,2],"draws":0,"t":36.86,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575636.95,"jogo":{"wins":[0,2],"draws":0,"t":36.94,"message":""}}
+00:00:36 INFO  /sumo_1 EVT {"t":1795575637.0,"jogo":{"wins":[0,2],"draws":0,"t":36.98,"message":""}}
+00:00:36 INFO  /sumo_1 TEL {"t":1795575637.0,"jogo":{"wins":[0,2],"draws":0,"t":36.98,"message":""},"me":[0.082,0.018,-1.765,0.074,-3.158],"opp":[0.071,-0.056,1.498,-0.09,-1.575],"cmd":[0.2,-0.637]}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.05,"jogo":{"wins":[0,2],"draws":0,"t":37.02,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.1,"jogo":{"wins":[0,2],"draws":0,"t":37.1,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.15,"jogo":{"wins":[0,2],"draws":0,"t":37.14,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.2,"jogo":{"wins":[0,2],"draws":0,"t":37.18,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.25,"jogo":{"wins":[0,2],"draws":0,"t":37.22,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.3,"jogo":{"wins":[0,2],"draws":0,"t":37.3,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.35,"jogo":{"wins":[0,2],"draws":0,"t":37.34,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.4,"jogo":{"wins":[0,2],"draws":0,"t":37.38,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.45,"jogo":{"wins":[0,2],"draws":0,"t":37.42,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.5,"jogo":{"wins":[0,2],"draws":0,"t":37.5,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.55,"jogo":{"wins":[0,2],"draws":0,"t":37.54,"message":""}}
+00:00:37 INFO  /sumo_1 TEL {"t":1795575637.55,"jogo":{"wins":[0,2],"draws":0,"t":37.54,"message":""},"me":[0.061,-0.03,-1.365,0.081,0.644],"opp":[0.083,-0.101,1.739,-0.086,1.423],"cmd":[0.2,-0.228]}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.6,"jogo":{"wins":[0,2],"draws":0,"t":37.58,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.65,"jogo":{"wins":[0,2],"draws":0,"t":37.62,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.7,"jogo":{"wins":[0,2],"draws":0,"t":37.7,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.75,"jogo":{"wins":[0,2],"draws":0,"t":37.74,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.8,"jogo":{"wins":[0,2],"draws":0,"t":37.78,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.85,"jogo":{"wins":[0,2],"draws":0,"t":37.82,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.9,"jogo":{"wins":[0,2],"draws":0,"t":37.9,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575637.95,"jogo":{"wins":[0,2],"draws":0,"t":37.94,"message":""}}
+00:00:37 INFO  /sumo_1 EVT {"t":1795575638.0,"jogo":{"wins":[0,2],"draws":0,"t":37.98,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.05,"jogo":{"wins":[0,2],"draws":0,"t":38.02,"message":""}}
+00:00:38 INFO  /sumo_1 TEL {"t":1795575638.05,"jogo":{"wins":[0,2],"draws":0,"t":38.02,"message":""},"me":[0.063,-0.069,-1.589,0.082,-0.542],"opp":[0.069,-0.143,1.841,-0.071,-0.377],"cmd":[0.2,-0.388]}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.1,"jogo":{"wins":[0,2],"draws":0,"t":38.1,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.15,"jogo":{"wins":[0,2],"draws":0,"t":38.14,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.2,"jogo":{"wins":[0,2],"draws":0,"t":38.18,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.25,"jogo":{"wins":[0,2],"draws":0,"t":38.22,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.3,"jogo":{"wins":[0,2],"draws":0,"t":38.3,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.35,"jogo":{"wins":[0,2],"draws":0,"t":38.34,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.4,"jogo":{"wins":[0,2],"draws":0,"t":38.38,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.45,"jogo":{"wins":[0,2],"draws":0,"t":38.42,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.5,"jogo":{"wins":[0,2],"draws":0,"t":38.5,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.55,"jogo":{"wins":[0,2],"draws":0,"t":38.54,"message":""}}
+00:00:38 INFO  /sumo_1 TEL {"t":1795575638.55,"jogo":{"wins":[0,2],"draws":0,"t":38.54,"message":""},"me":[0.053,-0.113,-1.763,0.086,-0.262],"opp":[0.048,-0.186,1.699,-0.079,-0.207],"cmd":[0.2,-0.584]}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.6,"jogo":{"wins":[0,2],"draws":0,"t":38.58,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.65,"jogo":{"wins":[0,2],"draws":0,"t":38.62,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.7,"jogo":{"wins":[0,2],"draws":0,"t":38.66,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.75,"jogo":{"wins":[0,2],"draws":0,"t":38.74,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.8,"jogo":{"wins":[0,2],"draws":0,"t":38.78,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.85,"jogo":{"wins":[0,2],"draws":0,"t":38.82,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.9,"jogo":{"wins":[0,2],"draws":0,"t":38.9,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575638.95,"jogo":{"wins":[0,2],"draws":0,"t":38.94,"message":""}}
+00:00:38 INFO  /sumo_1 EVT {"t":1795575639.0,"jogo":{"wins":[0,2],"draws":0,"t":38.98,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.05,"jogo":{"wins":[0,2],"draws":0,"t":39.02,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.1,"jogo":{"wins":[0,2],"draws":0,"t":39.1,"message":""}}
+00:00:39 INFO  /sumo_1 TEL {"t":1795575639.1,"jogo":{"wins":[0,2],"draws":0,"t":39.1,"message":""},"me":[0.032,-0.16,-1.781,0.09,0.783],"opp":[0.034,-0.233,1.553,-0.085,-0.201],"cmd":[0.2,0.983]}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.15,"jogo":{"wins":[0,2],"draws":0,"t":39.14,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.2,"jogo":{"wins":[0,2],"draws":0,"t":39.18,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.25,"jogo":{"wins":[0,2],"draws":0,"t":39.22,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.3,"jogo":{"wins":[0,2],"draws":0,"t":39.3,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.35,"jogo":{"wins":[0,2],"draws":0,"t":39.34,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.4,"jogo":{"wins":[0,2],"draws":0,"t":39.38,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.45,"jogo":{"wins":[0,2],"draws":0,"t":39.42,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.5,"jogo":{"wins":[0,2],"draws":0,"t":39.5,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.55,"jogo":{"wins":[0,2],"draws":0,"t":39.54,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.6,"jogo":{"wins":[0,2],"draws":0,"t":39.58,"message":""}}
+00:00:39 INFO  /sumo_1 TEL {"t":1795575639.6,"jogo":{"wins":[0,2],"draws":0,"t":39.58,"message":""},"me":[0.028,-0.2,-1.437,0.085,0.079],"opp":[0.04,-0.273,1.489,-0.082,0.045],"cmd":[0.2,-0.173]}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.65,"jogo":{"wins":[0,2],"draws":0,"t":39.62,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.7,"jogo":{"wins":[0,2],"draws":0,"t":39.7,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.75,"jogo":{"wins":[0,2],"draws":0,"t":39.74,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.8,"jogo":{"wins":[0,2],"draws":0,"t":39.78,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.85,"jogo":{"wins":[0,2],"draws":0,"t":39.82,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.9,"jogo":{"wins":[0,2],"draws":0,"t":39.9,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575639.95,"jogo":{"wins":[0,2],"draws":0,"t":39.94,"message":""}}
+00:00:39 INFO  /sumo_1 EVT {"t":1795575640.0,"jogo":{"wins":[0,2],"draws":0,"t":39.98,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.05,"jogo":{"wins":[0,2],"draws":0,"t":40.02,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.1,"jogo":{"wins":[0,2],"draws":0,"t":40.1,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.15,"jogo":{"wins":[0,2],"draws":0,"t":40.14,"message":""}}
+00:00:40 INFO  /sumo_1 TEL {"t":1795575640.15,"jogo":{"wins":[0,2],"draws":0,"t":40.14,"message":""},"me":[0.037,-0.247,-1.488,0.085,-0.192],"opp":[0.052,-0.32,1.61,-0.083,0.461],"cmd":[0.2,0.15]}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.2,"jogo":{"wins":[0,2],"draws":0,"t":40.18,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.25,"jogo":{"wins":[0,2],"draws":0,"t":40.22,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.3,"jogo":{"wins":[0,2],"draws":0,"t":40.3,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.35,"jogo":{"wins":[0,2],"draws":0,"t":40.34,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.4,"jogo":{"wins":[0,2],"draws":0,"t":40.38,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.45,"jogo":{"wins":[0,2],"draws":0,"t":40.42,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.5,"jogo":{"wins":[0,2],"draws":0,"t":40.46,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.55,"jogo":{"wins":[0,2],"draws":0,"t":40.54,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.6,"jogo":{"wins":[0,2],"draws":0,"t":40.58,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.65,"jogo":{"wins":[0,2],"draws":0,"t":40.62,"message":""}}
+00:00:40 INFO  /sumo_1 TEL {"t":1795575640.65,"jogo":{"wins":[0,2],"draws":0,"t":40.62,"message":""},"me":[0.036,-0.288,-1.463,0.083,0.051],"opp":[0.055,-0.36,1.672,-0.083,0.002],"cmd":[0.2,0.173]}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.7,"jogo":{"wins":[0,2],"draws":0,"t":40.7,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.75,"jogo":{"wins":[0,2],"draws":0,"t":40.74,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.8,"jogo":{"wins":[0,2],"draws":0,"t":40.78,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.85,"jogo":{"wins":[0,2],"draws":0,"t":40.82,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.9,"jogo":{"wins":[0,2],"draws":0,"t":40.9,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575640.95,"jogo":{"wins":[0,2],"draws":0,"t":40.94,"message":""}}
+00:00:40 INFO  /sumo_1 EVT {"t":1795575641.0,"jogo":{"wins":[0,2],"draws":0,"t":40.98,"message":""}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.05,"jogo":{"wins":[0,2],"draws":0,"t":41.02,"message":""}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.1,"jogo":{"wins":[0,3],"draws":0,"t":41.1,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.15,"jogo":{"wins":[0,3],"draws":0,"t":41.14,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.2,"jogo":{"wins":[0,3],"draws":0,"t":41.18,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 TEL {"t":1795575641.2,"jogo":{"wins":[0,3],"draws":0,"t":41.18,"message":"hero_1 venceu"},"me":[0.037,-0.328,-1.46,0.008,0.001],"opp":[0.055,-0.401,1.671,0.0,-0.0],"cmd":[0.2,1.776]}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.25,"jogo":{"wins":[0,3],"draws":0,"t":41.22,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.3,"jogo":{"wins":[0,3],"draws":0,"t":41.3,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.35,"jogo":{"wins":[0,3],"draws":0,"t":41.34,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.4,"jogo":{"wins":[0,3],"draws":0,"t":41.38,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.45,"jogo":{"wins":[0,3],"draws":0,"t":41.42,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.5,"jogo":{"wins":[0,3],"draws":0,"t":41.5,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.55,"jogo":{"wins":[0,3],"draws":0,"t":41.54,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.6,"jogo":{"wins":[0,3],"draws":0,"t":41.58,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.65,"jogo":{"wins":[0,3],"draws":0,"t":41.62,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.7,"jogo":{"wins":[0,3],"draws":0,"t":41.7,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.75,"jogo":{"wins":[0,3],"draws":0,"t":41.74,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 TEL {"t":1795575641.75,"jogo":{"wins":[0,3],"draws":0,"t":41.74,"message":"hero_1 venceu"},"me":[0.037,-0.329,-1.46,0.0,0.0],"opp":[0.055,-0.401,1.671,0.0,-0.0],"cmd":[0.2,1.752]}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.8,"jogo":{"wins":[0,3],"draws":0,"t":41.78,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.85,"jogo":{"wins":[0,3],"draws":0,"t":41.82,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.9,"jogo":{"wins":[0,3],"draws":0,"t":41.9,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575641.95,"jogo":{"wins":[0,3],"draws":0,"t":41.94,"message":"hero_1 venceu"}}
+00:00:41 INFO  /sumo_1 EVT {"t":1795575642.0,"jogo":{"wins":[0,3],"draws":0,"t":41.98,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.05,"jogo":{"wins":[0,3],"draws":0,"t":42.02,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.1,"jogo":{"wins":[0,3],"draws":0,"t":42.1,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.15,"jogo":{"wins":[0,3],"draws":0,"t":42.14,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.2,"jogo":{"wins":[0,3],"draws":0,"t":42.18,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.25,"jogo":{"wins":[0,3],"draws":0,"t":42.22,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.3,"jogo":{"wins":[0,3],"draws":0,"t":42.26,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 TEL {"t":1795575642.3,"jogo":{"wins":[0,3],"draws":0,"t":42.26,"message":"hero_1 venceu"},"me":[0.037,-0.329,-1.46,-0.0,0.0],"opp":[0.055,-0.401,1.671,-0.0,0.0],"cmd":[0.2,1.752]}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.35,"jogo":{"wins":[0,3],"draws":0,"t":42.34,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.4,"jogo":{"wins":[0,3],"draws":0,"t":42.38,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.45,"jogo":{"wins":[0,3],"draws":0,"t":42.42,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.5,"jogo":{"wins":[0,3],"draws":0,"t":42.5,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.55,"jogo":{"wins":[0,3],"draws":0,"t":42.54,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.6,"jogo":{"wins":[0,3],"draws":0,"t":42.58,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.65,"jogo":{"wins":[0,3],"draws":0,"t":42.62,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.7,"jogo":{"wins":[0,3],"draws":0,"t":42.7,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.75,"jogo":{"wins":[0,3],"draws":0,"t":42.74,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.8,"jogo":{"wins":[0,3],"draws":0,"t":42.78,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.85,"jogo":{"wins":[0,3],"draws":0,"t":42.82,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 TEL {"t":1795575642.85,"jogo":{"wins":[0,3],"draws":0,"t":42.82,"message":"hero_1 venceu"},"me":[0.037,-0.329,-1.46,-0.0,0.0],"opp":[0.055,-0.401,1.671,-0.0,-0.0],"cmd":[0.2,1.752]}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.9,"jogo":{"wins":[0,3],"draws":0,"t":42.9,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575642.95,"jogo":{"wins":[0,3],"draws":0,"t":42.94,"message":"hero_1 venceu"}}
+00:00:42 INFO  /sumo_1 EVT {"t":1795575643.0,"jogo":{"wins":[0,3],"draws":0,"t":42.98,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.05,"jogo":{"wins":[0,3],"draws":0,"t":43.02,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.1,"jogo":{"wins":[0,3],"draws":0,"t":43.1,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.15,"jogo":{"wins":[0,3],"draws":0,"t":43.14,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.2,"jogo":{"wins":[0,3],"draws":0,"t":43.18,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.25,"jogo":{"wins":[0,3],"draws":0,"t":43.22,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.3,"jogo":{"wins":[0,3],"draws":0,"t":43.3,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.35,"jogo":{"wins":[0,3],"draws":0,"t":43.34,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.4,"jogo":{"wins":[0,3],"draws":0,"t":43.38,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 TEL {"t":1795575643.4,"jogo":{"wins":[0,3],"draws":0,"t":43.38,"message":"hero_1 venceu"},"me":[0.037,-0.329,-1.46,-0.0,0.0],"opp":[0.055,-0.401,1.671,-0.0,-0.0],"cmd":[0.2,1.752]}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.45,"jogo":{"wins":[0,3],"draws":0,"t":43.42,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.5,"jogo":{"wins":[0,3],"draws":0,"t":43.5,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.55,"jogo":{"wins":[0,3],"draws":0,"t":43.54,"message":"hero_1 venceu"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.6,"jogo":{"wins":[0,3],"draws":0,"t":43.58,"message":""}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.65,"jogo":{"wins":[0,3],"draws":0,"t":43.62,"message":"Fim de jogo"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.7,"jogo":{"wins":[0,3],"draws":0,"t":43.7,"message":"Fim de jogo"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.75,"jogo":{"wins":[0,3],"draws":0,"t":43.74,"message":"Fim de jogo"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.8,"jogo":{"wins":[0,3],"draws":0,"t":43.78,"message":"Fim de jogo"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.85,"jogo":{"wins":[0,3],"draws":0,"t":43.82,"message":"Fim de jogo"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.9,"jogo":{"wins":[0,3],"draws":0,"t":43.9,"message":"Fim de jogo"}}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575643.95,"jogo":{"wins":[0,3],"draws":0,"t":43.94,"message":"Fim de jogo"}}
+00:00:43 INFO  /sumo_1 TEL {"t":1795575643.95,"jogo":{"wins":[0,3],"draws":0,"t":43.94,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:43 INFO  /sumo_1 EVT {"t":1795575644.0,"jogo":{"wins":[0,3],"draws":0,"t":43.98,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.05,"jogo":{"wins":[0,3],"draws":0,"t":44.02,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.1,"jogo":{"wins":[0,3],"draws":0,"t":44.06,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.15,"jogo":{"wins":[0,3],"draws":0,"t":44.14,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.2,"jogo":{"wins":[0,3],"draws":0,"t":44.18,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.25,"jogo":{"wins":[0,3],"draws":0,"t":44.22,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.3,"jogo":{"wins":[0,3],"draws":0,"t":44.3,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.35,"jogo":{"wins":[0,3],"draws":0,"t":44.34,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.4,"jogo":{"wins":[0,3],"draws":0,"t":44.38,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.45,"jogo":{"wins":[0,3],"draws":0,"t":44.42,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 TEL {"t":1795575644.45,"jogo":{"wins":[0,3],"draws":0,"t":44.42,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.5,"jogo":{"wins":[0,3],"draws":0,"t":44.5,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.55,"jogo":{"wins":[0,3],"draws":0,"t":44.54,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.6,"jogo":{"wins":[0,3],"draws":0,"t":44.58,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.65,"jogo":{"wins":[0,3],"draws":0,"t":44.62,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.7,"jogo":{"wins":[0,3],"draws":0,"t":44.7,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.75,"jogo":{"wins":[0,3],"draws":0,"t":44.74,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.8,"jogo":{"wins":[0,3],"draws":0,"t":44.78,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.85,"jogo":{"wins":[0,3],"draws":0,"t":44.82,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.9,"jogo":{"wins":[0,3],"draws":0,"t":44.9,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575644.95,"jogo":{"wins":[0,3],"draws":0,"t":44.94,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 EVT {"t":1795575645.0,"jogo":{"wins":[0,3],"draws":0,"t":44.98,"message":"Fim de jogo"}}
+00:00:44 INFO  /sumo_1 TEL {"t":1795575645.0,"jogo":{"wins":[0,3],"draws":0,"t":44.98,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.05,"jogo":{"wins":[0,3],"draws":0,"t":45.02,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.1,"jogo":{"wins":[0,3],"draws":0,"t":45.1,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.15,"jogo":{"wins":[0,3],"draws":0,"t":45.14,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.2,"jogo":{"wins":[0,3],"draws":0,"t":45.18,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.25,"jogo":{"wins":[0,3],"draws":0,"t":45.22,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.3,"jogo":{"wins":[0,3],"draws":0,"t":45.3,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.35,"jogo":{"wins":[0,3],"draws":0,"t":45.34,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.4,"jogo":{"wins":[0,3],"draws":0,"t":45.38,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.45,"jogo":{"wins":[0,3],"draws":0,"t":45.42,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.5,"jogo":{"wins":[0,3],"draws":0,"t":45.5,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.55,"jogo":{"wins":[0,3],"draws":0,"t":45.54,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 TEL {"t":1795575645.55,"jogo":{"wins":[0,3],"draws":0,"t":45.54,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.6,"jogo":{"wins":[0,3],"draws":0,"t":45.58,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.65,"jogo":{"wins":[0,3],"draws":0,"t":45.62,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.7,"jogo":{"wins":[0,3],"draws":0,"t":45.7,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.75,"jogo":{"wins":[0,3],"draws":0,"t":45.74,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.8,"jogo":{"wins":[0,3],"draws":0,"t":45.78,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.85,"jogo":{"wins":[0,3],"draws":0,"t":45.82,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.9,"jogo":{"wins":[0,3],"draws":0,"t":45.86,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575645.95,"jogo":{"wins":[0,3],"draws":0,"t":45.94,"message":"Fim de jogo"}}
+00:00:45 INFO  /sumo_1 EVT {"t":1795575646.0,"jogo":{"wins":[0,3],"draws":0,"t":45.98,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.05,"jogo":{"wins":[0,3],"draws":0,"t":46.02,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 TEL {"t":1795575646.05,"jogo":{"wins":[0,3],"draws":0,"t":46.02,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.1,"jogo":{"wins":[0,3],"draws":0,"t":46.1,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.15,"jogo":{"wins":[0,3],"draws":0,"t":46.14,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.2,"jogo":{"wins":[0,3],"draws":0,"t":46.18,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.25,"jogo":{"wins":[0,3],"draws":0,"t":46.22,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.3,"jogo":{"wins":[0,3],"draws":0,"t":46.3,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.35,"jogo":{"wins":[0,3],"draws":0,"t":46.34,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.4,"jogo":{"wins":[0,3],"draws":0,"t":46.38,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.45,"jogo":{"wins":[0,3],"draws":0,"t":46.42,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.5,"jogo":{"wins":[0,3],"draws":0,"t":46.5,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.55,"jogo":{"wins":[0,3],"draws":0,"t":46.54,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 TEL {"t":1795575646.55,"jogo":{"wins":[0,3],"draws":0,"t":46.54,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.6,"jogo":{"wins":[0,3],"draws":0,"t":46.58,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.65,"jogo":{"wins":[0,3],"draws":0,"t":46.62,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.7,"jogo":{"wins":[0,3],"draws":0,"t":46.7,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.75,"jogo":{"wins":[0,3],"draws":0,"t":46.74,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.8,"jogo":{"wins":[0,3],"draws":0,"t":46.78,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.85,"jogo":{"wins":[0,3],"draws":0,"t":46.82,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.9,"jogo":{"wins":[0,3],"draws":0,"t":46.9,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575646.95,"jogo":{"wins":[0,3],"draws":0,"t":46.94,"message":"Fim de jogo"}}
+00:00:46 INFO  /sumo_1 EVT {"t":1795575647.0,"jogo":{"wins":[0,3],"draws":0,"t":46.98,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.05,"jogo":{"wins":[0,3],"draws":0,"t":47.02,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.1,"jogo":{"wins":[0,3],"draws":0,"t":47.1,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 TEL {"t":1795575647.1,"jogo":{"wins":[0,3],"draws":0,"t":47.1,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.15,"jogo":{"wins":[0,3],"draws":0,"t":47.14,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.2,"jogo":{"wins":[0,3],"draws":0,"t":47.18,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.25,"jogo":{"wins":[0,3],"draws":0,"t":47.22,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.3,"jogo":{"wins":[0,3],"draws":0,"t":47.3,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.35,"jogo":{"wins":[0,3],"draws":0,"t":47.34,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.4,"jogo":{"wins":[0,3],"draws":0,"t":47.38,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.45,"jogo":{"wins":[0,3],"draws":0,"t":47.42,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.5,"jogo":{"wins":[0,3],"draws":0,"t":47.5,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.55,"jogo":{"wins":[0,3],"draws":0,"t":47.54,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.6,"jogo":{"wins":[0,3],"draws":0,"t":47.58,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 TEL {"t":1795575647.6,"jogo":{"wins":[0,3],"draws":0,"t":47.58,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.65,"jogo":{"wins":[0,3],"draws":0,"t":47.62,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.7,"jogo":{"wins":[0,3],"draws":0,"t":47.66,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.75,"jogo":{"wins":[0,3],"draws":0,"t":47.74,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.8,"jogo":{"wins":[0,3],"draws":0,"t":47.78,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.85,"jogo":{"wins":[0,3],"draws":0,"t":47.82,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.9,"jogo":{"wins":[0,3],"draws":0,"t":47.9,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575647.95,"jogo":{"wins":[0,3],"draws":0,"t":47.94,"message":"Fim de jogo"}}
+00:00:47 INFO  /sumo_1 EVT {"t":1795575648.0,"jogo":{"wins":[0,3],"draws":0,"t":47.98,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.05,"jogo":{"wins":[0,3],"draws":0,"t":48.02,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.1,"jogo":{"wins":[0,3],"draws":0,"t":48.1,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.15,"jogo":{"wins":[0,3],"draws":0,"t":48.14,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 TEL {"t":1795575648.15,"jogo":{"wins":[0,3],"draws":0,"t":48.14,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.2,"jogo":{"wins":[0,3],"draws":0,"t":48.18,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.25,"jogo":{"wins":[0,3],"draws":0,"t":48.22,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.3,"jogo":{"wins":[0,3],"draws":0,"t":48.3,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.35,"jogo":{"wins":[0,3],"draws":0,"t":48.34,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.4,"jogo":{"wins":[0,3],"draws":0,"t":48.38,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.45,"jogo":{"wins":[0,3],"draws":0,"t":48.42,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.5,"jogo":{"wins":[0,3],"draws":0,"t":48.5,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.55,"jogo":{"wins":[0,3],"draws":0,"t":48.54,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.6,"jogo":{"wins":[0,3],"draws":0,"t":48.58,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.65,"jogo":{"wins":[0,3],"draws":0,"t":48.62,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 TEL {"t":1795575648.65,"jogo":{"wins":[0,3],"draws":0,"t":48.62,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.7,"jogo":{"wins":[0,3],"draws":0,"t":48.7,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.75,"jogo":{"wins":[0,3],"draws":0,"t":48.74,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.8,"jogo":{"wins":[0,3],"draws":0,"t":48.78,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.85,"jogo":{"wins":[0,3],"draws":0,"t":48.82,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.9,"jogo":{"wins":[0,3],"draws":0,"t":48.9,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575648.95,"jogo":{"wins":[0,3],"draws":0,"t":48.94,"message":"Fim de jogo"}}
+00:00:48 INFO  /sumo_1 EVT {"t":1795575649.0,"jogo":{"wins":[0,3],"draws":0,"t":48.98,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.05,"jogo":{"wins":[0,3],"draws":0,"t":49.02,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.1,"jogo":{"wins":[0,3],"draws":0,"t":49.1,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 TEL {"t":1795575649.15,"jogo":{"wins":[0,3],"draws":0,"t":49.1,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.2,"jogo":{"wins":[0,3],"draws":0,"t":49.18,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.25,"jogo":{"wins":[0,3],"draws":0,"t":49.22,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.3,"jogo":{"wins":[0,3],"draws":0,"t":49.3,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.35,"jogo":{"wins":[0,3],"draws":0,"t":49.34,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.4,"jogo":{"wins":[0,3],"draws":0,"t":49.38,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.45,"jogo":{"wins":[0,3],"draws":0,"t":49.42,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.5,"jogo":{"wins":[0,3],"draws":0,"t":49.46,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.55,"jogo":{"wins":[0,3],"draws":0,"t":49.54,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 EVT {"t":1795575649.6,"jogo":{"wins":[0,3],"draws":0,"t":49.58,"message":"Fim de jogo"}}
+00:00:49 INFO  /sumo_1 TEL {"t":1795575649.7,"jogo":{"wins":[0,3],"draws":0,"t":49.58,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:50 INFO  /sumo_1 TEL {"t":1795575650.2,"jogo":{"wins":[0,3],"draws":0,"t":49.58,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:50 INFO  /sumo_1 TEL {"t":1795575650.75,"jogo":{"wins":[0,3],"draws":0,"t":49.58,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:51 INFO  /sumo_1 TEL {"t":1795575651.3,"jogo":{"wins":[0,3],"draws":0,"t":49.58,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}
+00:00:51 INFO  /sumo_1 TEL {"t":1795575651.85,"jogo":{"wins":[0,3],"draws":0,"t":49.58,"message":"Fim de jogo"},"me":[0.18,0.032,-3.142,-0.0,0.0],"opp":[-0.18,-0.054,0.0,0.0,0.0],"cmd":[0.2,4.0]}

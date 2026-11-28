@@ -1,0 +1,3 @@
+match 1 (5 min): ctf_zs_robusto 18 x 0 parado | pegadas 19 x 0 | segurados 10 x 0
+match 2 (5 min): ctf_zs_robusto 18 x 0 parado | pegadas 19 x 0 | segurados 8 x 0
+RESULT ctf_zs_robusto (blue) vs parado (red): 2 matches of 5 min, points 36 x 0, pickups 38 x 0, held 18 x 0

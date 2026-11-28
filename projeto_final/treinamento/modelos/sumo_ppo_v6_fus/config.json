@@ -1,0 +1,57 @@
+{
+  "args": {
+    "phase": 5,
+    "envs": 2048,
+    "iters": 1500,
+    "name": "sumo_ppo_v6_fus",
+    "seed": 0,
+    "init": "runs/sumo_ppo_v5/model.pt",
+    "init_std": 0.35,
+    "snapshot_every": 100,
+    "no_shaping": false,
+    "time_cost": null,
+    "clinch": null,
+    "ent": null,
+    "pool_from": "runs/sumo_ppo_v5/pool",
+    "fusion": true,
+    "noise_max": 2.0
+  },
+  "ppo": {
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "clip": 0.2,
+    "lr": 0.0003,
+    "ent_coef": 0.01,
+    "vf_coef": 1.0,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.02
+  },
+  "reward": {
+    "win": 10.0,
+    "still": -0.05,
+    "self_out": -10.0,
+    "draw": -3.0,
+    "still_speed": 0.02,
+    "shape_approach": 1.0,
+    "shape_push": 2.0,
+    "shape_center": 1.0,
+    "time_cost": -0.01
+  },
+  "opponent_mix": {
+    "pool": 0.22,
+    "latest": 0.1,
+    "pursuer": 0.22,
+    "pursuer_bi": 0.22,
+    "chaser": 0.1,
+    "careful": 0.06,
+    "evader": 0.05,
+    "random": 0.02,
+    "stopped": 0.01
+  },
+  "control_dt": 0.05,
+  "max_steps": 800,
+  "obs_dim": 12
+}

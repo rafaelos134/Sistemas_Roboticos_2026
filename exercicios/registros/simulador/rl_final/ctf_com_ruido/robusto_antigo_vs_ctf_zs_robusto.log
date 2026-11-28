@@ -1,0 +1,4 @@
+match 1 (5 min): ctf_robusto 3 x 0 ctf_zs_robusto | pegadas 8 x 8 | segurados 9 x 7
+match 2 (5 min): ctf_robusto 9 x 0 ctf_zs_robusto | pegadas 11 x 6 | segurados 3 x 15
+match 3 (5 min): ctf_robusto 3 x 0 ctf_zs_robusto | pegadas 14 x 8 | segurados 34 x 7
+RESULT ctf_robusto (blue) vs ctf_zs_robusto (red): 3 matches of 5 min, points 15 x 0, pickups 33 x 22, held 46 x 29

@@ -1,0 +1,2 @@
+22:33:14 WARN  /ctf_2 waiting for odometry and flags (TODO 1)
+22:33:14 WARN  /ctf_3 waiting for odometry and flags (TODO 1)

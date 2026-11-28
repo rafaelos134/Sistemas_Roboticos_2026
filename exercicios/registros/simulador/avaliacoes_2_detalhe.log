@@ -1,0 +1,55 @@
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_ctf.py --blue exports/ctf/ctf_rl_v4.py --red exports/ctf/ctf_hibrido_v4.py --minutes 5 --matches 3 --csv ../classico/entrega/results/ctf_rl_v4_vs_hibrido_v4.csv
+match 1 (5 min): ctf_rl_v4 0 x 0 ctf_hibrido_v4 | pegadas 0 x 21 | segurados 0 x 52
+match 2 (5 min): ctf_rl_v4 0 x 0 ctf_hibrido_v4 | pegadas 0 x 25 | segurados 0 x 52
+match 3 (5 min): ctf_rl_v4 0 x 1 ctf_hibrido_v4 | pegadas 0 x 17 | segurados 1 x 49
+RESULT ctf_rl_v4 (blue) vs ctf_hibrido_v4 (red): 3 matches of 5 min, points 0 x 1, pickups 0 x 63, held 1 x 153
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue exports/soccer/soccer_rl_a2.py --red exports/soccer/soccer_rl.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_a2_vs_rl.csv
+match 1 (5 min): soccer_rl_a2 1 x 0 soccer_rl
+match 2 (5 min): soccer_rl_a2 1 x 2 soccer_rl
+match 3 (5 min): soccer_rl_a2 1 x 0 soccer_rl
+RESULT soccer_rl_a2 (blue) vs soccer_rl (red): 3 matches of 5 min, goals 3 x 2
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue ../classico/entrega/eval_soccer_classico.py --red ../classico/entrega/soccer_parado.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_classico_vs_parado.csv
+match 1 (5 min): eval_soccer_classico 26 x 0 soccer_parado
+match 2 (5 min): eval_soccer_classico 27 x 0 soccer_parado
+match 3 (5 min): eval_soccer_classico 28 x 0 soccer_parado
+RESULT eval_soccer_classico (blue) vs soccer_parado (red): 3 matches of 5 min, goals 81 x 0
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue ../classico/entrega/eval_soccer_classico.py --red exports/soccer/soccer_rl.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_classico_vs_rl.csv
+match 1 (5 min): eval_soccer_classico 0 x 2 soccer_rl
+match 2 (5 min): eval_soccer_classico 0 x 1 soccer_rl
+match 3 (5 min): eval_soccer_classico 0 x 4 soccer_rl
+RESULT eval_soccer_classico (blue) vs soccer_rl (red): 3 matches of 5 min, goals 0 x 7
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue ../classico/entrega/eval_soccer_classico.py --red exports/soccer/soccer_script.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_classico_vs_script.csv
+match 1 (5 min): eval_soccer_classico 0 x 1 soccer_script
+match 2 (5 min): eval_soccer_classico 0 x 0 soccer_script
+match 3 (5 min): eval_soccer_classico 0 x 1 soccer_script
+RESULT eval_soccer_classico (blue) vs soccer_script (red): 3 matches of 5 min, goals 0 x 2
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue ../classico/entrega/soccer_parado.py --red ../classico/entrega/eval_soccer_classico.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_parado_vs_classico.csv
+match 1 (5 min): soccer_parado 0 x 27 eval_soccer_classico
+match 2 (5 min): soccer_parado 0 x 27 eval_soccer_classico
+match 3 (5 min): soccer_parado 0 x 26 eval_soccer_classico
+RESULT soccer_parado (blue) vs eval_soccer_classico (red): 3 matches of 5 min, goals 0 x 80
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue ../classico/entrega/soccer_parado.py --red exports/soccer/soccer_rl.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_parado_vs_rl.csv
+match 1 (5 min): soccer_parado 0 x 28 soccer_rl
+match 2 (5 min): soccer_parado 0 x 20 soccer_rl
+match 3 (5 min): soccer_parado 0 x 30 soccer_rl
+RESULT soccer_parado (blue) vs soccer_rl (red): 3 matches of 5 min, goals 0 x 78
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue exports/soccer/soccer_rl.py --red exports/soccer/soccer_rl_a2.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_rl_vs_a2.csv
+match 1 (5 min): soccer_rl 0 x 0 soccer_rl_a2
+match 2 (5 min): soccer_rl 1 x 0 soccer_rl_a2
+match 3 (5 min): soccer_rl 0 x 0 soccer_rl_a2
+RESULT soccer_rl (blue) vs soccer_rl_a2 (red): 3 matches of 5 min, goals 1 x 0
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue exports/soccer/soccer_rl.py --red ../classico/entrega/eval_soccer_classico.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_rl_vs_classico.csv
+match 1 (5 min): soccer_rl 0 x 0 eval_soccer_classico
+match 2 (5 min): soccer_rl 6 x 0 eval_soccer_classico
+match 3 (5 min): soccer_rl 0 x 0 eval_soccer_classico
+RESULT soccer_rl (blue) vs eval_soccer_classico (red): 3 matches of 5 min, goals 6 x 0
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue exports/soccer/soccer_rl.py --red ../classico/entrega/soccer_parado.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_rl_vs_parado.csv
+match 1 (5 min): soccer_rl 6 x 0 soccer_parado
+match 2 (5 min): soccer_rl 2 x 0 soccer_parado
+match 3 (5 min): soccer_rl 11 x 0 soccer_parado
+RESULT soccer_rl (blue) vs soccer_parado (red): 3 matches of 5 min, goals 19 x 0
+### /home/ubuntu/ros2_ws/.venv/bin/python eval_soccer.py --blue exports/soccer/soccer_script.py --red ../classico/entrega/eval_soccer_classico.py --minutes 5 --matches 3 --csv ../classico/entrega/results/soccer_script_vs_classico.csv
+match 1 (5 min): soccer_script 1 x 0 eval_soccer_classico
+match 2 (5 min): soccer_script 0 x 0 eval_soccer_classico
+match 3 (5 min): soccer_script 1 x 0 eval_soccer_classico
+RESULT soccer_script (blue) vs eval_soccer_classico (red): 3 matches of 5 min, goals 2 x 0

@@ -1,0 +1,49 @@
+{
+  "args": {
+    "stage": "A1",
+    "envs": 1024,
+    "iters": 600,
+    "name": "soccer_att_a1",
+    "seed": 0,
+    "init": null,
+    "init_std": 0.35,
+    "attacker": null,
+    "snapshot_every": 100
+  },
+  "stage": {
+    "mode": "attack",
+    "red": {
+      "stopped": 1.0
+    },
+    "keeper": "stopped"
+  },
+  "ppo": {
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "clip": 0.2,
+    "lr": 0.0003,
+    "ent_coef": 0.01,
+    "vf_coef": 1.0,
+    "max_grad_norm": 1.0,
+    "target_kl": 0.02
+  },
+  "hidden": [
+    128,
+    128
+  ],
+  "reward": {
+    "goal": 10.0,
+    "conceded": -10.0,
+    "still": -0.02,
+    "still_speed": 0.02,
+    "shape_ball": 3.0,
+    "shape_reach": 1.0,
+    "shape_own": 0.0
+  },
+  "control_dt": 0.05,
+  "max_steps": 600,
+  "obs_dim": 28
+}
